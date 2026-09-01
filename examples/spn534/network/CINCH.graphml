@@ -1,0 +1,4537 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d17" for="edge" attr.name="annotation_B" attr.type="string" />
+  <key id="d16" for="edge" attr.name="annotation_A" attr.type="string" />
+  <key id="d15" for="edge" attr.name="driver_B" attr.type="string" />
+  <key id="d14" for="edge" attr.name="driver_A" attr.type="string" />
+  <key id="d13" for="edge" attr.name="Neff" attr.type="double" />
+  <key id="d12" for="edge" attr.name="HC_supported" attr.type="long" />
+  <key id="d11" for="edge" attr.name="order_distance" attr.type="double" />
+  <key id="d10" for="edge" attr.name="NMI" attr.type="double" />
+  <key id="d9" for="edge" attr.name="MIraw" attr.type="double" />
+  <key id="d8" for="edge" attr.name="orientation" attr.type="string" />
+  <key id="d7" for="edge" attr.name="pair_class" attr.type="string" />
+  <key id="d6" for="edge" attr.name="channel" attr.type="string" />
+  <key id="d5" for="edge" attr.name="edge_id" attr.type="string" />
+  <key id="d4" for="node" attr.name="y" attr.type="double" />
+  <key id="d3" for="node" attr.name="x" attr.type="double" />
+  <key id="d2" for="node" attr.name="community" attr.type="long" />
+  <key id="d1" for="node" attr.name="degree" attr.type="long" />
+  <key id="d0" for="node" attr.name="annotation" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="group_1922">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">8</data>
+      <data key="d3">-0.22500000000000003</data>
+      <data key="d4">-1.0799999975958736</data>
+    </node>
+    <node id="group_2348">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">8</data>
+      <data key="d3">-0.335</data>
+      <data key="d4">-1.0800000024041265</data>
+    </node>
+    <node id="yxlF">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">2</data>
+      <data key="d2">6</data>
+      <data key="d3">-0.7849999999999999</data>
+      <data key="d4">-1.0799999989072482</data>
+    </node>
+    <node id="group_5417">
+      <data key="d0">major facilitator superfamily permease</data>
+      <data key="d1">1</data>
+      <data key="d2">6</data>
+      <data key="d3">-0.8674999959021806</data>
+      <data key="d4">-1.127631399011924</data>
+    </node>
+    <node id="group_1482">
+      <data key="d0">cell division protein FtsZ</data>
+      <data key="d1">1</data>
+      <data key="d2">6</data>
+      <data key="d3">-0.8675000040978194</data>
+      <data key="d4">-1.032368602080828</data>
+    </node>
+    <node id="group_1888">
+      <data key="d0">zinc metalloprotease ZmpC</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.12401474874996476</data>
+      <data key="d4">1.0582416602242761</data>
+    </node>
+    <node id="group_3921">
+      <data key="d0">putative flavoprotein</data>
+      <data key="d1">2</data>
+      <data key="d2">1</data>
+      <data key="d3">0.13615317535341215</data>
+      <data key="d4">0.8873451615344601</data>
+    </node>
+    <node id="group_2753">
+      <data key="d0">phosphotransferase system sugar-specific EII component</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">-0.008518564229571242</data>
+      <data key="d4">0.7525290108971865</data>
+    </node>
+    <node id="group_4266">
+      <data key="d0">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d1">62</data>
+      <data key="d2">1</data>
+      <data key="d3">0.15138453952396622</data>
+      <data key="d4">0.7075380501920714</data>
+    </node>
+    <node id="glf_2">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.13659545179274463</data>
+      <data key="d4">0.7873502546079953</data>
+    </node>
+    <node id="group_3656">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">2</data>
+      <data key="d2">5</data>
+      <data key="d3">-0.27348436427830103</data>
+      <data key="d4">-0.5107865595957286</data>
+    </node>
+    <node id="group_4441">
+      <data key="d0">histidine kinase</data>
+      <data key="d1">19</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.1655838092328638</data>
+      <data key="d4">-0.3596768832078317</data>
+    </node>
+    <node id="gpsB">
+      <data key="d0">oligopeptide ABC transporter oligopeptide-binding protein AliA</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.23850837388057836</data>
+      <data key="d4">-0.20418601133225162</data>
+    </node>
+    <node id="group_1130">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">41</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.289516704162035</data>
+      <data key="d4">-0.25992312386095406</data>
+    </node>
+    <node id="group_2577">
+      <data key="d0">DNA-3-methyladenine glycosylase I</data>
+      <data key="d1">11</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.16325041342167615</data>
+      <data key="d4">-0.1756550955579782</data>
+    </node>
+    <node id="ponA">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.40589043690492455</data>
+      <data key="d4">-0.31377980284301343</data>
+    </node>
+    <node id="group_2233">
+      <data key="d0">oligopeptide binding lipoprotein</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.15732268616230816</data>
+      <data key="d4">-0.32070986001914287</data>
+    </node>
+    <node id="group_711">
+      <data key="d0">HAD superfamily hydrolase protein</data>
+      <data key="d1">20</data>
+      <data key="d2">3</data>
+      <data key="d3">0.009934328911559875</data>
+      <data key="d4">-0.30815331326108564</data>
+    </node>
+    <node id="group_2568">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.3988346312954739</data>
+      <data key="d4">-0.2196830029480754</data>
+    </node>
+    <node id="group_2556">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.38903411831751233</data>
+      <data key="d4">-0.2617529123967936</data>
+    </node>
+    <node id="group_2386">
+      <data key="d0">putative metal-dependent membrane protease</data>
+      <data key="d1">4</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.0010366953872445808</data>
+      <data key="d4">0.23338243933635253</data>
+    </node>
+    <node id="wfgD">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.15497580723632534</data>
+      <data key="d4">0.8131067898805024</data>
+    </node>
+    <node id="group_2751">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">7</data>
+      <data key="d3">-0.505</data>
+      <data key="d4">-1.0799999989072482</data>
+    </node>
+    <node id="sorB">
+      <data key="d0">N-acetylgalactosamine-specific phosphotransferase EIIB</data>
+      <data key="d1">2</data>
+      <data key="d2">7</data>
+      <data key="d3">-0.5874999959021807</data>
+      <data key="d4">-1.127631399011924</data>
+    </node>
+    <node id="group_2421">
+      <data key="d0">amino acid ABC transporter ATP-binding protein</data>
+      <data key="d1">1</data>
+      <data key="d2">4</data>
+      <data key="d3">0.8977368439364488</data>
+      <data key="d4">1.0307486543559965</data>
+    </node>
+    <node id="folD">
+      <data key="d0">FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase</data>
+      <data key="d1">4</data>
+      <data key="d2">4</data>
+      <data key="d3">0.7833227272844917</data>
+      <data key="d4">0.9634578931181437</data>
+    </node>
+    <node id="ygaZ">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.16827151014766875</data>
+      <data key="d4">0.6563447502112282</data>
+    </node>
+    <node id="group_5169">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.4581416788875758</data>
+      <data key="d4">-0.24123827630631223</data>
+    </node>
+    <node id="celD">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">9</data>
+      <data key="d3">-0.055</data>
+      <data key="d4">-1.0800000024041265</data>
+    </node>
+    <node id="pyrF">
+      <data key="d0">orotidine-5-phosphate decarboxylase</data>
+      <data key="d1">1</data>
+      <data key="d2">9</data>
+      <data key="d3">0.055</data>
+      <data key="d4">-1.0799999975958736</data>
+    </node>
+    <node id="group_2522">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.07918948999046667</data>
+      <data key="d4">-0.2263527818242942</data>
+    </node>
+    <node id="group_4408">
+      <data key="d0">galactosyl transferase CpsE</data>
+      <data key="d1">21</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.03587988613627458</data>
+      <data key="d4">-0.27150938800749097</data>
+    </node>
+    <node id="group_860">
+      <data key="d0">Ser/Thr protein phosphatase family protein</data>
+      <data key="d1">2</data>
+      <data key="d2">4</data>
+      <data key="d3">0.6303700867448937</data>
+      <data key="d4">0.90999072153619</data>
+    </node>
+    <node id="glf">
+      <data key="d0">capsular polysaccharide synthesis protein</data>
+      <data key="d1">5</data>
+      <data key="d2">4</data>
+      <data key="d3">0.4746727717098985</data>
+      <data key="d4">0.8591176131814997</data>
+    </node>
+    <node id="group_2416">
+      <data key="d0">VncR, response regulator</data>
+      <data key="d1">2</data>
+      <data key="d2">4</data>
+      <data key="d3">0.620434964673309</data>
+      <data key="d4">0.9320471149946157</data>
+    </node>
+    <node id="group_4466">
+      <data key="d0">GNAT family acetyltransferase</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.27732130488373735</data>
+      <data key="d4">0.7574901647768686</data>
+    </node>
+    <node id="group_4912">
+      <data key="d0">LysM domain protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.14428331933381158</data>
+      <data key="d4">0.8397205764864388</data>
+    </node>
+    <node id="group_5893">
+      <data key="d0">transposase</data>
+      <data key="d1">1</data>
+      <data key="d2">4</data>
+      <data key="d3">0.913636497078021</data>
+      <data key="d4">0.9363693615958539</data>
+    </node>
+    <node id="group_1322">
+      <data key="d0">glycosyltransferase</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.007947562839893382</data>
+      <data key="d4">0.7133562963344402</data>
+    </node>
+    <node id="group_4450">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">7</data>
+      <data key="d3">-0.5875000040978194</data>
+      <data key="d4">-1.032368602080828</data>
+    </node>
+    <node id="group_2856">
+      <data key="d0">peptidoglycan branched peptide synthesis protein, femAB family</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.14590720036428956</data>
+      <data key="d4">0.5965284216420847</data>
+    </node>
+    <node id="group_2872">
+      <data key="d0">putative holin 1</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.24746197508317097</data>
+      <data key="d4">0.6631479051099481</data>
+    </node>
+    <node id="argH">
+      <data key="d0">argininosuccinate synthase</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.04355207700381818</data>
+      <data key="d4">0.7188606143417899</data>
+    </node>
+    <node id="group_6020">
+      <data key="d0">BlpT protein, fusion</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.0793664316705354</data>
+      <data key="d4">0.7277799495114623</data>
+    </node>
+    <node id="group_1172">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.08960195259641238</data>
+      <data key="d4">0.8568957465761871</data>
+    </node>
+    <node id="group_1186">
+      <data key="d0">pyruvate formate-lyase</data>
+      <data key="d1">2</data>
+      <data key="d2">4</data>
+      <data key="d3">0.31875329942630093</data>
+      <data key="d4">0.8011292724450823</data>
+    </node>
+    <node id="group_5527">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.08286264317736222</data>
+      <data key="d4">0.8242808725098032</data>
+    </node>
+    <node id="group_3103">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.21531867269155325</data>
+      <data key="d4">0.8539434615390502</data>
+    </node>
+    <node id="group_5452">
+      <data key="d0">aldose 1-epimerase</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.26555745462846697</data>
+      <data key="d4">0.6356635001281701</data>
+    </node>
+    <node id="group_6043">
+      <data key="d0">choline binding protein CbpI</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.1113640622294501</data>
+      <data key="d4">0.6020248950982806</data>
+    </node>
+    <node id="group_4105">
+      <data key="d0">choline binding protein I</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.27872366490679995</data>
+      <data key="d4">0.7314806753681942</data>
+    </node>
+    <node id="maa">
+      <data key="d0">glyoxalase family protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.10141798780951622</data>
+      <data key="d4">0.6432283061395785</data>
+    </node>
+    <node id="licC_3">
+      <data key="d0">Predicted membrane protein (DUF2207)</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.020885611081201218</data>
+      <data key="d4">0.7740878217419362</data>
+    </node>
+    <node id="group_6045">
+      <data key="d0">chlorohydrolase</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.1197978135662096</data>
+      <data key="d4">0.7540360710377549</data>
+    </node>
+    <node id="group_3157">
+      <data key="d0">gp18</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.2976473594442244</data>
+      <data key="d4">0.713082963793251</data>
+    </node>
+    <node id="group_3144">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.05069066191253067</data>
+      <data key="d4">0.7608889246763426</data>
+    </node>
+    <node id="group_3469">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.047610967696868074</data>
+      <data key="d4">0.6882766242151548</data>
+    </node>
+    <node id="group_4136">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.2166530657727919</data>
+      <data key="d4">0.687798400138786</data>
+    </node>
+    <node id="group_4951">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.1802309542102478</data>
+      <data key="d4">0.5944010839460417</data>
+    </node>
+    <node id="group_4952">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.023397412739587207</data>
+      <data key="d4">0.7416238249030358</data>
+    </node>
+    <node id="group_5505">
+      <data key="d0">bacteriophage maturation protease</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.06587598186674828</data>
+      <data key="d4">0.7995985028532258</data>
+    </node>
+    <node id="group_5506">
+      <data key="d0">portal protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.06379692818416234</data>
+      <data key="d4">0.6579348834564083</data>
+    </node>
+    <node id="group_5508">
+      <data key="d0">prophage LambdaSa2, site-specific recombinase, phage integrase family</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.2830140642405448</data>
+      <data key="d4">0.6595047112694845</data>
+    </node>
+    <node id="group_6135">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.10386230408602609</data>
+      <data key="d4">0.8009936673438902</data>
+    </node>
+    <node id="group_5507">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.080834882903786</data>
+      <data key="d4">0.6148724978307895</data>
+    </node>
+    <node id="group_4501">
+      <data key="d0">bacteriophage terminase</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.013204212928957758</data>
+      <data key="d4">0.68504535622617</data>
+    </node>
+    <node id="group_6133">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.2426213526502115</data>
+      <data key="d4">0.721372438133157</data>
+    </node>
+    <node id="bca">
+      <data key="d0">NTP pyrophosphohydrolase including oxidative damage repair enzymes</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.18308589836737452</data>
+      <data key="d4">0.8257238184667748</data>
+    </node>
+    <node id="group_5627">
+      <data key="d0">bacteriophage transcriptional activator</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.21631455675858385</data>
+      <data key="d4">0.6445724786123326</data>
+    </node>
+    <node id="group_3475">
+      <data key="d0">heat shock protein GrpE</data>
+      <data key="d1">2</data>
+      <data key="d2">4</data>
+      <data key="d3">0.3383643567558106</data>
+      <data key="d4">0.7813565996971052</data>
+    </node>
+    <node id="group_4953">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.2611639907061308</data>
+      <data key="d4">0.7841101060461333</data>
+    </node>
+    <node id="thrB_2">
+      <data key="d0">choline binding protein J</data>
+      <data key="d1">1</data>
+      <data key="d2">10</data>
+      <data key="d3">0.22499999999999992</data>
+      <data key="d4">-1.0800000024041265</data>
+    </node>
+    <node id="mutX_1">
+      <data key="d0">MutT/nudix family protein</data>
+      <data key="d1">1</data>
+      <data key="d2">10</data>
+      <data key="d3">0.3349999999999999</data>
+      <data key="d4">-1.0799999975958736</data>
+    </node>
+    <node id="group_1393">
+      <data key="d0">coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein</data>
+      <data key="d1">4</data>
+      <data key="d2">5</data>
+      <data key="d3">-0.3919751853397941</data>
+      <data key="d4">-0.6051819478105156</data>
+    </node>
+    <node id="group_5291">
+      <data key="d0">ATP-dependent Clp protease, ATP-binding subunit ClpX</data>
+      <data key="d1">1</data>
+      <data key="d2">5</data>
+      <data key="d3">-0.43406372368410856</data>
+      <data key="d4">-0.72</data>
+    </node>
+    <node id="group_2605">
+      <data key="d0">putative metal-binding, possibly nucleic acid-binding protein</data>
+      <data key="d1">1</data>
+      <data key="d2">5</data>
+      <data key="d3">-0.4687023320905381</data>
+      <data key="d4">-0.6976925993572374</data>
+    </node>
+    <node id="gutB">
+      <data key="d0">glutamyl-tRNA(Gln) amidotransferase, A subunit</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.35867054266154486</data>
+      <data key="d4">-0.44078858962658735</data>
+    </node>
+    <node id="group_4888">
+      <data key="d0">choline binding protein J</data>
+      <data key="d1">6</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.10308775281679959</data>
+      <data key="d4">-0.11077529649249584</data>
+    </node>
+    <node id="group_4882">
+      <data key="d0">N-6 adenine-specific DNA methylase</data>
+      <data key="d1">6</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.09928126387810013</data>
+      <data key="d4">-0.09998633039238847</data>
+    </node>
+    <node id="group_3724">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">5</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.12109650872357391</data>
+      <data key="d4">-0.08868003372749605</data>
+    </node>
+    <node id="group_8256">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.171920296084462</data>
+      <data key="d4">-0.4994943798748626</data>
+    </node>
+    <node id="Int-Tn_1">
+      <data key="d0">phage protein</data>
+      <data key="d1">3</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.06733692094846554</data>
+      <data key="d4">-0.31507077964994923</data>
+    </node>
+    <node id="group_3705">
+      <data key="d0">phage protein</data>
+      <data key="d1">3</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.04359589876803937</data>
+      <data key="d4">-0.32494361152210466</data>
+    </node>
+    <node id="group_5408">
+      <data key="d0">phage protein</data>
+      <data key="d1">3</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.04158740114783311</data>
+      <data key="d4">-0.37046511538732535</data>
+    </node>
+    <node id="group_4837">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.27929365249704036</data>
+      <data key="d4">-0.35275930439089703</data>
+    </node>
+    <node id="group_5357">
+      <data key="d0">Mobile element protein</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.24095620928237818</data>
+      <data key="d4">-0.35917658167328853</data>
+    </node>
+    <node id="group_5358">
+      <data key="d0">Helix-turn-helix domain</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.25434792399281425</data>
+      <data key="d4">-0.38048022739828297</data>
+    </node>
+    <node id="group_5359">
+      <data key="d0">Mobile element protein</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.25587265973803175</data>
+      <data key="d4">-0.3382020481001807</data>
+    </node>
+    <node id="iap">
+      <data key="d0">anaerobic benzoate catabolism transcriptional regulator</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.2792797292995341</data>
+      <data key="d4">-0.3765145163359233</data>
+    </node>
+    <node id="group_4892">
+      <data key="d0">bacteriophage integrase</data>
+      <data key="d1">3</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.02672917880098162</data>
+      <data key="d4">-0.3544045067156693</data>
+    </node>
+    <node id="group_5412">
+      <data key="d0">phage protein</data>
+      <data key="d1">3</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.07151131376034782</data>
+      <data key="d4">-0.33827220099774374</data>
+    </node>
+    <node id="group_5411">
+      <data key="d0">DNA-binding phage protein</data>
+      <data key="d1">3</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.046862574175676526</data>
+      <data key="d4">-0.345554470883322</data>
+    </node>
+    <node id="group_5991">
+      <data key="d0">phage protein</data>
+      <data key="d1">3</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.06265691320424083</data>
+      <data key="d4">-0.36124057884007427</data>
+    </node>
+    <node id="group_3024">
+      <data key="d0">CbxX/CfqX family protein</data>
+      <data key="d1">3</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.2373000278480216</data>
+      <data key="d4">-0.2813202145975351</data>
+    </node>
+    <node id="group_4895">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">3</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.20687927991771274</data>
+      <data key="d4">-0.27012158171357764</data>
+    </node>
+    <node id="erm">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">4</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.20955520507099903</data>
+      <data key="d4">-0.24466429091637376</data>
+    </node>
+    <node id="group_5422">
+      <data key="d0">ImpB/MucB/SamB family protein</data>
+      <data key="d1">5</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.16192689377593084</data>
+      <data key="d4">-0.24921552502069716</data>
+    </node>
+    <node id="tetM">
+      <data key="d0">Helix-turn-helix domain</data>
+      <data key="d1">4</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.163049380519696</data>
+      <data key="d4">-0.26973803476026414</data>
+    </node>
+    <node id="group_2492">
+      <data key="d0">lactose-specific phosphotransferase EIIA</data>
+      <data key="d1">1</data>
+      <data key="d2">11</data>
+      <data key="d3">0.5049999999999999</data>
+      <data key="d4">-1.0800000024041265</data>
+    </node>
+    <node id="group_1349">
+      <data key="d0">GntR family transcriptional regulator</data>
+      <data key="d1">1</data>
+      <data key="d2">11</data>
+      <data key="d3">0.615</data>
+      <data key="d4">-1.0799999975958736</data>
+    </node>
+    <node id="phnV_2">
+      <data key="d0">phosphoglycerate mutase family protein</data>
+      <data key="d1">14</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.21243276445743128</data>
+      <data key="d4">-0.16806796287811016</data>
+    </node>
+    <node id="group_5361">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.32940316930876523</data>
+      <data key="d4">-0.16122572309687883</data>
+    </node>
+    <node id="Int-Tn_2">
+      <data key="d0">membrane protein</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.301162239913104</data>
+      <data key="d4">-0.17911322293929188</data>
+    </node>
+    <node id="group_5944">
+      <data key="d0">membrane protein</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.33222018425027766</data>
+      <data key="d4">-0.18770911388524247</data>
+    </node>
+    <node id="group_5945">
+      <data key="d0">CBS domain membrane protein</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.3027161430167718</data>
+      <data key="d4">-0.15163299281375747</data>
+    </node>
+    <node id="group_5360">
+      <data key="d0">DNA-directed RNA polymerase subunit beta</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.30976250191955473</data>
+      <data key="d4">-0.2083427680692046</data>
+    </node>
+    <node id="group_4448">
+      <data key="d0">sortase family protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.27353468822653687</data>
+      <data key="d4">-0.058163615839918636</data>
+    </node>
+    <node id="group_624">
+      <data key="d0">choline binding protein C</data>
+      <data key="d1">5</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.1249547998019903</data>
+      <data key="d4">-0.22480635514395136</data>
+    </node>
+    <node id="group_1077">
+      <data key="d0">translation factor</data>
+      <data key="d1">3</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.12198634320172724</data>
+      <data key="d4">-0.38188283470357015</data>
+    </node>
+    <node id="group_4444">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">2</data>
+      <data key="d2">3</data>
+      <data key="d3">0.061713595385414946</data>
+      <data key="d4">-0.31090262252173206</data>
+    </node>
+    <node id="group_2046">
+      <data key="d0">ABC transporter membrane protein</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.05419296299240545</data>
+      <data key="d4">-0.2556576638190651</data>
+    </node>
+    <node id="phnU">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.09304066416822017</data>
+      <data key="d4">-0.2577759036397928</data>
+    </node>
+    <node id="group_1962">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">2</data>
+      <data key="d2">3</data>
+      <data key="d3">0.012816352077912393</data>
+      <data key="d4">-0.1854429183179125</data>
+    </node>
+    <node id="group_5410">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.046171042214590736</data>
+      <data key="d4">-0.21868469938438279</data>
+    </node>
+    <node id="group_5409">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.07784295625708909</data>
+      <data key="d4">-0.2845373231523187</data>
+    </node>
+    <node id="group_2704">
+      <data key="d0">type I restriction-modification system, R subunit</data>
+      <data key="d1">2</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.06826030190108821</data>
+      <data key="d4">-0.1985032909267178</data>
+    </node>
+    <node id="group_3419">
+      <data key="d0">phage protein</data>
+      <data key="d1">2</data>
+      <data key="d2">3</data>
+      <data key="d3">0.041891033196598426</data>
+      <data key="d4">-0.33361560584211797</data>
+    </node>
+    <node id="galT_2">
+      <data key="d0">anthranilate synthase component II (glutamine amido-transferase)</data>
+      <data key="d1">2</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.15302603931629832</data>
+      <data key="d4">-0.2927918313501948</data>
+    </node>
+    <node id="group_3703">
+      <data key="d0">3-dehydroquinate synthase</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.44940126124295615</data>
+      <data key="d4">-0.27413129946785614</data>
+    </node>
+    <node id="pbpX_1">
+      <data key="d0">transcriptional regulator</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.2553165482575547</data>
+      <data key="d4">-0.1840240167981127</data>
+    </node>
+    <node id="group_1119">
+      <data key="d0">ABC transporter ATP-binding protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.41737367692580085</data>
+      <data key="d4">-0.36718875671702195</data>
+    </node>
+    <node id="group_5355">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.37125566316045566</data>
+      <data key="d4">-0.3083858871803177</data>
+    </node>
+    <node id="group_4581">
+      <data key="d0">RNA polymerase sigma factor</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.4209698778329449</data>
+      <data key="d4">-0.24479621194733758</data>
+    </node>
+    <node id="ftsK_1">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.40160772407637524</data>
+      <data key="d4">-0.18730080522262582</data>
+    </node>
+    <node id="group_5416">
+      <data key="d0">thioredoxin</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.37125418898439794</data>
+      <data key="d4">-0.3761170809969984</data>
+    </node>
+    <node id="group_5942">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.41434583239626055</data>
+      <data key="d4">-0.2835321092679604</data>
+    </node>
+    <node id="group_4894">
+      <data key="d0">30S ribosomal protein S16</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.4500738923238019</data>
+      <data key="d4">-0.30597285069154356</data>
+    </node>
+    <node id="group_1754">
+      <data key="d0">galactose-1-phosphate uridylyltransferase</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.43305877997676434</data>
+      <data key="d4">-0.3353893264231474</data>
+    </node>
+    <node id="group_1976">
+      <data key="d0">anthranilate phosphoribosyltransferase</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.3498819492637609</data>
+      <data key="d4">-0.35189282280742024</data>
+    </node>
+    <node id="group_4451">
+      <data key="d0">galactokinase, (galactose kinase)</data>
+      <data key="d1">2</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.24953632914886673</data>
+      <data key="d4">-0.15676357258982498</data>
+    </node>
+    <node id="group_1359">
+      <data key="d0">anthranilate synthase component I</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.38472970982912047</data>
+      <data key="d4">-0.3420648037873992</data>
+    </node>
+    <node id="group_1656">
+      <data key="d0">filamentation induced by cAMP protein fic</data>
+      <data key="d1">1</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.43476841370266983</data>
+      <data key="d4">-0.20738172110723369</data>
+    </node>
+    <node id="group_5093">
+      <data key="d0">bacteriocin</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.0815409810342798</data>
+      <data key="d4">-0.4064990165646664</data>
+    </node>
+    <node id="group_4891">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.11388991893269794</data>
+      <data key="d4">-0.4006743164844507</data>
+    </node>
+    <node id="group_5990">
+      <data key="d0">prophage Sa05, P4 family DNA primase</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.13977598105040512</data>
+      <data key="d4">-0.36878926845006527</data>
+    </node>
+    <node id="sarA_2">
+      <data key="d0">peptidase propeptide and ypeb domain-containing protein</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.10827333617721477</data>
+      <data key="d4">-0.3734466809844615</data>
+    </node>
+    <node id="group_5418">
+      <data key="d0">2-isopropylmalate synthase</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.13320876141423724</data>
+      <data key="d4">-0.3394952051647317</data>
+    </node>
+    <node id="group_5996">
+      <data key="d0">ion transporter</data>
+      <data key="d1">2</data>
+      <data key="d2">3</data>
+      <data key="d3">0.04908581139158417</data>
+      <data key="d4">-0.4480387329419265</data>
+    </node>
+    <node id="group_5997">
+      <data key="d0">cytotoxic translational repressor of toxin-antitoxin stability system</data>
+      <data key="d1">2</data>
+      <data key="d2">3</data>
+      <data key="d3">0.02374420659904536</data>
+      <data key="d4">-0.44781602730030806</data>
+    </node>
+    <node id="group_1314">
+      <data key="d0">permease</data>
+      <data key="d1">4</data>
+      <data key="d2">2</data>
+      <data key="d3">-0.049736771040295</data>
+      <data key="d4">-0.13892004347291514</data>
+    </node>
+    <node id="group_1296">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">5</data>
+      <data key="d2">3</data>
+      <data key="d3">-0.00017901685636687858</data>
+      <data key="d4">-0.5380210129749297</data>
+    </node>
+    <node id="group_5414">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.06253406185782963</data>
+      <data key="d4">-0.6510608762870589</data>
+    </node>
+    <node id="group_5993">
+      <data key="d0">chlorohydrolase</data>
+      <data key="d1">1</data>
+      <data key="d2">3</data>
+      <data key="d3">0.02189302452491549</data>
+      <data key="d4">-0.662613647662635</data>
+    </node>
+    <node id="group_437">
+      <data key="d0">Domain of uncharacterised function (DUF1858)</data>
+      <data key="d1">2</data>
+      <data key="d2">4</data>
+      <data key="d3">0.34448209995860585</data>
+      <data key="d4">0.8059961069623478</data>
+    </node>
+    <node id="group_3153">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.17517194010343307</data>
+      <data key="d4">0.8586619831703473</data>
+    </node>
+    <node id="group_5503">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.09350988018469682</data>
+      <data key="d4">0.6839879942370639</data>
+    </node>
+    <node id="group_6036">
+      <data key="d0">transcriptional regulator</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.24846384043704287</data>
+      <data key="d4">0.8304569076477417</data>
+    </node>
+    <node id="group_6134">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.20963031576407826</data>
+      <data key="d4">0.8155997809131519</data>
+    </node>
+    <node id="group_6148">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.051568006672103345</data>
+      <data key="d4">0.6307885598859666</data>
+    </node>
+    <node id="group_5626">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.24142553527909763</data>
+      <data key="d4">0.7567143750887111</data>
+    </node>
+    <node id="group_6468">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.21154666764154129</data>
+      <data key="d4">0.7805755801029175</data>
+    </node>
+    <node id="group_6480">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.23729899341880106</data>
+      <data key="d4">0.8006602191080607</data>
+    </node>
+    <node id="group_6132">
+      <data key="d0">prophage pi2 protein 37</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.20185419280633168</data>
+      <data key="d4">0.7410982110819864</data>
+    </node>
+    <node id="group_4531">
+      <data key="d0">DNA-binding protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.1760850368679222</data>
+      <data key="d4">0.7811011478481349</data>
+    </node>
+    <node id="group_5501">
+      <data key="d0">phage major tail protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.2940975140682034</data>
+      <data key="d4">0.6851096357332314</data>
+    </node>
+    <node id="group_5502">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.21465952708107328</data>
+      <data key="d4">0.6046793095010511</data>
+    </node>
+    <node id="group_6467">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.24138317794530584</data>
+      <data key="d4">0.6190339571059674</data>
+    </node>
+    <node id="group_6478">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.08236830378054345</data>
+      <data key="d4">0.7708607696598453</data>
+    </node>
+    <node id="group_6479">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.11675937835134537</data>
+      <data key="d4">0.8301807106078531</data>
+    </node>
+    <node id="group_6481">
+      <data key="d0">Uncharacterised protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.02755192970341222</data>
+      <data key="d4">0.6573148181590206</data>
+    </node>
+    <node id="group_6482">
+      <data key="d0">gp27</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.26252190761837585</data>
+      <data key="d4">0.6941645222165505</data>
+    </node>
+    <node id="group_6477">
+      <data key="d0">phage protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.04347172071440306</data>
+      <data key="d4">0.8293947942517252</data>
+    </node>
+    <node id="group_6476">
+      <data key="d0">putative phage DNA binding protein</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.13642665183036864</data>
+      <data key="d4">0.6289210919132301</data>
+    </node>
+    <node id="group_2868">
+      <data key="d0">integrase</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.18328953232391948</data>
+      <data key="d4">0.6237510844048798</data>
+    </node>
+    <node id="group_3051">
+      <data key="d0">gp19</data>
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+      <data key="d3">0.03647879885499193</data>
+      <data key="d4">0.7958898513015376</data>
+    </node>
+    <node id="gyrB">
+      <data key="d0">DNA gyrase subunit B</data>
+      <data key="d1">1</data>
+      <data key="d2">12</data>
+      <data key="d3">0.895</data>
+      <data key="d4">-1.0799999975958736</data>
+    </node>
+    <node id="aguA">
+      <data key="d0">agmatine deiminase</data>
+      <data key="d1">1</data>
+      <data key="d2">12</data>
+      <data key="d3">0.7849999999999999</data>
+      <data key="d4">-1.0800000024041265</data>
+    </node>
+    <edge source="group_1922" target="group_2348">
+      <data key="d5">PP:group_1922--group_2348</data>
+      <data key="d6">PP</data>
+      <data key="d7">PP</data>
+      <data key="d8">P_A__P_B</data>
+      <data key="d9">0.2695785823766203</data>
+      <data key="d10">0.3899660883411208</data>
+      <data key="d11">135.14285714285714</data>
+      <data key="d12">25</data>
+      <data key="d13">6.2608633</data>
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="yxlF" target="group_5417">
+      <data key="d5">PP:yxlF--group_5417</data>
+      <data key="d6">PP</data>
+      <data key="d7">PP</data>
+      <data key="d8">P_A__P_B</data>
+      <data key="d9">0.2928027577364576</data>
+      <data key="d10">0.4234561633746656</data>
+      <data key="d11">152.0</data>
+      <data key="d12">13</data>
+      <data key="d13">3.4157245</data>
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">major facilitator superfamily permease</data>
+    </edge>
+    <edge source="yxlF" target="group_1482">
+      <data key="d5">PP:yxlF--group_1482</data>
+      <data key="d6">PP</data>
+      <data key="d7">PP</data>
+      <data key="d8">P_A__P_B</data>
+      <data key="d9">0.2791310095456147</data>
+      <data key="d10">0.4038233135364636</data>
+      <data key="d11">152.85714285714286</data>
+      <data key="d12">12</data>
+      <data key="d13">3.331653</data>
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">cell division protein FtsZ</data>
+    </edge>
+    <edge source="group_1888" target="group_3921">
+      <data key="d5">PP:group_1888--group_3921</data>
+      <data key="d6">PP</data>
+      <data key="d7">PP</data>
+      <data key="d8">P_A__P_B</data>
+      <data key="d9">0.174108199911863</data>
+      <data key="d10">0.3104716089399468</data>
+      <data key="d11">575.375</data>
+      <data key="d12">4</data>
+      <data key="d13">2.6938255</data>
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">zinc metalloprotease ZmpC</data>
+      <data key="d17">putative flavoprotein</data>
+    </edge>
+    <edge source="group_3921" target="group_4266">
+      <data key="d5">PT:group_3921--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">341.8333333333333</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">putative flavoprotein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_2753" target="group_4266">
+      <data key="d5">PT:group_2753--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5452835046657886</data>
+      <data key="d10">0.6333963717124956</data>
+      <data key="d11">225.6</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">1</data>
+      <data key="d15">2</data>
+      <data key="d16">phosphotransferase system sugar-specific EII component</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="glf_2">
+      <data key="d5">PT:glf_2--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">134.16666666666666</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">1</data>
+      <data key="d15">2</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_2386">
+      <data key="d5">PT:group_2386--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">128.58333333333334</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">1</data>
+      <data key="d15">2</data>
+      <data key="d16">putative metal-dependent membrane protease</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="wfgD">
+      <data key="d5">PT:wfgD--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">139.9090909090909</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">1</data>
+      <data key="d15">2</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="ygaZ">
+      <data key="d5">PT:ygaZ--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">120.06451612903226</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_4466">
+      <data key="d5">PT:group_4466--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">276.3076923076923</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">GNAT family acetyltransferase</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_4912">
+      <data key="d5">PT:group_4912--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">168.68</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">LysM domain protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_1322">
+      <data key="d5">PT:group_1322--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">131.06451612903226</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">glycosyltransferase</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_2856">
+      <data key="d5">PT:group_2856--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">269.53846153846155</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">peptidoglycan branched peptide synthesis protein, femAB family</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_2872">
+      <data key="d5">PT:group_2872--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">245.9090909090909</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">putative holin 1</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="argH">
+      <data key="d5">PT:argH--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">163.79166666666666</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">argininosuccinate synthase</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_6020">
+      <data key="d5">PT:group_6020--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">207.92307692307693</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">BlpT protein, fusion</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_1172">
+      <data key="d5">PT:group_1172--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5193783119600369</data>
+      <data key="d10">0.6033051349009347</data>
+      <data key="d11">244.9090909090909</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_1186">
+      <data key="d5">PT:group_1186--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">161.94736842105263</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">pyruvate formate-lyase</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_5527">
+      <data key="d5">PT:group_5527--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">188.78571428571428</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_3103">
+      <data key="d5">PT:group_3103--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5193783119600369</data>
+      <data key="d10">0.6033051349009347</data>
+      <data key="d11">246.9090909090909</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">phage protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_5452">
+      <data key="d5">PT:group_5452--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">201.13333333333333</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">aldose 1-epimerase</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_6043">
+      <data key="d5">PT:group_6043--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">200.13333333333333</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">choline binding protein CbpI</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_4105">
+      <data key="d5">PT:group_4105--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">199.13333333333333</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">choline binding protein I</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="maa">
+      <data key="d5">PT:maa--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">197.13333333333333</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">glyoxalase family protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="licC_3">
+      <data key="d5">PT:licC_3--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">157.14285714285714</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">Predicted membrane protein (DUF2207)</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_6045">
+      <data key="d5">PT:group_6045--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">192.13333333333333</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">chlorohydrolase</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_3157">
+      <data key="d5">PT:group_3157--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">268.6363636363636</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">gp18</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_3144">
+      <data key="d5">PT:group_3144--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">273.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_3469">
+      <data key="d5">PT:group_3469--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">251.1</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">phage protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_4136">
+      <data key="d5">PT:group_4136--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">250.1</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">phage protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_4951">
+      <data key="d5">PT:group_4951--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">252.33333333333331</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_4952">
+      <data key="d5">PT:group_4952--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">263.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">phage protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_5505">
+      <data key="d5">PT:group_5505--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">259.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">bacteriophage maturation protease</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_5506">
+      <data key="d5">PT:group_5506--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">260.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">portal protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_5508">
+      <data key="d5">PT:group_5508--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">265.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">prophage LambdaSa2, site-specific recombinase, phage integrase family</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_6135">
+      <data key="d5">PT:group_6135--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">264.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">phage protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_5507">
+      <data key="d5">PT:group_5507--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">261.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">phage protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_4501">
+      <data key="d5">PT:group_4501--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">262.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">bacteriophage terminase</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_6133">
+      <data key="d5">PT:group_6133--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">256.0</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">phage protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="bca">
+      <data key="d5">PT:bca--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">291.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">NTP pyrophosphohydrolase including oxidative damage repair enzymes</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_5627">
+      <data key="d5">PT:group_5627--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">266.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">bacteriophage transcriptional activator</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_3475">
+      <data key="d5">PT:group_3475--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">187.8571428571429</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">heat shock protein GrpE</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_4953">
+      <data key="d5">PT:group_4953--group_4266</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6268694575724264</data>
+      <data key="d10">0.7395695833710968</data>
+      <data key="d11">261.27272727272725</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">PTS system mannose-specific transporter subunit IIAB</data>
+    </edge>
+    <edge source="group_4266" target="group_3153">
+      <data key="d5">TP:group_4266--group_3153</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5452835046657886</data>
+      <data key="d10">0.6333963717124956</data>
+      <data key="d11">121.60714285714286</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4266" target="group_5503">
+      <data key="d5">TP:group_4266--group_5503</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">257.75</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6036">
+      <data key="d5">TP:group_4266--group_6036</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5452835046657886</data>
+      <data key="d10">0.6333963717124956</data>
+      <data key="d11">122.60714285714286</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">transcriptional regulator</data>
+    </edge>
+    <edge source="group_4266" target="group_6134">
+      <data key="d5">TP:group_4266--group_6134</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">257.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6148">
+      <data key="d5">TP:group_4266--group_6148</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">275.1818181818182</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4266" target="group_5626">
+      <data key="d5">TP:group_4266--group_5626</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">258.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6468">
+      <data key="d5">TP:group_4266--group_6468</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">269.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6480">
+      <data key="d5">TP:group_4266--group_6480</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">272.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6132">
+      <data key="d5">TP:group_4266--group_6132</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">255.0</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">prophage pi2 protein 37</data>
+    </edge>
+    <edge source="group_4266" target="group_4531">
+      <data key="d5">TP:group_4266--group_4531</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">268.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">DNA-binding protein</data>
+    </edge>
+    <edge source="group_4266" target="group_5501">
+      <data key="d5">TP:group_4266--group_5501</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">253.0</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">phage major tail protein</data>
+    </edge>
+    <edge source="group_4266" target="group_5502">
+      <data key="d5">TP:group_4266--group_5502</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">254.0</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6467">
+      <data key="d5">TP:group_4266--group_6467</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">267.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6478">
+      <data key="d5">TP:group_4266--group_6478</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">271.90909090909093</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6479">
+      <data key="d5">TP:group_4266--group_6479</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">271.09090909090907</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6481">
+      <data key="d5">TP:group_4266--group_6481</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">271.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6482">
+      <data key="d5">TP:group_4266--group_6482</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">270.8</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">gp27</data>
+    </edge>
+    <edge source="group_4266" target="group_6477">
+      <data key="d5">TP:group_4266--group_6477</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5452835046657886</data>
+      <data key="d10">0.6333963717124956</data>
+      <data key="d11">272.72727272727275</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4266" target="group_6476">
+      <data key="d5">TP:group_4266--group_6476</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">273.54545454545456</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">putative phage DNA binding protein</data>
+    </edge>
+    <edge source="group_4266" target="group_2868">
+      <data key="d5">TP:group_4266--group_2868</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">274.4</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">integrase</data>
+    </edge>
+    <edge source="group_4266" target="group_3051">
+      <data key="d5">TP:group_4266--group_3051</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6268694575724263</data>
+      <data key="d10">0.7395695833710967</data>
+      <data key="d11">267.8181818181818</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">gp19</data>
+    </edge>
+    <edge source="group_4266" target="group_437">
+      <data key="d5">TP:group_4266--group_437</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5452835046657886</data>
+      <data key="d10">0.6333963717124956</data>
+      <data key="d11">231.16666666666663</data>
+      <data key="d12">3</data>
+      <data key="d13">2.4615386</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">PTS system mannose-specific transporter subunit IIAB</data>
+      <data key="d17">Domain of uncharacterised function (DUF1858)</data>
+    </edge>
+    <edge source="group_3656" target="group_4441">
+      <data key="d5">PT:group_3656--group_4441</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6011919136548338</data>
+      <data key="d10">0.6009458225842075</data>
+      <data key="d11">103.57142857142856</data>
+      <data key="d12">15</data>
+      <data key="d13">5.008633</data>
+      <data key="d14">1</data>
+      <data key="d15">4</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">histidine kinase</data>
+    </edge>
+    <edge source="group_3656" target="group_1393">
+      <data key="d5">TP:group_1393--group_3656</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5164565558869559</data>
+      <data key="d10">0.5223086968406295</data>
+      <data key="d11">137.6</data>
+      <data key="d12">28</data>
+      <data key="d13">8.968945</data>
+      <data key="d14">4</data>
+      <data key="d15">1</data>
+      <data key="d16">coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4441" target="group_8256">
+      <data key="d5">TP:group_4441--group_8256</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4858538659893969</data>
+      <data key="d10">0.4857682043685985</data>
+      <data key="d11">194.97142857142856</data>
+      <data key="d12">13</data>
+      <data key="d13">4.5581393</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4441" target="Int-Tn_1">
+      <data key="d5">TP:group_4441--Int-Tn_1</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5227654098814415</data>
+      <data key="d10">0.5234061459682091</data>
+      <data key="d11">193.08860759493672</data>
+      <data key="d12">13</data>
+      <data key="d13">4.4160585</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4441" target="group_3705">
+      <data key="d5">TP:group_4441--group_3705</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5227654098814415</data>
+      <data key="d10">0.5234061459682091</data>
+      <data key="d11">188.12820512820517</data>
+      <data key="d12">13</data>
+      <data key="d13">4.4160585</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4441" target="group_5408">
+      <data key="d5">TP:group_4441--group_5408</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5227654098814415</data>
+      <data key="d10">0.5234061459682091</data>
+      <data key="d11">184.12820512820517</data>
+      <data key="d12">13</data>
+      <data key="d13">4.4160585</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4441" target="group_4837">
+      <data key="d5">TP:group_4441--group_4837</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">329.7058823529412</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4441" target="group_5357">
+      <data key="d5">TP:group_4441--group_5357</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">330.7058823529412</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">Mobile element protein</data>
+    </edge>
+    <edge source="group_4441" target="group_5358">
+      <data key="d5">TP:group_4441--group_5358</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">328.7058823529412</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">Helix-turn-helix domain</data>
+    </edge>
+    <edge source="group_4441" target="group_5359">
+      <data key="d5">TP:group_4441--group_5359</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">327.7058823529412</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">Mobile element protein</data>
+    </edge>
+    <edge source="group_4441" target="iap">
+      <data key="d5">TP:group_4441--iap</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">325.7058823529412</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">anaerobic benzoate catabolism transcriptional regulator</data>
+    </edge>
+    <edge source="group_4441" target="group_4892">
+      <data key="d5">TP:group_4441--group_4892</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5227654098814415</data>
+      <data key="d10">0.5234061459682091</data>
+      <data key="d11">192.11688311688312</data>
+      <data key="d12">13</data>
+      <data key="d13">4.4160585</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">bacteriophage integrase</data>
+    </edge>
+    <edge source="group_4441" target="group_5412">
+      <data key="d5">TP:group_4441--group_5412</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5227654098814415</data>
+      <data key="d10">0.5234061459682091</data>
+      <data key="d11">191.12820512820517</data>
+      <data key="d12">13</data>
+      <data key="d13">4.4160585</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4441" target="group_5411">
+      <data key="d5">TP:group_4441--group_5411</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5227654098814415</data>
+      <data key="d10">0.5234061459682091</data>
+      <data key="d11">190.12820512820517</data>
+      <data key="d12">13</data>
+      <data key="d13">4.4160585</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">DNA-binding phage protein</data>
+    </edge>
+    <edge source="group_4441" target="group_5991">
+      <data key="d5">TP:group_4441--group_5991</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5227654098814415</data>
+      <data key="d10">0.5234061459682091</data>
+      <data key="d11">186.12820512820517</data>
+      <data key="d12">13</data>
+      <data key="d13">4.4160585</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4441" target="group_3024">
+      <data key="d5">TP:group_4441--group_3024</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">326.25</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">CbxX/CfqX family protein</data>
+    </edge>
+    <edge source="group_4441" target="group_4895">
+      <data key="d5">TP:group_4441--group_4895</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">332.7058823529412</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4441" target="erm">
+      <data key="d5">TP:group_4441--erm</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">333.7058823529412</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4441" target="group_5422">
+      <data key="d5">TP:group_4441--group_5422</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">331.7058823529412</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">ImpB/MucB/SamB family protein</data>
+    </edge>
+    <edge source="group_4441" target="tetM">
+      <data key="d5">TP:group_4441--tetM</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5403114221760668</data>
+      <data key="d10">0.5406576064510512</data>
+      <data key="d11">323.6470588235294</data>
+      <data key="d12">14</data>
+      <data key="d13">4.571429</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">histidine kinase</data>
+      <data key="d17">Helix-turn-helix domain</data>
+    </edge>
+    <edge source="gpsB" target="group_1130">
+      <data key="d5">PT:gpsB--group_1130</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">192.9705882352941</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">1</data>
+      <data key="d15">3</data>
+      <data key="d16">oligopeptide ABC transporter oligopeptide-binding protein AliA</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="gpsB" target="group_2577">
+      <data key="d5">PT:gpsB--group_2577</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5509865752942333</data>
+      <data key="d10">0.6678610538025493</data>
+      <data key="d11">184.16666666666663</data>
+      <data key="d12">16</data>
+      <data key="d13">8.398773</data>
+      <data key="d14">1</data>
+      <data key="d15">2</data>
+      <data key="d16">oligopeptide ABC transporter oligopeptide-binding protein AliA</data>
+      <data key="d17">DNA-3-methyladenine glycosylase I</data>
+    </edge>
+    <edge source="group_1130" target="ponA">
+      <data key="d5">PT:ponA--group_1130</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">190.13513513513516</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">1</data>
+      <data key="d15">3</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="group_2568">
+      <data key="d5">PT:group_2568--group_1130</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">169.92</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">1</data>
+      <data key="d15">3</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="group_2556">
+      <data key="d5">PT:group_2556--group_1130</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">306.84615384615387</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">1</data>
+      <data key="d15">3</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="group_5169">
+      <data key="d5">PT:group_5169--group_1130</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5268969176510274</data>
+      <data key="d10">0.5589536886891495</data>
+      <data key="d11">308.61538461538464</data>
+      <data key="d12">8</data>
+      <data key="d13">5.084507</data>
+      <data key="d14">1</data>
+      <data key="d15">3</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="group_3703">
+      <data key="d5">TP:group_1130--group_3703</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5680084844489448</data>
+      <data key="d10">0.6009860744968017</data>
+      <data key="d11">116.21794871794872</data>
+      <data key="d12">8</data>
+      <data key="d13">5.4054055</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">3-dehydroquinate synthase</data>
+    </edge>
+    <edge source="group_1130" target="group_1077">
+      <data key="d5">TP:group_1130--group_1077</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5680084844489448</data>
+      <data key="d10">0.6009860744968017</data>
+      <data key="d11">341.125</data>
+      <data key="d12">8</data>
+      <data key="d13">5.714286</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">translation factor</data>
+    </edge>
+    <edge source="group_1130" target="pbpX_1">
+      <data key="d5">TP:group_1130--pbpX_1</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">184.94736842105263</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">transcriptional regulator</data>
+    </edge>
+    <edge source="group_1130" target="gutB">
+      <data key="d5">TP:group_1130--gutB</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">257.4931506849315</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">glutamyl-tRNA(Gln) amidotransferase, A subunit</data>
+    </edge>
+    <edge source="group_1130" target="group_1119">
+      <data key="d5">TP:group_1130--group_1119</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4990948580676925</data>
+      <data key="d10">0.5260105520931369</data>
+      <data key="d11">103.16216216216216</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">ABC transporter ATP-binding protein</data>
+    </edge>
+    <edge source="group_1130" target="group_4837">
+      <data key="d5">TP:group_1130--group_4837</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">156.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="group_5355">
+      <data key="d5">TP:group_1130--group_5355</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">164.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="group_5357">
+      <data key="d5">TP:group_1130--group_5357</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">157.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Mobile element protein</data>
+    </edge>
+    <edge source="group_1130" target="group_4581">
+      <data key="d5">TP:group_1130--group_4581</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">151.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">RNA polymerase sigma factor</data>
+    </edge>
+    <edge source="group_1130" target="ftsK_1">
+      <data key="d5">TP:group_1130--ftsK_1</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">162.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="group_5358">
+      <data key="d5">TP:group_1130--group_5358</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">155.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Helix-turn-helix domain</data>
+    </edge>
+    <edge source="group_1130" target="group_5359">
+      <data key="d5">TP:group_1130--group_5359</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">154.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Mobile element protein</data>
+    </edge>
+    <edge source="group_1130" target="group_5416">
+      <data key="d5">TP:group_1130--group_5416</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5680084844489448</data>
+      <data key="d10">0.6009860744968017</data>
+      <data key="d11">229.1904761904762</data>
+      <data key="d12">8</data>
+      <data key="d13">5.4054055</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">thioredoxin</data>
+    </edge>
+    <edge source="group_1130" target="group_5942">
+      <data key="d5">TP:group_1130--group_5942</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">163.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="iap">
+      <data key="d5">TP:group_1130--iap</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">152.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">anaerobic benzoate catabolism transcriptional regulator</data>
+    </edge>
+    <edge source="group_1130" target="group_5361">
+      <data key="d5">TP:group_1130--group_5361</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">108.5</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="Int-Tn_2">
+      <data key="d5">TP:group_1130--Int-Tn_2</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">140.05882352941177</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">membrane protein</data>
+    </edge>
+    <edge source="group_1130" target="group_4888">
+      <data key="d5">TP:group_1130--group_4888</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">209.6164383561644</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">choline binding protein J</data>
+    </edge>
+    <edge source="group_1130" target="group_5944">
+      <data key="d5">TP:group_1130--group_5944</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">109.28571428571428</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">membrane protein</data>
+    </edge>
+    <edge source="group_1130" target="group_5945">
+      <data key="d5">TP:group_1130--group_5945</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">141.05882352941177</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">CBS domain membrane protein</data>
+    </edge>
+    <edge source="group_1130" target="group_5360">
+      <data key="d5">TP:group_1130--group_5360</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">144.9375</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">DNA-directed RNA polymerase subunit beta</data>
+    </edge>
+    <edge source="group_1130" target="group_3024">
+      <data key="d5">TP:group_1130--group_3024</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">158.06666666666666</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">CbxX/CfqX family protein</data>
+    </edge>
+    <edge source="group_1130" target="group_4895">
+      <data key="d5">TP:group_1130--group_4895</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">159.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="erm">
+      <data key="d5">TP:group_1130--erm</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">160.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="group_4882">
+      <data key="d5">TP:group_1130--group_4882</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">206.64285714285717</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">N-6 adenine-specific DNA methylase</data>
+    </edge>
+    <edge source="group_1130" target="group_5422">
+      <data key="d5">TP:group_1130--group_5422</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">158.52941176470588</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">ImpB/MucB/SamB family protein</data>
+    </edge>
+    <edge source="group_1130" target="group_4894">
+      <data key="d5">TP:group_1130--group_4894</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5482282396563025</data>
+      <data key="d10">0.5781689406109003</data>
+      <data key="d11">228.28571428571428</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">30S ribosomal protein S16</data>
+    </edge>
+    <edge source="group_1130" target="tetM">
+      <data key="d5">TP:group_1130--tetM</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">152.75</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Helix-turn-helix domain</data>
+    </edge>
+    <edge source="group_1130" target="group_3724">
+      <data key="d5">TP:group_1130--group_3724</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">163.8125</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1130" target="group_1754">
+      <data key="d5">TP:group_1130--group_1754</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5482282396563025</data>
+      <data key="d10">0.5781689406109003</data>
+      <data key="d11">304.15</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">galactose-1-phosphate uridylyltransferase</data>
+    </edge>
+    <edge source="group_1130" target="galT_2">
+      <data key="d5">TP:group_1130--galT_2</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">263.5238095238095</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">anthranilate synthase component II (glutamine amido-transferase)</data>
+    </edge>
+    <edge source="group_1130" target="group_1976">
+      <data key="d5">TP:group_1130--group_1976</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">234.16666666666663</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">anthranilate phosphoribosyltransferase</data>
+    </edge>
+    <edge source="group_1130" target="group_4451">
+      <data key="d5">TP:group_1130--group_4451</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5482282396563025</data>
+      <data key="d10">0.5781689406109003</data>
+      <data key="d11">305.15</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">galactokinase, (galactose kinase)</data>
+    </edge>
+    <edge source="group_1130" target="group_1359">
+      <data key="d5">TP:group_1130--group_1359</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6179271255663197</data>
+      <data key="d10">0.652523040540498</data>
+      <data key="d11">264.42857142857144</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">anthranilate synthase component I</data>
+    </edge>
+    <edge source="group_1130" target="group_1656">
+      <data key="d5">TP:group_1130--group_1656</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5700285688575066</data>
+      <data key="d10">0.6011598636015346</data>
+      <data key="d11">159.2923076923077</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">filamentation induced by cAMP protein fic</data>
+    </edge>
+    <edge source="group_1130" target="group_624">
+      <data key="d5">TP:group_1130--group_624</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5700285688575066</data>
+      <data key="d10">0.6011598636015346</data>
+      <data key="d11">214.1190476190476</data>
+      <data key="d12">8</data>
+      <data key="d13">5.5822783</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">choline binding protein C</data>
+    </edge>
+    <edge source="group_2577" target="pbpX_1">
+      <data key="d5">TP:group_2577--pbpX_1</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5189693812811891</data>
+      <data key="d10">0.6293237222373415</data>
+      <data key="d11">153.60714285714286</data>
+      <data key="d12">16</data>
+      <data key="d13">8.307693</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">transcriptional regulator</data>
+    </edge>
+    <edge source="group_2577" target="group_2704">
+      <data key="d5">TP:group_2577--group_2704</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5509865752942332</data>
+      <data key="d10">0.6678610538025491</data>
+      <data key="d11">294.3191489361702</data>
+      <data key="d12">16</data>
+      <data key="d13">8.398773</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">type I restriction-modification system, R subunit</data>
+    </edge>
+    <edge source="group_2577" target="group_4888">
+      <data key="d5">TP:group_2577--group_4888</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5509865752942332</data>
+      <data key="d10">0.6678610538025491</data>
+      <data key="d11">179.1153846153846</data>
+      <data key="d12">16</data>
+      <data key="d13">8.398773</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">choline binding protein J</data>
+    </edge>
+    <edge source="group_2577" target="group_4895">
+      <data key="d5">TP:group_2577--group_4895</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5871834925859922</data>
+      <data key="d10">0.7117360090389239</data>
+      <data key="d11">186.7333333333333</data>
+      <data key="d12">17</data>
+      <data key="d13">8.804878</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_2577" target="erm">
+      <data key="d5">TP:group_2577--erm</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5871834925859922</data>
+      <data key="d10">0.7117360090389239</data>
+      <data key="d11">187.7333333333333</data>
+      <data key="d12">17</data>
+      <data key="d13">8.804878</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_2577" target="group_4882">
+      <data key="d5">TP:group_2577--group_4882</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5509865752942332</data>
+      <data key="d10">0.6678610538025491</data>
+      <data key="d11">176.16</data>
+      <data key="d12">16</data>
+      <data key="d13">8.398773</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">N-6 adenine-specific DNA methylase</data>
+    </edge>
+    <edge source="group_2577" target="group_5422">
+      <data key="d5">TP:group_2577--group_5422</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5871834925859922</data>
+      <data key="d10">0.7117360090389239</data>
+      <data key="d11">185.7333333333333</data>
+      <data key="d12">17</data>
+      <data key="d13">8.804878</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">ImpB/MucB/SamB family protein</data>
+    </edge>
+    <edge source="group_2577" target="group_3724">
+      <data key="d5">TP:group_2577--group_3724</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5871834925859922</data>
+      <data key="d10">0.7117360090389239</data>
+      <data key="d11">188.7333333333333</data>
+      <data key="d12">17</data>
+      <data key="d13">8.804878</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_2577" target="group_4451">
+      <data key="d5">TP:group_2577--group_4451</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5509865752942332</data>
+      <data key="d10">0.6678610538025491</data>
+      <data key="d11">323.42105263157896</data>
+      <data key="d12">16</data>
+      <data key="d13">8.398773</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">galactokinase, (galactose kinase)</data>
+    </edge>
+    <edge source="group_2577" target="group_624">
+      <data key="d5">TP:group_2577--group_624</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5509865752942332</data>
+      <data key="d10">0.6678610538025491</data>
+      <data key="d11">183.5</data>
+      <data key="d12">16</data>
+      <data key="d13">8.398773</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">DNA-3-methyladenine glycosylase I</data>
+      <data key="d17">choline binding protein C</data>
+    </edge>
+    <edge source="group_2233" target="group_711">
+      <data key="d5">PT:group_2233--group_711</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5285303455019461</data>
+      <data key="d10">0.6135060387461422</data>
+      <data key="d11">174.57142857142858</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7</data>
+      <data key="d14">1</data>
+      <data key="d15">2</data>
+      <data key="d16">oligopeptide binding lipoprotein</data>
+      <data key="d17">HAD superfamily hydrolase protein</data>
+    </edge>
+    <edge source="group_711" target="group_5093">
+      <data key="d5">TP:group_711--group_5093</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">208.4</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">bacteriocin</data>
+    </edge>
+    <edge source="group_711" target="group_4444">
+      <data key="d5">TP:group_711--group_4444</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">378.0769230769231</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_711" target="group_4891">
+      <data key="d5">TP:group_711--group_4891</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">255.0</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_711" target="group_5990">
+      <data key="d5">TP:group_711--group_5990</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">256.3333333333333</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">prophage Sa05, P4 family DNA primase</data>
+    </edge>
+    <edge source="group_711" target="Int-Tn_1">
+      <data key="d5">TP:group_711--Int-Tn_1</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">248.3684210526316</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_711" target="group_3705">
+      <data key="d5">TP:group_711--group_3705</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">250.7894736842105</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_711" target="group_5408">
+      <data key="d5">TP:group_711--group_5408</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">252.68421052631575</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_711" target="group_4892">
+      <data key="d5">TP:group_711--group_4892</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">248.8947368421053</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">bacteriophage integrase</data>
+    </edge>
+    <edge source="group_711" target="group_5412">
+      <data key="d5">TP:group_711--group_5412</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">249.3684210526316</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_711" target="group_3419">
+      <data key="d5">TP:group_711--group_3419</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">255.47368421052636</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_711" target="group_5411">
+      <data key="d5">TP:group_711--group_5411</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">249.8421052631579</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">DNA-binding phage protein</data>
+    </edge>
+    <edge source="group_711" target="group_5991">
+      <data key="d5">TP:group_711--group_5991</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">251.73684210526315</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_711" target="group_4888">
+      <data key="d5">TP:group_711--group_4888</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">344.8888888888889</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">choline binding protein J</data>
+    </edge>
+    <edge source="group_711" target="sarA_2">
+      <data key="d5">TP:group_711--sarA_2</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">180.625</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">peptidase propeptide and ypeb domain-containing protein</data>
+    </edge>
+    <edge source="group_711" target="group_4882">
+      <data key="d5">TP:group_711--group_4882</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">343.22222222222223</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">N-6 adenine-specific DNA methylase</data>
+    </edge>
+    <edge source="group_711" target="group_5418">
+      <data key="d5">TP:group_711--group_5418</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">190.625</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">2-isopropylmalate synthase</data>
+    </edge>
+    <edge source="group_711" target="group_5996">
+      <data key="d5">TP:group_711--group_5996</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">175.5</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">ion transporter</data>
+    </edge>
+    <edge source="group_711" target="group_5997">
+      <data key="d5">TP:group_711--group_5997</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5927701462228009</data>
+      <data key="d10">0.6848990596563721</data>
+      <data key="d11">187.0</data>
+      <data key="d12">6</data>
+      <data key="d13">2.7984495</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">cytotoxic translational repressor of toxin-antitoxin stability system</data>
+    </edge>
+    <edge source="group_711" target="group_624">
+      <data key="d5">TP:group_711--group_624</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6211568901452116</data>
+      <data key="d10">0.7136063831990954</data>
+      <data key="d11">371.8</data>
+      <data key="d12">7</data>
+      <data key="d13">3.0769231</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">HAD superfamily hydrolase protein</data>
+      <data key="d17">choline binding protein C</data>
+    </edge>
+    <edge source="group_2386" target="group_4888">
+      <data key="d5">TP:group_2386--group_4888</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4637428963506291</data>
+      <data key="d10">0.4716641946700118</data>
+      <data key="d11">203.03614457831324</data>
+      <data key="d12">34</data>
+      <data key="d13">9.766816</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">putative metal-dependent membrane protease</data>
+      <data key="d17">choline binding protein J</data>
+    </edge>
+    <edge source="group_2386" target="group_4882">
+      <data key="d5">TP:group_2386--group_4882</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5064677323814242</data>
+      <data key="d10">0.5159557114260696</data>
+      <data key="d11">200.0875</data>
+      <data key="d12">35</data>
+      <data key="d13">10.372549</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">putative metal-dependent membrane protease</data>
+      <data key="d17">N-6 adenine-specific DNA methylase</data>
+    </edge>
+    <edge source="group_2386" target="group_3724">
+      <data key="d5">TP:group_2386--group_3724</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5064677323814242</data>
+      <data key="d10">0.5159557114260696</data>
+      <data key="d11">166.11764705882354</data>
+      <data key="d12">37</data>
+      <data key="d13">10.463737</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">putative metal-dependent membrane protease</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_2751" target="sorB">
+      <data key="d5">PT:group_2751--sorB</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5453052179711018</data>
+      <data key="d10">0.5076960786197134</data>
+      <data key="d11">161.59574468085106</data>
+      <data key="d12">14</data>
+      <data key="d13">3.4977307</data>
+      <data key="d14">1</data>
+      <data key="d15">1</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">N-acetylgalactosamine-specific phosphotransferase EIIB</data>
+    </edge>
+    <edge source="sorB" target="group_4450">
+      <data key="d5">PT:group_4450--sorB</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5336256711601667</data>
+      <data key="d10">0.4965009125331588</data>
+      <data key="d11">181.2183908045977</data>
+      <data key="d12">14</data>
+      <data key="d13">3.4977307</data>
+      <data key="d14">0</data>
+      <data key="d15">1</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">N-acetylgalactosamine-specific phosphotransferase EIIB</data>
+    </edge>
+    <edge source="group_2421" target="folD">
+      <data key="d5">PT:group_2421--folD</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5434283552432793</data>
+      <data key="d10">0.3558398930495794</data>
+      <data key="d11">149.33333333333334</data>
+      <data key="d12">5</data>
+      <data key="d13">2.2146835</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">amino acid ABC transporter ATP-binding protein</data>
+      <data key="d17">FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase</data>
+    </edge>
+    <edge source="folD" target="group_860">
+      <data key="d5">PT:group_860--folD</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5246364110720015</data>
+      <data key="d10">0.34345396636127</data>
+      <data key="d11">164.9</data>
+      <data key="d12">5</data>
+      <data key="d13">2.2146835</data>
+      <data key="d14">1</data>
+      <data key="d15">2</data>
+      <data key="d16">Ser/Thr protein phosphatase family protein</data>
+      <data key="d17">FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase</data>
+    </edge>
+    <edge source="folD" target="group_2416">
+      <data key="d5">PT:group_2416--folD</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5248229396336043</data>
+      <data key="d10">0.3436014454044114</data>
+      <data key="d11">164.3</data>
+      <data key="d12">5</data>
+      <data key="d13">2.2146835</data>
+      <data key="d14">1</data>
+      <data key="d15">2</data>
+      <data key="d16">VncR, response regulator</data>
+      <data key="d17">FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase</data>
+    </edge>
+    <edge source="folD" target="group_5893">
+      <data key="d5">PT:group_5893--folD</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5771011743865724</data>
+      <data key="d10">0.381280713492144</data>
+      <data key="d11">107.42857142857144</data>
+      <data key="d12">5</data>
+      <data key="d13">2.2209313</data>
+      <data key="d14">1</data>
+      <data key="d15">2</data>
+      <data key="d16">transposase</data>
+      <data key="d17">FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase</data>
+    </edge>
+    <edge source="celD" target="pyrF">
+      <data key="d5">PT:celD--pyrF</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5237286705395949</data>
+      <data key="d10">0.3340372479956572</data>
+      <data key="d11">160.66666666666666</data>
+      <data key="d12">5</data>
+      <data key="d13">3.7396984</data>
+      <data key="d14">1</data>
+      <data key="d15">5</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">orotidine-5-phosphate decarboxylase</data>
+    </edge>
+    <edge source="group_2522" target="group_4408">
+      <data key="d5">PT:group_2522--group_4408</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.5870809905801407</data>
+      <data key="d10">0.7351258474585997</data>
+      <data key="d11">136.12244897959184</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">galactosyl transferase CpsE</data>
+    </edge>
+    <edge source="group_4408" target="group_1077">
+      <data key="d5">TP:group_4408--group_1077</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5325035048821389</data>
+      <data key="d10">0.6713042549143775</data>
+      <data key="d11">241.625</data>
+      <data key="d12">6</data>
+      <data key="d13">4.0833335</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">translation factor</data>
+    </edge>
+    <edge source="group_4408" target="group_4444">
+      <data key="d5">TP:group_4408--group_4444</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5325035048821389</data>
+      <data key="d10">0.6713042549143775</data>
+      <data key="d11">132.140350877193</data>
+      <data key="d12">7</data>
+      <data key="d13">4.0833335</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4408" target="group_2046">
+      <data key="d5">TP:group_4408--group_2046</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">367.8421052631579</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">ABC transporter membrane protein</data>
+    </edge>
+    <edge source="group_4408" target="phnU">
+      <data key="d5">TP:group_4408--phnU</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5870809905801407</data>
+      <data key="d10">0.7351258474585997</data>
+      <data key="d11">334.7058823529412</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4408" target="Int-Tn_1">
+      <data key="d5">TP:group_4408--Int-Tn_1</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">159.1851851851852</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4408" target="group_1962">
+      <data key="d5">TP:group_4408--group_1962</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5584889044385895</data>
+      <data key="d10">0.699323663615708</data>
+      <data key="d11">318.3</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4408" target="group_3705">
+      <data key="d5">TP:group_4408--group_3705</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">154.19753086419752</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4408" target="group_5408">
+      <data key="d5">TP:group_4408--group_5408</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">150.19753086419752</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4408" target="group_5410">
+      <data key="d5">TP:group_4408--group_5410</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">153.19753086419752</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4408" target="group_5409">
+      <data key="d5">TP:group_4408--group_5409</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">151.19753086419752</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4408" target="group_2704">
+      <data key="d5">TP:group_4408--group_2704</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5870809905801407</data>
+      <data key="d10">0.7351258474585997</data>
+      <data key="d11">130.51785714285714</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">type I restriction-modification system, R subunit</data>
+    </edge>
+    <edge source="group_4408" target="group_4892">
+      <data key="d5">TP:group_4408--group_4892</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">158.175</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">bacteriophage integrase</data>
+    </edge>
+    <edge source="group_4408" target="group_5412">
+      <data key="d5">TP:group_4408--group_5412</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">157.19753086419752</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4408" target="group_3419">
+      <data key="d5">TP:group_4408--group_3419</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">144.20987654320987</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4408" target="group_5411">
+      <data key="d5">TP:group_4408--group_5411</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">156.19753086419752</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">DNA-binding phage protein</data>
+    </edge>
+    <edge source="group_4408" target="group_5991">
+      <data key="d5">TP:group_4408--group_5991</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">152.19753086419752</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">phage protein</data>
+    </edge>
+    <edge source="group_4408" target="group_5422">
+      <data key="d5">TP:group_4408--group_5422</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5734152604727226</data>
+      <data key="d10">0.7208401980021812</data>
+      <data key="d11">305.7058823529412</data>
+      <data key="d12">6</data>
+      <data key="d13">3.985782</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">ImpB/MucB/SamB family protein</data>
+    </edge>
+    <edge source="group_4408" target="tetM">
+      <data key="d5">TP:group_4408--tetM</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">297.6470588235294</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">Helix-turn-helix domain</data>
+    </edge>
+    <edge source="group_4408" target="group_3724">
+      <data key="d5">TP:group_4408--group_3724</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">308.7058823529412</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_4408" target="galT_2">
+      <data key="d5">TP:group_4408--galT_2</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.6217438715271476</data>
+      <data key="d10">0.7798384882039797</data>
+      <data key="d11">383.7894736842105</data>
+      <data key="d12">7</data>
+      <data key="d13">4.245283</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">galactosyl transferase CpsE</data>
+      <data key="d17">anthranilate synthase component II (glutamine amido-transferase)</data>
+    </edge>
+    <edge source="group_860" target="glf">
+      <data key="d5">PT:group_860--glf</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.532078094356881</data>
+      <data key="d10">0.6201549708621072</data>
+      <data key="d11">204.08333333333331</data>
+      <data key="d12">5</data>
+      <data key="d13">2.5</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">Ser/Thr protein phosphatase family protein</data>
+      <data key="d17">capsular polysaccharide synthesis protein</data>
+    </edge>
+    <edge source="glf" target="group_2416">
+      <data key="d5">PT:group_2416--glf</data>
+      <data key="d6">PT</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">P_A__T_B</data>
+      <data key="d9">0.532078094356881</data>
+      <data key="d10">0.6201549708621072</data>
+      <data key="d11">206.58333333333331</data>
+      <data key="d12">5</data>
+      <data key="d13">2.5</data>
+      <data key="d14">0</data>
+      <data key="d15">2</data>
+      <data key="d16">VncR, response regulator</data>
+      <data key="d17">capsular polysaccharide synthesis protein</data>
+    </edge>
+    <edge source="glf" target="group_1186">
+      <data key="d5">TP:glf--group_1186</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4416725728957555</data>
+      <data key="d10">0.5220293093205427</data>
+      <data key="d11">103.77777777777776</data>
+      <data key="d12">4</data>
+      <data key="d13">2.0769231</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">capsular polysaccharide synthesis protein</data>
+      <data key="d17">pyruvate formate-lyase</data>
+    </edge>
+    <edge source="glf" target="group_3475">
+      <data key="d5">TP:glf--group_3475</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5320780943568809</data>
+      <data key="d10">0.620154970862107</data>
+      <data key="d11">138.0</data>
+      <data key="d12">5</data>
+      <data key="d13">2.5</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">capsular polysaccharide synthesis protein</data>
+      <data key="d17">heat shock protein GrpE</data>
+    </edge>
+    <edge source="glf" target="group_437">
+      <data key="d5">TP:glf--group_437</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5863592742291206</data>
+      <data key="d10">0.671235843173375</data>
+      <data key="d11">173.0909090909091</data>
+      <data key="d12">5</data>
+      <data key="d13">2.8139534</data>
+      <data key="d14">2</data>
+      <data key="d15">0</data>
+      <data key="d16">capsular polysaccharide synthesis protein</data>
+      <data key="d17">Domain of uncharacterised function (DUF1858)</data>
+    </edge>
+    <edge source="thrB_2" target="mutX_1">
+      <data key="d5">TP:thrB_2--mutX_1</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4514040168395695</data>
+      <data key="d10">0.4962177357186143</data>
+      <data key="d11">119.14285714285714</data>
+      <data key="d12">36</data>
+      <data key="d13">16.89228</data>
+      <data key="d14">4</data>
+      <data key="d15">1</data>
+      <data key="d16">choline binding protein J</data>
+      <data key="d17">MutT/nudix family protein</data>
+    </edge>
+    <edge source="group_1393" target="group_5291">
+      <data key="d5">TP:group_1393--group_5291</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5092470499564825</data>
+      <data key="d10">0.514297191347669</data>
+      <data key="d11">122.0</data>
+      <data key="d12">27</data>
+      <data key="d13">8.748056</data>
+      <data key="d14">4</data>
+      <data key="d15">1</data>
+      <data key="d16">coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein</data>
+      <data key="d17">ATP-dependent Clp protease, ATP-binding subunit ClpX</data>
+    </edge>
+    <edge source="group_1393" target="group_2605">
+      <data key="d5">TP:group_1393--group_2605</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5445947228446042</data>
+      <data key="d10">0.5499954028318409</data>
+      <data key="d11">103.25</data>
+      <data key="d12">28</data>
+      <data key="d13">8.968945</data>
+      <data key="d14">4</data>
+      <data key="d15">1</data>
+      <data key="d16">coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein</data>
+      <data key="d17">putative metal-binding, possibly nucleic acid-binding protein</data>
+    </edge>
+    <edge source="group_1393" target="gutB">
+      <data key="d5">TP:group_1393--gutB</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4726841567203129</data>
+      <data key="d10">0.4765110734781797</data>
+      <data key="d11">136.11111111111111</data>
+      <data key="d12">24</data>
+      <data key="d13">8.1</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein</data>
+      <data key="d17">glutamyl-tRNA(Gln) amidotransferase, A subunit</data>
+    </edge>
+    <edge source="group_4888" target="phnV_2">
+      <data key="d5">TP:phnV_2--group_4888</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5521700017738462</data>
+      <data key="d10">0.5251133595863693</data>
+      <data key="d11">109.8</data>
+      <data key="d12">16</data>
+      <data key="d13">9.309091</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">choline binding protein J</data>
+    </edge>
+    <edge source="group_4888" target="group_1314">
+      <data key="d5">TP:group_1314--group_4888</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4934832004174444</data>
+      <data key="d10">0.469130592932277</data>
+      <data key="d11">202.43939393939397</data>
+      <data key="d12">13</data>
+      <data key="d13">9.68</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">permease</data>
+      <data key="d17">choline binding protein J</data>
+    </edge>
+    <edge source="group_4882" target="phnV_2">
+      <data key="d5">TP:phnV_2--group_4882</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5521700017738462</data>
+      <data key="d10">0.5251133595863693</data>
+      <data key="d11">106.85526315789474</data>
+      <data key="d12">16</data>
+      <data key="d13">9.309091</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">N-6 adenine-specific DNA methylase</data>
+    </edge>
+    <edge source="group_4882" target="group_1314">
+      <data key="d5">TP:group_1314--group_4882</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4934832004174444</data>
+      <data key="d10">0.469130592932277</data>
+      <data key="d11">199.46031746031747</data>
+      <data key="d12">13</data>
+      <data key="d13">9.68</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">permease</data>
+      <data key="d17">N-6 adenine-specific DNA methylase</data>
+    </edge>
+    <edge source="group_3724" target="phnV_2">
+      <data key="d5">TP:phnV_2--group_3724</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.521253593161121</data>
+      <data key="d10">0.4966306866011499</data>
+      <data key="d11">238.33333333333331</data>
+      <data key="d12">16</data>
+      <data key="d13">8.981308</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_3024" target="phnV_2">
+      <data key="d5">TP:phnV_2--group_3024</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5344912148368385</data>
+      <data key="d10">0.5114836566616527</data>
+      <data key="d11">232.14285714285717</data>
+      <data key="d12">15</data>
+      <data key="d13">8.490566</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">CbxX/CfqX family protein</data>
+    </edge>
+    <edge source="erm" target="phnV_2">
+      <data key="d5">TP:phnV_2--erm</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5344912148368385</data>
+      <data key="d10">0.5114836566616527</data>
+      <data key="d11">237.33333333333331</data>
+      <data key="d12">15</data>
+      <data key="d13">8.490566</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_5422" target="phnV_2">
+      <data key="d5">TP:phnV_2--group_5422</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.493825320880969</data>
+      <data key="d10">0.4714775185215162</data>
+      <data key="d11">235.33333333333331</data>
+      <data key="d12">15</data>
+      <data key="d13">8.490566</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">ImpB/MucB/SamB family protein</data>
+    </edge>
+    <edge source="tetM" target="phnV_2">
+      <data key="d5">TP:phnV_2--tetM</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5521700017738462</data>
+      <data key="d10">0.5251133595863693</data>
+      <data key="d11">227.26666666666668</data>
+      <data key="d12">16</data>
+      <data key="d13">9.309091</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">Helix-turn-helix domain</data>
+    </edge>
+    <edge source="group_2492" target="group_1349">
+      <data key="d5">TP:group_2492--group_1349</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.3270077216401775</data>
+      <data key="d10">0.3467174923591652</data>
+      <data key="d11">493.75</data>
+      <data key="d12">11</data>
+      <data key="d13">5.481203</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">lactose-specific phosphotransferase EIIA</data>
+      <data key="d17">GntR family transcriptional regulator</data>
+    </edge>
+    <edge source="phnV_2" target="group_5361">
+      <data key="d5">TP:phnV_2--group_5361</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5091524360174702</data>
+      <data key="d10">0.4884776177907332</data>
+      <data key="d11">205.42857142857144</data>
+      <data key="d12">14</data>
+      <data key="d13">8.009523</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="phnV_2" target="Int-Tn_2">
+      <data key="d5">TP:phnV_2--Int-Tn_2</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5091524360174702</data>
+      <data key="d10">0.4884776177907332</data>
+      <data key="d11">216.46666666666667</data>
+      <data key="d12">14</data>
+      <data key="d13">8.009523</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">membrane protein</data>
+    </edge>
+    <edge source="phnV_2" target="group_5944">
+      <data key="d5">TP:phnV_2--group_5944</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5091524360174702</data>
+      <data key="d10">0.4884776177907332</data>
+      <data key="d11">205.66666666666663</data>
+      <data key="d12">14</data>
+      <data key="d13">8.009523</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">membrane protein</data>
+    </edge>
+    <edge source="phnV_2" target="group_5945">
+      <data key="d5">TP:phnV_2--group_5945</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5091524360174702</data>
+      <data key="d10">0.4884776177907332</data>
+      <data key="d11">217.46666666666667</data>
+      <data key="d12">14</data>
+      <data key="d13">8.009523</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">CBS domain membrane protein</data>
+    </edge>
+    <edge source="phnV_2" target="group_5360">
+      <data key="d5">TP:phnV_2--group_5360</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5091524360174702</data>
+      <data key="d10">0.4884776177907332</data>
+      <data key="d11">219.92857142857144</data>
+      <data key="d12">14</data>
+      <data key="d13">8.009523</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">DNA-directed RNA polymerase subunit beta</data>
+    </edge>
+    <edge source="phnV_2" target="group_4448">
+      <data key="d5">TP:phnV_2--group_4448</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.525054028154644</data>
+      <data key="d10">0.4985143043601697</data>
+      <data key="d11">182.94444444444449</data>
+      <data key="d12">16</data>
+      <data key="d13">9.309091</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">sortase family protein</data>
+    </edge>
+    <edge source="phnV_2" target="group_624">
+      <data key="d5">TP:phnV_2--group_624</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5885191399174267</data>
+      <data key="d10">0.5587714671377985</data>
+      <data key="d11">114.20454545454544</data>
+      <data key="d12">17</data>
+      <data key="d13">9.810811</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">phosphoglycerate mutase family protein</data>
+      <data key="d17">choline binding protein C</data>
+    </edge>
+    <edge source="group_624" target="group_1314">
+      <data key="d5">TP:group_1314--group_624</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.5316744131592044</data>
+      <data key="d10">0.5027280526344434</data>
+      <data key="d11">206.90243902439025</data>
+      <data key="d12">14</data>
+      <data key="d13">10.666667</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">permease</data>
+      <data key="d17">choline binding protein C</data>
+    </edge>
+    <edge source="group_1077" target="group_1296">
+      <data key="d5">TP:group_1296--group_1077</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4825864171766016</data>
+      <data key="d10">0.5138257290639273</data>
+      <data key="d11">109.91666666666669</data>
+      <data key="d12">8</data>
+      <data key="d13">4.05618</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">translation factor</data>
+    </edge>
+    <edge source="group_1962" target="group_1314">
+      <data key="d5">TP:group_1314--group_1962</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4926694889079126</data>
+      <data key="d10">0.4665116237779212</data>
+      <data key="d11">208.94117647058823</data>
+      <data key="d12">14</data>
+      <data key="d13">10.372549</data>
+      <data key="d14">4</data>
+      <data key="d15">0</data>
+      <data key="d16">permease</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_5996" target="group_1296">
+      <data key="d5">TP:group_1296--group_5996</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4825864171766016</data>
+      <data key="d10">0.5138257290639273</data>
+      <data key="d11">120.22222222222224</data>
+      <data key="d12">8</data>
+      <data key="d13">4.05618</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">ion transporter</data>
+    </edge>
+    <edge source="group_5997" target="group_1296">
+      <data key="d5">TP:group_1296--group_5997</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4825864171766016</data>
+      <data key="d10">0.5138257290639273</data>
+      <data key="d11">119.85714285714286</data>
+      <data key="d12">8</data>
+      <data key="d13">4.05618</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">cytotoxic translational repressor of toxin-antitoxin stability system</data>
+    </edge>
+    <edge source="group_1296" target="group_5414">
+      <data key="d5">TP:group_1296--group_5414</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4825864171766016</data>
+      <data key="d10">0.5138257290639273</data>
+      <data key="d11">137.58823529411765</data>
+      <data key="d12">8</data>
+      <data key="d13">4.05618</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">Uncharacterised protein</data>
+    </edge>
+    <edge source="group_1296" target="group_5993">
+      <data key="d5">TP:group_1296--group_5993</data>
+      <data key="d6">TP</data>
+      <data key="d7">P↔T</data>
+      <data key="d8">T_A__P_B</data>
+      <data key="d9">0.4825864171766016</data>
+      <data key="d10">0.5138257290639273</data>
+      <data key="d11">138.35294117647058</data>
+      <data key="d12">8</data>
+      <data key="d13">4.05618</data>
+      <data key="d14">3</data>
+      <data key="d15">0</data>
+      <data key="d16">Uncharacterised protein</data>
+      <data key="d17">chlorohydrolase</data>
+    </edge>
+    <edge source="gyrB" target="aguA">
+      <data key="d5">TT:gyrB--aguA</data>
+      <data key="d6">TT</data>
+      <data key="d7">TT</data>
+      <data key="d8">T_A__T_B</data>
+      <data key="d9">2.160210467076942</data>
+      <data key="d10">0.7982993337075359</data>
+      <data key="d11">120.28571428571428</data>
+      <data key="d12">3</data>
+      <data key="d13">2.5789473</data>
+      <data key="d14">17</data>
+      <data key="d15">19</data>
+      <data key="d16">DNA gyrase subunit B</data>
+      <data key="d17">agmatine deiminase</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,4 @@
+distance	definition	available_pairs	missing_pairs	availability_fraction	spearman_rho_MIraw	spearman_p_descriptive	total_pairs	both_order_bp_available	order_only_available	bp_only_available	neither_order_nor_bp_available	order_bp_spearman_rho_when_both	order_bp_spearman_p_descriptive	different_contig_or_no_reliable_coobservation_loss	insufficient_same_contig_observations_1_to_4
+phylo	legacy tree units	3624696	330382	0.9164663756315299	0.08794871317344824	0.0	3955078	990661	0	0	2964417	0.997312594360871	0.0	1641493	1322924
+order	genes	990661	2964417	0.25047824594104084	-0.07330006377019185	0.0	3955078	990661	0	0	2964417	0.997312594360871	0.0	1641493	1322924
+bp	bp	990661	2964417	0.25047824594104084	-0.07821606156882877	0.0	3955078	990661	0	0	2964417	0.997312594360871	0.0	1641493	1322924

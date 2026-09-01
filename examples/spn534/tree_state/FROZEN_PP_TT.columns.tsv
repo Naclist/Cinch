@@ -1,0 +1,11 @@
+plot_column	edge_id	channel	side	locus	product	state_layer	type_labels
+0	SPN355_0097	PP	A	yxlF	yxlF	presence	
+1	SPN355_0097	PP	B	group_5417	major facilitator superfamily permease	presence	
+2	SPN355_0098	PP	A	yxlF	yxlF	presence	
+3	SPN355_0098	PP	B	group_1482	cell division protein FtsZ	presence	
+4	SPN355_0099	PP	A	group_1922	group_1922	presence	
+5	SPN355_0099	PP	B	group_2348	group_2348	presence	
+6	SPN355_0100	PP	A	group_1888	zinc metalloprotease ZmpC	presence	
+7	SPN355_0100	PP	B	group_3921	putative flavoprotein	presence	
+8	SPN355_0355	TT	A	gyrB	DNA gyrase subunit B	pooled_type	type_1;type_6;type_8;type_11;type_12;type_13;type_14;type_17;type_20;type_26;type_27;type_32;type_33;type_34;type_36;type_43;type_45;type_46;type_50;type_54;RARE
+9	SPN355_0355	TT	B	aguA	agmatine deiminase	pooled_type	type_1;type_2;type_5;type_7;type_10;type_11;type_15;type_16;type_17;type_24;type_26;type_30;type_32;type_34;type_38;type_42;type_44;type_45;type_48;type_51;type_53;RARE

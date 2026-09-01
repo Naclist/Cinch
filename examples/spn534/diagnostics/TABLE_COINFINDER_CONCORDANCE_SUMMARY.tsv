@@ -1,0 +1,9 @@
+metric	value
+candidate_pairs	985
+Coinfinder_association_supported	582
+Coinfinder_dissociation_supported	400
+same_published_component	963
+not_a_published_direct_edge	3
+new_pair_outside_published_components	0
+V_ATPase_control_pairs	30
+pairs_in_recurrent_hub_families	6
