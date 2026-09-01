@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+
+# Cinch runs can contain millions of pair records. Keep generated runs local.
+*.cinch/
+*.parquet
+*.npz
+
+# Raw public-genome mirrors are provenance inputs, not repository payloads.
+ncbi_dataset/
+downloads/
+assemblies/
+*.fna.gz
+*.gff.gz
+*.gbff.gz
+
+.DS_Store
+Thumbs.db
+

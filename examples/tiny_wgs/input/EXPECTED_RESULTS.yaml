@@ -1,0 +1,43 @@
+seed: 314159
+samples: 48
+loci: 20
+manual_HC: 2
+manual_order_threshold: 2
+truth:
+- channel: PP
+  locus_A: pp_co_A
+  locus_B: pp_co_B
+  expected: association
+- channel: PP
+  locus_A: pp_ex_A
+  locus_B: pp_ex_B
+  expected: dissociation
+- channel: PT
+  locus_A: pt_presence
+  locus_B: pt_type
+  expected: dependency
+- channel: TT
+  locus_A: tt_core_A
+  locus_B: tt_core_B
+  expected: PP_zero_TT_high
+- channel: PP
+  locus_A: local_A
+  locus_B: local_B
+  expected: fails_order
+- channel: PP
+  locus_A: pop_A
+  locus_B: pop_B
+  expected: population_confined
+expected_final_oriented_counts:
+  PP: 12
+  PT: 18
+  TP: 0
+  TT: 3
+  total: 33
+expected_retained:
+- PP:pp_co_A--pp_co_B
+- PT:pt_presence--pt_type
+- TT:tt_core_A--tt_core_B
+expected_rejected:
+- PP:local_A--local_B
+- PP:pop_A--pop_B

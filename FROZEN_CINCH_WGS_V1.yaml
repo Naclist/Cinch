@@ -1,0 +1,40 @@
+schema: CINCH_WGS_V1_FREEZE
+version: 1.0.0
+commands:
+  wgs: cinch wgs -r ref.cds.fasta -p RUN -t THREADS genomes/*.fasta
+  filter: cinch filter --wgs_results RUN.cinch/ --hc HC_LEVEL --order-threshold ORDER_DISTANCE
+state_semantics:
+  presence: {-1: noncallable, 0: confidently_absent, 1: present}
+  type: nominal_complete_CDS_sequence_per_locus
+  missing_is_absence: false
+statistics:
+  log_base: natural
+  MIraw: sum_ab p_ab * ln(p_ab/(p_a*p_b))
+  entropy: -sum_a p_a * ln(p_a)
+  NMI: 2*MIraw/(H_A+H_B)
+  minimum_informative_N: 20
+  minimum_marginal_state_count: 3
+  rare_state_policy: pool per locus before scoring
+channels:
+  PP: I(P_A;P_B)
+  PT: I(P_A;T_B | P_B=1)
+  TP: I(T_A;P_B | P_A=1)
+  TT: I(T_A;T_B | P_A=P_B=1)
+order_distance:
+  within_sample_contig: minimum absolute gene-order difference across placements
+  across_samples: arithmetic_mean
+  minimum_observations: 5
+  different_contig: NA
+HC:
+  meaning: allele-distance threshold, never number of clusters
+  clustering: single_linkage
+  SPN534_level: 69
+filter:
+  high_information: oriented-channel-specific conditional Q99.9 MIraw
+  order_rule: order_distance >= dataset-specific threshold
+  recurrence_rule: same enriched driver in at least 3 HC blocks
+  Neff: 1/sum((n_h/sum_h(n_h))^2)
+  Neff_rule: greater than display-channel order-bin mean from all eligible pairs
+  ARACNE: false
+  network_construction: false
+

@@ -1,0 +1,24 @@
+check	pass	detail
+all_final_high_information	True	223
+all_final_order_filtered	True	103.16216216216216
+all_final_HC_recurrent	True	3
+all_final_Neff_above_mean	True	0.14301403543032754
+ARACNE_not_run	True	filter stops at network-ready edges
+expected_PP_count	True	4
+expected_PT_count	True	58
+expected_TP_count	True	160
+expected_TT_count	True	1
+expected_total	True	223
+expected_unique_undirected	True	223
+retained_yxlF--group_5417	True	1
+retained_yxlF--group_1482	True	1
+retained_group_1922--group_2348	True	1
+retained_group_1888--group_3921	True	1
+retained_gyrB--aguA	True	1
+rejected_rsuA_2--glyS	True	0
+gyrB_aguA_MIraw	True	2.160210467076942
+gyrB_aguA_NMI	True	0.7982993337075359
+gyrB_aguA_order_distance	True	120.28571428571429
+gyrB_aguA_Neff	True	2.5789473
+gyrB_aguA_HC_supported	True	3
+gyrB_aguA_HC_driver_distribution	True	7:1;16:3;27:3
