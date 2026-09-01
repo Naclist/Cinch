@@ -1,50 +1,193 @@
 # Cinch
 
-> **Research preview — actively in development.** Cinch discovers statistical
-> dependencies in bacterial whole-genome state data. A retained edge is not, by
-> itself, molecular epistasis, a fitness interaction, or causality.
+> **Research preview.** Cinch reports candidate bacterial genome dependencies.
+> A retained edge is not, by itself, molecular epistasis, a fitness interaction,
+> or causality.
 
-Cinch starts from a simple limitation of ordinary pangenome association:
-presence/absence cannot detect dependence between two genes that are present in
-almost every isolate. Cinch therefore represents each locus at two biological
-resolutions — **P** (presence/absence) and **T** (nominal CDS allele/type) — and
-evaluates four channels: **PP, PT, TP and TT**.
+## The problem Cinch addresses
 
-![Why Cinch exists](docs/assets/figures/FIG01_WHY_CINCH.png)
+A bacterial whole-genome collection may contain $M=10^5\text{–}10^6$ variable SNP
+sites. Exhaustive pairwise screening grows as
 
-The current frozen development workflow separates three questions:
+$$
+N_{\mathrm{SNP\ pairs}}=\binom{M}{2}=\frac{M(M-1)}{2}=O(M^2),
+$$
 
-1. **Association:** how much information do two locus states share (MIraw/NMI)?
-2. **Linkage:** is that information exceptional for the observed gene-order distance?
-3. **Population recurrence:** does the same state-pair driver recur in at least two HC69 backgrounds, and how dispersed is its support (Neff)?
+creating an enormous, sparse and difficult-to-interpret search space. At the same
+time, bacterial genomics already provides cgMLST/wgMLST profiles that group sequence
+variation into biologically named loci. Cinch uses that locus-level abstraction:
 
-![Frozen workflow](docs/assets/figures/FIG05_WGS_PIPELINE.png)
+$$
+\text{SNP-scale variation}
+\xrightarrow{\text{cg/wgMLST locus abstraction}}
+\text{nominal locus states}
+\xrightarrow{\text{information dependence}}
+\text{candidate dependency graph}.
+$$
 
-## The biological-state model
+This is a candidate-discovery framework: it compresses the search from nucleotide
+coordinates to interpretable loci before evaluating dependence and graph structure.
 
-Allele IDs are nominal categories, never ordered integers, SNP counts or branch
-lengths. MI is measured in **nats**. PT and TP are distinct computational
-orientations — presence at A versus type at B, or type at A versus presence at B —
-but are displayed together as P↔T when orientation is not the scientific question.
+## One locus, two biological state variables
 
-![State model](docs/assets/figures/FIG02_STATE_MODEL.png)
+For isolate $i$ and locus $g$, Cinch records
 
-The state-pair contingency table also identifies the cells driving dependence.
-Total MI quantifies dependence, while enriched/depleted cells say which biological
-states carry it.
+$$
+P_{ig}\in\{-1,0,1\},\qquad
+T_{ig}\in\{a_1,a_2,\ldots\}\cup\{-1\},
+$$
 
-![MI and drivers](docs/assets/figures/FIG04_MI_AND_DRIVERS.png)
+where $P$ is non-callable/absent/present and $T$ is a nominal complete-CDS
+type when present. Type IDs are categories, not ordered numbers, SNP distances or
+branch lengths. For loci $A,B$, the four tested channels are
 
-## SPN534: real-data development case
+$$
+\begin{aligned}
+PP&: I(P_A;P_B),\\
+PT&: I(P_A;T_B\mid P_B=1),\\
+TP&: I(T_A;P_B\mid P_A=1),\\
+TT&: I(T_A;T_B\mid P_A=P_B=1).
+\end{aligned}
+$$
 
-The worked example uses 534 *Streptococcus pneumoniae* genomes from the dataset
-published with Coinfinder. It is a **development case**, not an unseen validation
-cohort. The publication matrix/tree/outputs and versioned assembly/GFF provenance
-are independently traceable under [`examples/spn534/provenance`](examples/spn534/provenance).
+PT and TP remain separate computational orientations, but may be displayed jointly
+as P↔T. The TT channel is what allows two nearly universal genes to have
+$MI_{PP}\approx0$ but strong allele-type dependence.
 
-Frozen settings are **HC69** (a single-linkage allele-difference level, not 69
-clusters) and **100 genes** for the long-range order threshold. This repository
-reads the frozen scores; it does not recompute MI.
+## Association and its state driver
+
+For state variables $X,Y$, Cinch reports mutual information in nats:
+
+$$
+MI_{\rm raw}(X;Y)=\sum_{x,y}p(x,y)
+\ln\frac{p(x,y)}{p(x)p(y)},
+\qquad
+NMI=\frac{2MI_{\rm raw}}{H(X)+H(Y)}.
+$$
+
+MI/NMI quantify dependence magnitude, not sign or direction. The enriched state
+cell is described separately through the observed/expected contingency residual:
+
+$$
+R_{xy}=\frac{O_{xy}-E_{xy}}{\sqrt{E_{xy}}},
+\qquad
+E_{xy}=\frac{O_{x\cdot}O_{\cdot y}}{N}.
+$$
+
+## Local-linkage evidence
+
+For loci reliably co-located on the same contig, the frozen order distance is
+
+$$
+d_{\rm order}(A,B)=
+\operatorname{mean}_{i\in\mathcal C_{AB}}
+\left[
+\min_{u\in A_i,v\in B_i}|\operatorname{order}(u)-\operatorname{order}(v)|
+\right],
+$$
+
+requiring at least five same-contig observations. Different-contig pairs remain
+NA; they are never assigned an artificial large distance. Each channel has its
+own empirical conditional envelope $Q_{99.9}(MI\mid d_{\rm order})$. The frozen
+SPN534 filter requires both an exceptional channel-specific MI and
+$d_{\rm order}\ge100$ genes.
+
+![Fine-resolution mean MIraw versus distance](docs/assets/figures/FIG06_DISTANCE_MEAN_CURVES.png)
+
+**Take-home:** local order/bp dependence decays toward a low baseline, whereas the
+legacy phylogenetic curve has a distinct far-distance tail. The plotted point area
+is proportional to $\sqrt N$, so tail bins do not masquerade as dense evidence.
+
+Across all 3,955,078 SPN534 locus pairs, legacy phylogenetic distance is available
+for 3,624,696; order and bp are available for the same 990,661 pairs. When both are
+defined, $\rho_{\rm Spearman}(d_{order},d_{bp})=0.9973$. Order is retained not for
+greater coverage, but because locus units normalize genome-scale length, are less
+sensitive to variable intergenic expansion, and transfer more directly across
+assemblies/species. The full density and missingness audit is in
+[`FIG06_DISTANCE_COMPARISON`](docs/assets/figures/FIG06_DISTANCE_COMPARISON.png).
+
+## Population recurrence and Neff
+
+HC69 is a single-linkage allele-difference threshold, not “69 clusters” and not a
+model producing adjusted p/q-values. Let $n_h$ be support for the same enriched
+state-pair driver in HC69 block $h$:
+
+$$
+K_{HC}=\sum_h\mathbf 1(n_h>0),\qquad
+p_h=\frac{n_h}{\sum_j n_j},\qquad
+N_{eff}=\frac{1}{\sum_h p_h^2}.
+$$
+
+$K_{HC}$ measures recurrence breadth; $N_{eff}$ measures its evenness. Three
+blocks with counts $(98,1,1)$ and $(34,33,33)$ have the same $K_{HC}=3$, but
+very different $N_{eff}$. The **current frozen SPN534 rule** is
+
+$$
+K_{HC}\ge3
+\quad\land\quad
+N_{eff}>E[N_{eff}\mid \operatorname{bin}(d_{order}),\text{channel}].
+$$
+
+The frozen threshold is therefore stated explicitly wherever this SPN534 result
+is shown; later design decisions are kept in the development-history document.
+
+## One edge from state table to final graph
+
+The retained TT example follows the complete frozen chain:
+
+$$
+\boxed{
+gyrB\!-!aguA:
+P\approx1
+\Rightarrow MI_{PP}\approx0
+\Rightarrow MI_{TT}=2.1602
+\Rightarrow NMI=0.7983
+\Rightarrow type_{46}\leftrightarrow type_{51}
+\Rightarrow d_{order}=120.29
+\Rightarrow (n_h)=(1,3,3)
+\Rightarrow N_{eff}=2.5789
+\Rightarrow \text{retained}
+}
+$$
+
+The negative development contrast is
+
+$$
+rsuA\_2\!-!glyS:
+MI_{TT}\ \text{high}
+\Rightarrow (n_h)=(5)
+\Rightarrow K_{HC}=1,\ N_{eff}=1
+\Rightarrow \text{rejected}.
+$$
+
+![TT background contrast](docs/assets/figures/FIG10_TT_BACKGROUND_CONTRAST.png)
+
+**Take-home:** high TT information is insufficient when the driver is only a
+population identity tag; recurrent support changes the interpretation.
+
+## Published comparator and information beyond P/A
+
+Among 985 high-MI pairs in the Coinfinder audit, 982 (99.70%) are direct published
+association/dissociation edges and 963 (97.77%) lie in the same published component.
+This is concordance with a published dependency method, not causal ground truth or
+an unseen accuracy estimate. The V-ATPase control further shows that a dependency
+may be detected correctly and then interpreted as local linkage.
+
+![Coinfinder concordance](docs/assets/figures/FIG12_COINFINDER_CONCORDANCE.png)
+
+**Take-home:** Cinch recovers the established P/A dependency structure while the
+P↔T/TT channels define its additional information domain.
+
+![PP versus TT](docs/assets/figures/FIG13_PP_VS_TT.png)
+
+**Take-home:** the $MI_{PP}\approx0,MI_{TT}\gg0$ region contains dependencies that
+a presence/absence-only analysis cannot represent.
+
+## Frozen SPN534 result
+
+SPN534 is a 534-genome *Streptococcus pneumoniae* **development case**, not an
+unseen validation cohort. Frozen settings are HC69, $K_{HC}\ge3$, and a 100-gene
+long-range threshold.
 
 | stage | PP | PT | TP | TT |
 |---|---:|---:|---:|---:|
@@ -54,95 +197,33 @@ reads the frozen scores; it does not recompute MI.
 | HC69 recurrent | 50 | 71 | 160 | 1 |
 | Neff filtered | **4** | **58** | **160** | **1** |
 
-The final frozen table has **223 oriented records / 223 unique unordered locus
-pairs**. They are network-ready candidate dependencies. The checked-in freeze
-stops before ARACNE; the network below is the full 223-edge candidate graph, not
-an ARACNE-pruned significance set.
+The result contains 223 oriented records and 223 unique unordered locus pairs.
+The published tree, HC69 strip and the exact P/T states for the four PP plus one TT
+examples use the same 534-isolate order.
 
-![Filter attrition](docs/assets/figures/FIG15_FILTER_ATTRITION.png)
+![Tree-aligned states](docs/assets/figures/FIG14_TREE_HC_STATE.png)
 
-### Why gene-order distance?
+**Take-home:** retained state drivers are visible in their phylogenetic-background
+context rather than being presented as context-free scores.
 
-Legacy diagnostics were reconstructed exactly for phylogenetic distance and from
-the same provenance-verified GFF rules for order/bp distance. Of 3,955,078 locus
-pairs, phylogenetic distance is available for 3,624,696 and both order and bp for
-990,661. Order and bp availability is identical; among jointly mapped pairs their
-Spearman correlation is 0.9973. Different-contig pairs remain **NA**, never an
-invented large distance.
+## Candidate dependency network
 
-Order distance is retained because it is less sensitive to assembly-specific
-intergenic expansion and is expressed in transferable gene units — not because
-it has more observations than bp distance.
+The frozen table forms a 167-locus, 223-edge **candidate dependency network**.
+It is pre-ARACNE: the frozen configuration has `ARACNE: false` and
+`network_construction: false`; graph construction here is a presentation of the
+network-ready table, not another statistical filter. Communities are descriptive
+graph partitions, not automatically pathways.
 
-![Fine-resolution mean MIraw versus distance](docs/assets/figures/FIG06_DISTANCE_MEAN_CURVES.png)
+![Candidate dependency network](docs/assets/figures/FIG16_FINAL_NETWORK.png)
 
-This fixed-width-bin view is the lead distance diagnostic: point area is
-proportional to √N, so sparse tail bins remain visible without pretending they
-carry the same support as dense bins. The density/availability audit below uses
-all valid pairs and explains which pairs can contribute to each axis.
-
-![Distance comparison](docs/assets/figures/FIG06_DISTANCE_COMPARISON.png)
-
-### Why HC69 recurrence and Neff?
-
-HC69 is not a statistical correction that produces adjusted p/q-values. It asks
-whether the **same driver** appears in multiple genetic backgrounds. For driver
-support counts \(n_h\):
-
-\[
-p_h = \frac{n_h}{\sum_h n_h}, \qquad
-N_{\mathrm{eff}} = \frac{1}{\sum_h p_h^2}.
-\]
-
-Neff is 1 when all support comes from one HC69 background and increases as support
-is distributed. It is a recurrence-dispersion diagnostic, not the conventional
-effective sample size of weighted observations.
-
-![Neff derivation](docs/assets/figures/FIG09_NEFF_DERIVATION.png)
-
-The contrast between `rsuA_2–glyS` and the frozen `gyrB–aguA` TT edge illustrates
-why high TT MI alone is insufficient. The former's dominant driver is restricted
-to one background (Neff=1); the latter repeats across three HC69 groups with
-support 1:3:3 (Neff=2.58).
-
-![TT background contrast](docs/assets/figures/FIG10_TT_BACKGROUND_CONTRAST.png)
-
-### What is new beyond presence/absence?
-
-The PP-versus-TT plane makes the central contribution visible: points near PP
-MI≈0 but with high TT MI are dependencies invisible to a P/A-only method.
-
-![PP versus TT](docs/assets/figures/FIG13_PP_VS_TT.png)
-
-The tree-aligned state view shows the published core tree, HC69 memberships and
-the exact P/T states for the four frozen PP edges and the one frozen TT edge.
-
-![Tree and state view](docs/assets/figures/FIG14_TREE_HC_STATE.png)
-
-### External published comparator
-
-Among 985 high-MI candidate pairs used for the comparator audit, 982 (99.70%) are
-direct Coinfinder association/dissociation edges and 963 (97.77%) lie in the same
-published component. This is strong **concordance with a published dependency
-method**, not causal truth and not an unseen performance estimate. The V-ATPase
-control demonstrates why dependency detection and local-linkage interpretation
-must remain separate.
-
-![Coinfinder concordance](docs/assets/figures/FIG12_COINFINDER_CONCORDANCE.png)
-
-## Frozen network
-
-The 223 candidates form a graph of 167 loci. Static communities are descriptive
-graph partitions; they are not automatically pathways or mechanistic modules.
-
-![Frozen candidate network](docs/assets/figures/FIG16_FINAL_NETWORK.png)
-
-Open the **[interactive network](examples/spn534/network/CINCH_INTERACTIVE.html)**
-to search loci/products, filter PP/PT/TP/TT, set MIraw/NMI/Neff/order/HC-support
-thresholds, recolor edges, and inspect exact frozen metadata. GraphML and GEXF are
-provided for Cytoscape, Gephi and other network software.
+**Take-home:** most retained candidates occupy one large component, with a small
+set of disconnected dependency components. Use the
+**[interactive network](examples/spn534/network/CINCH_INTERACTIVE.html)** for
+channel filters, ego views, product search and exact edge metadata.
 
 ## Install and run the redistributable demo
+
+The actual WGS input contract is a reference CDS FASTA plus genome FASTA files:
 
 ```bash
 git clone https://github.com/Naclist/Cinch.git
@@ -161,31 +242,27 @@ cinch wgs \
 cinch filter --wgs_results tiny.cinch --hc 2 --order-threshold 2
 ```
 
-The 48-genome toy includes PP/PT/TT positives plus local-linkage and
-population-confounded negative controls. Expected outputs are committed under
-[`examples/tiny_wgs/expected`](examples/tiny_wgs/expected).
+The toy's `--hc 2` is a toy-specific HC level, not the SPN534 recurrence-count
+criterion. SPN534 provenance, versioned assembly mappings and SHA256 manifests are
+under [`examples/spn534/provenance`](examples/spn534/provenance).
 
-## Repository map
+## Repository map and boundaries
 
 | path | purpose |
 |---|---|
 | [`cinch/frozen_v1`](cinch/frozen_v1) | state construction, MI/NMI, hierarchy, order distance, recurrence and Neff |
-| [`docs/SCIENTIFIC_NARRATIVE.md`](docs/SCIENTIFIC_NARRATIVE.md) | paper-style scientific walkthrough |
-| [`docs/FIGURE_INDEX.md`](docs/FIGURE_INDEX.md) | FIG01–FIG17 with data provenance and interpretation |
-| [`docs/DEVELOPMENT_HISTORY.md`](docs/DEVELOPMENT_HISTORY.md) | decisions, failures and frozen boundaries |
-| [`examples/tiny_wgs`](examples/tiny_wgs) | fully redistributable end-to-end demo |
-| [`examples/spn534`](examples/spn534) | frozen real-data tables, diagnostics, tree states, network and checksums |
-| [`site`](site) | static GitHub Pages presentation |
-| [`scripts/build_scientific_assets.py`](scripts/build_scientific_assets.py) | deterministic presentation build; never recomputes MI |
+| [`docs/SCIENTIFIC_NARRATIVE.md`](docs/SCIENTIFIC_NARRATIVE.md) | full mathematical/scientific walkthrough |
+| [`docs/FIGURE_INDEX.md`](docs/FIGURE_INDEX.md) | result figures and exact evidence source |
+| [`docs/DEVELOPMENT_HISTORY.md`](docs/DEVELOPMENT_HISTORY.md) | decisions, failures and frozen/future boundaries |
+| [`examples/tiny_wgs`](examples/tiny_wgs) | fully redistributable demo |
+| [`examples/spn534`](examples/spn534) | frozen tables, diagnostics, tree states, network and checksums |
+| [`site`](site) | GitHub Pages source |
 | [`FROZEN_CINCH_WGS_V1.yaml`](FROZEN_CINCH_WGS_V1.yaml) | machine-readable freeze contract |
 
-## Interpretation boundaries
-
-- MI/NMI measures dependence magnitude, not direction or causality.
-- High PP may be co-occurrence or mutual exclusion; inspect the driver states.
-- Cross-HC recurrence is not a population-adjusted significance test.
-- Long-range order reduces obvious local linkage; it does not prove function.
-- ARACNE is post-filter redundancy pruning and cannot define significance.
+- MI/NMI measures dependence, not causality.
+- HC recurrence is not an adjusted significance test.
+- Order distance reduces obvious local linkage; it does not prove function.
+- ARACNE, if used later, is post-filter redundancy pruning and cannot define significance.
 - SPN534 informed development and must not be presented as unseen validation.
 
 Comparator inputs originate from
@@ -193,8 +270,5 @@ Comparator inputs originate from
 and Whelan, Rusilowicz & McInerney (2020),
 [doi:10.1099/mgen.0.000338](https://doi.org/10.1099/mgen.0.000338).
 
-## Status and license
-
-The interface and scientific interpretation may change before a stable release.
 No redistribution license has yet been selected; public source visibility is not
-a grant of reuse rights. Please open an issue before production or publication use.
+a grant of reuse rights.

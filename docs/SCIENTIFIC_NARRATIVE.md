@@ -1,12 +1,21 @@
 # Scientific narrative
 
-## The gap
+## The search-space problem
 
-Pangenome association commonly reduces each family to present/absent. That is
-useful for accessory genes but has no resolution for two nearly universal loci:
-their P/P table is almost constant even if particular CDS types are strongly
-coupled. Cinch makes locus state explicit and applies the same information-theory
-core across P/P, P/T, T/P and T/T.
+For `M` variable nucleotide sites, exhaustive SNP-pair screening requires
+`M(M-1)/2 = O(M^2)` tests. With `M` in the hundreds of thousands or millions,
+the space is computationally large and fragmented across hard-to-interpret
+nucleotide coordinates. Cinch uses cg/wgMLST as a gene/locus-level abstraction:
+
+```text
+SNP-scale variation -> nominal locus states -> information dependence
+                    -> candidate dependency graph
+```
+
+Presence/absence is then recognized as only one locus resolution. It is useful
+for accessory genes but cannot resolve two nearly universal loci. Cinch therefore
+makes P and nominal CDS type T explicit and applies one information-theory core
+across PP, PT, TP and TT.
 
 ## What Cinch measures
 
@@ -21,9 +30,10 @@ direction. Enriched/depleted state cells are retained as driver descriptors.
 3. HC69 recurrence asks whether the same driver repeats across backgrounds;
    Neff measures how evenly that support is distributed.
 
-The accepted SPN534 configuration uses HC69 as a recurrence filter and 100 genes
-as a manually frozen long-range threshold. HC69 means clusters connected under a
-69-allele single-linkage threshold. It does not mean 69 groups.
+The accepted SPN534 configuration uses HC69 as a recurrence filter, requires the
+same driver in at least three HC69 blocks, and uses 100 genes as a manually frozen
+long-range threshold. HC69 is a 69-allele single-linkage threshold; it does not
+mean 69 groups.
 
 ## Frozen result
 

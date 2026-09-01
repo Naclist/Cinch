@@ -30,12 +30,15 @@ def test_network_is_exact_frozen_pair_universe():
 
 def test_methods_paper_assets_are_complete():
     figs = ROOT / "docs" / "assets" / "figures"
-    for number in range(1, 18):
+    assert not [p for p in figs.iterdir() if p.name.startswith(tuple(f"FIG{i:02d}_" for i in range(1, 6)))]
+    for number in range(6, 18):
         stem = f"FIG{number:02d}_"
         matching = [p for p in figs.iterdir() if p.name.startswith(stem)]
         assert {p.suffix for p in matching} == {".png", ".pdf", ".svg"}
     assert (SPN / "network" / "CINCH_INTERACTIVE.html").stat().st_size > 50_000
     assert (ROOT / "site" / "index.html").exists()
+    assert (ROOT / "README.md").read_text(encoding="utf-8").count("![") == 6
+    assert (ROOT / "site" / "index.html").read_text(encoding="utf-8").count("<img ") == 6
 
 
 def test_order_and_bp_availability_is_explicit():

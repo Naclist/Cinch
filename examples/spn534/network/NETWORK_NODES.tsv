@@ -150,19 +150,19 @@ group_1393	coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin redu
 group_3656	Uncharacterised protein	2	5	-0.27348436427830103	-0.5107865595957286
 group_5291	ATP-dependent Clp protease, ATP-binding subunit ClpX	1	5	-0.43406372368410856	-0.72
 group_2605	putative metal-binding, possibly nucleic acid-binding protein	1	5	-0.4687023320905381	-0.6976925993572374
-yxlF	Uncharacterised protein	2	6	-0.7849999999999999	-1.0799999989072482
-group_5417	major facilitator superfamily permease	1	6	-0.8674999959021806	-1.127631399011924
+yxlF	Uncharacterised protein	2	6	-0.8674999959021806	-1.127631399011924
+group_5417	major facilitator superfamily permease	1	6	-0.7849999999999999	-1.0799999989072482
 group_1482	cell division protein FtsZ	1	6	-0.8675000040978194	-1.032368602080828
-sorB	N-acetylgalactosamine-specific phosphotransferase EIIB	2	7	-0.5874999959021807	-1.127631399011924
-group_2751	Uncharacterised protein	1	7	-0.505	-1.0799999989072482
-group_4450	Uncharacterised protein	1	7	-0.5875000040978194	-1.032368602080828
-group_1922	Uncharacterised protein	1	8	-0.22500000000000003	-1.0799999975958736
-group_2348	Uncharacterised protein	1	8	-0.335	-1.0800000024041265
+sorB	N-acetylgalactosamine-specific phosphotransferase EIIB	2	7	-0.505	-1.0799999989072482
+group_2751	Uncharacterised protein	1	7	-0.5875000040978194	-1.032368602080828
+group_4450	Uncharacterised protein	1	7	-0.5874999959021807	-1.127631399011924
+group_1922	Uncharacterised protein	1	8	-0.335	-1.0800000024041265
+group_2348	Uncharacterised protein	1	8	-0.22500000000000003	-1.0799999975958736
 celD	Uncharacterised protein	1	9	-0.055	-1.0800000024041265
 pyrF	orotidine-5-phosphate decarboxylase	1	9	0.055	-1.0799999975958736
-thrB_2	choline binding protein J	1	10	0.22499999999999992	-1.0800000024041265
-mutX_1	MutT/nudix family protein	1	10	0.3349999999999999	-1.0799999975958736
-group_2492	lactose-specific phosphotransferase EIIA	1	11	0.5049999999999999	-1.0800000024041265
-group_1349	GntR family transcriptional regulator	1	11	0.615	-1.0799999975958736
+thrB_2	choline binding protein J	1	10	0.3349999999999999	-1.0799999975958736
+mutX_1	MutT/nudix family protein	1	10	0.22499999999999992	-1.0800000024041265
+group_2492	lactose-specific phosphotransferase EIIA	1	11	0.615	-1.0799999975958736
+group_1349	GntR family transcriptional regulator	1	11	0.5049999999999999	-1.0800000024041265
 gyrB	DNA gyrase subunit B	1	12	0.895	-1.0799999975958736
 aguA	agmatine deiminase	1	12	0.7849999999999999	-1.0800000024041265

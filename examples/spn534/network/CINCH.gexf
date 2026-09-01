@@ -14,10 +14,11 @@
       <attribute id="11" title="order_distance" type="double" />
       <attribute id="12" title="HC_supported" type="long" />
       <attribute id="13" title="Neff" type="double" />
-      <attribute id="14" title="driver_A" type="string" />
-      <attribute id="15" title="driver_B" type="string" />
-      <attribute id="16" title="annotation_A" type="string" />
-      <attribute id="17" title="annotation_B" type="string" />
+      <attribute id="14" title="driver_label" type="string" />
+      <attribute id="15" title="driver_A_internal_code" type="string" />
+      <attribute id="16" title="driver_B_internal_code" type="string" />
+      <attribute id="17" title="annotation_A" type="string" />
+      <attribute id="18" title="annotation_B" type="string" />
     </attributes>
     <attributes mode="static" class="node">
       <attribute id="0" title="annotation" type="string" />
@@ -32,8 +33,8 @@
           <attvalue for="0" value="Uncharacterised protein" />
           <attvalue for="1" value="1" />
           <attvalue for="2" value="8" />
-          <attvalue for="3" value="-0.22500000000000003" />
-          <attvalue for="4" value="-1.0799999975958736" />
+          <attvalue for="3" value="-0.335" />
+          <attvalue for="4" value="-1.0800000024041265" />
         </attvalues>
       </node>
       <node id="group_2348" label="group_2348">
@@ -41,8 +42,8 @@
           <attvalue for="0" value="Uncharacterised protein" />
           <attvalue for="1" value="1" />
           <attvalue for="2" value="8" />
-          <attvalue for="3" value="-0.335" />
-          <attvalue for="4" value="-1.0800000024041265" />
+          <attvalue for="3" value="-0.22500000000000003" />
+          <attvalue for="4" value="-1.0799999975958736" />
         </attvalues>
       </node>
       <node id="yxlF" label="yxlF">
@@ -50,8 +51,8 @@
           <attvalue for="0" value="Uncharacterised protein" />
           <attvalue for="1" value="2" />
           <attvalue for="2" value="6" />
-          <attvalue for="3" value="-0.7849999999999999" />
-          <attvalue for="4" value="-1.0799999989072482" />
+          <attvalue for="3" value="-0.8674999959021806" />
+          <attvalue for="4" value="-1.127631399011924" />
         </attvalues>
       </node>
       <node id="group_5417" label="group_5417">
@@ -59,8 +60,8 @@
           <attvalue for="0" value="major facilitator superfamily permease" />
           <attvalue for="1" value="1" />
           <attvalue for="2" value="6" />
-          <attvalue for="3" value="-0.8674999959021806" />
-          <attvalue for="4" value="-1.127631399011924" />
+          <attvalue for="3" value="-0.7849999999999999" />
+          <attvalue for="4" value="-1.0799999989072482" />
         </attvalues>
       </node>
       <node id="group_1482" label="group_1482">
@@ -230,8 +231,8 @@
           <attvalue for="0" value="Uncharacterised protein" />
           <attvalue for="1" value="1" />
           <attvalue for="2" value="7" />
-          <attvalue for="3" value="-0.505" />
-          <attvalue for="4" value="-1.0799999989072482" />
+          <attvalue for="3" value="-0.5875000040978194" />
+          <attvalue for="4" value="-1.032368602080828" />
         </attvalues>
       </node>
       <node id="sorB" label="sorB">
@@ -239,8 +240,8 @@
           <attvalue for="0" value="N-acetylgalactosamine-specific phosphotransferase EIIB" />
           <attvalue for="1" value="2" />
           <attvalue for="2" value="7" />
-          <attvalue for="3" value="-0.5874999959021807" />
-          <attvalue for="4" value="-1.127631399011924" />
+          <attvalue for="3" value="-0.505" />
+          <attvalue for="4" value="-1.0799999989072482" />
         </attvalues>
       </node>
       <node id="group_2421" label="group_2421">
@@ -383,8 +384,8 @@
           <attvalue for="0" value="Uncharacterised protein" />
           <attvalue for="1" value="1" />
           <attvalue for="2" value="7" />
-          <attvalue for="3" value="-0.5875000040978194" />
-          <attvalue for="4" value="-1.032368602080828" />
+          <attvalue for="3" value="-0.5874999959021807" />
+          <attvalue for="4" value="-1.127631399011924" />
         </attvalues>
       </node>
       <node id="group_2856" label="group_2856">
@@ -671,8 +672,8 @@
           <attvalue for="0" value="choline binding protein J" />
           <attvalue for="1" value="1" />
           <attvalue for="2" value="10" />
-          <attvalue for="3" value="0.22499999999999992" />
-          <attvalue for="4" value="-1.0800000024041265" />
+          <attvalue for="3" value="0.3349999999999999" />
+          <attvalue for="4" value="-1.0799999975958736" />
         </attvalues>
       </node>
       <node id="mutX_1" label="mutX_1">
@@ -680,8 +681,8 @@
           <attvalue for="0" value="MutT/nudix family protein" />
           <attvalue for="1" value="1" />
           <attvalue for="2" value="10" />
-          <attvalue for="3" value="0.3349999999999999" />
-          <attvalue for="4" value="-1.0799999975958736" />
+          <attvalue for="3" value="0.22499999999999992" />
+          <attvalue for="4" value="-1.0800000024041265" />
         </attvalues>
       </node>
       <node id="group_1393" label="group_1393">
@@ -914,8 +915,8 @@
           <attvalue for="0" value="lactose-specific phosphotransferase EIIA" />
           <attvalue for="1" value="1" />
           <attvalue for="2" value="11" />
-          <attvalue for="3" value="0.5049999999999999" />
-          <attvalue for="4" value="-1.0800000024041265" />
+          <attvalue for="3" value="0.615" />
+          <attvalue for="4" value="-1.0799999975958736" />
         </attvalues>
       </node>
       <node id="group_1349" label="group_1349">
@@ -923,8 +924,8 @@
           <attvalue for="0" value="GntR family transcriptional regulator" />
           <attvalue for="1" value="1" />
           <attvalue for="2" value="11" />
-          <attvalue for="3" value="0.615" />
-          <attvalue for="4" value="-1.0799999975958736" />
+          <attvalue for="3" value="0.5049999999999999" />
+          <attvalue for="4" value="-1.0800000024041265" />
         </attvalues>
       </node>
       <node id="phnV_2" label="phnV_2">
@@ -1543,10 +1544,11 @@
           <attvalue for="11" value="135.14285714285714" />
           <attvalue for="12" value="25" />
           <attvalue for="13" value="6.2608633" />
-          <attvalue for="14" value="1" />
+          <attvalue for="14" value="PRESENT ↔ PRESENT" />
           <attvalue for="15" value="1" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="16" value="1" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="yxlF" target="group_5417" id="1">
@@ -1560,10 +1562,11 @@
           <attvalue for="11" value="152.0" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="3.4157245" />
-          <attvalue for="14" value="1" />
+          <attvalue for="14" value="PRESENT ↔ PRESENT" />
           <attvalue for="15" value="1" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="major facilitator superfamily permease" />
+          <attvalue for="16" value="1" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="major facilitator superfamily permease" />
         </attvalues>
       </edge>
       <edge source="yxlF" target="group_1482" id="2">
@@ -1577,10 +1580,11 @@
           <attvalue for="11" value="152.85714285714286" />
           <attvalue for="12" value="12" />
           <attvalue for="13" value="3.331653" />
-          <attvalue for="14" value="1" />
+          <attvalue for="14" value="PRESENT ↔ PRESENT" />
           <attvalue for="15" value="1" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="cell division protein FtsZ" />
+          <attvalue for="16" value="1" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="cell division protein FtsZ" />
         </attvalues>
       </edge>
       <edge source="group_1888" target="group_3921" id="3">
@@ -1594,10 +1598,11 @@
           <attvalue for="11" value="575.375" />
           <attvalue for="12" value="4" />
           <attvalue for="13" value="2.6938255" />
-          <attvalue for="14" value="1" />
+          <attvalue for="14" value="PRESENT ↔ PRESENT" />
           <attvalue for="15" value="1" />
-          <attvalue for="16" value="zinc metalloprotease ZmpC" />
-          <attvalue for="17" value="putative flavoprotein" />
+          <attvalue for="16" value="1" />
+          <attvalue for="17" value="zinc metalloprotease ZmpC" />
+          <attvalue for="18" value="putative flavoprotein" />
         </attvalues>
       </edge>
       <edge source="group_3921" target="group_4266" id="4">
@@ -1611,10 +1616,11 @@
           <attvalue for="11" value="341.8333333333333" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="putative flavoprotein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="putative flavoprotein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_2753" target="group_4266" id="5">
@@ -1628,10 +1634,11 @@
           <attvalue for="11" value="225.6" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="phosphotransferase system sugar-specific EII component" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_1 ↔ state_2" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="phosphotransferase system sugar-specific EII component" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="glf_2" id="6">
@@ -1645,10 +1652,11 @@
           <attvalue for="11" value="134.16666666666666" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_1 ↔ state_2" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_2386" id="7">
@@ -1662,10 +1670,11 @@
           <attvalue for="11" value="128.58333333333334" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="putative metal-dependent membrane protease" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_1 ↔ state_2" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="putative metal-dependent membrane protease" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="wfgD" id="8">
@@ -1679,10 +1688,11 @@
           <attvalue for="11" value="139.9090909090909" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_1 ↔ state_2" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="ygaZ" id="9">
@@ -1696,10 +1706,11 @@
           <attvalue for="11" value="120.06451612903226" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_4466" id="10">
@@ -1713,10 +1724,11 @@
           <attvalue for="11" value="276.3076923076923" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="GNAT family acetyltransferase" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="GNAT family acetyltransferase" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_4912" id="11">
@@ -1730,10 +1742,11 @@
           <attvalue for="11" value="168.68" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="LysM domain protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="LysM domain protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_1322" id="12">
@@ -1747,10 +1760,11 @@
           <attvalue for="11" value="131.06451612903226" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="glycosyltransferase" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="glycosyltransferase" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_2856" id="13">
@@ -1764,10 +1778,11 @@
           <attvalue for="11" value="269.53846153846155" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="peptidoglycan branched peptide synthesis protein, femAB family" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="peptidoglycan branched peptide synthesis protein, femAB family" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_2872" id="14">
@@ -1781,10 +1796,11 @@
           <attvalue for="11" value="245.9090909090909" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="putative holin 1" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="putative holin 1" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="argH" id="15">
@@ -1798,10 +1814,11 @@
           <attvalue for="11" value="163.79166666666666" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="argininosuccinate synthase" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="argininosuccinate synthase" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6020" id="16">
@@ -1815,10 +1832,11 @@
           <attvalue for="11" value="207.92307692307693" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="BlpT protein, fusion" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="BlpT protein, fusion" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_1172" id="17">
@@ -1832,10 +1850,11 @@
           <attvalue for="11" value="244.9090909090909" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_1186" id="18">
@@ -1849,10 +1868,11 @@
           <attvalue for="11" value="161.94736842105263" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="pyruvate formate-lyase" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="pyruvate formate-lyase" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5527" id="19">
@@ -1866,10 +1886,11 @@
           <attvalue for="11" value="188.78571428571428" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_3103" id="20">
@@ -1883,10 +1904,11 @@
           <attvalue for="11" value="246.9090909090909" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="phage protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="phage protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5452" id="21">
@@ -1900,10 +1922,11 @@
           <attvalue for="11" value="201.13333333333333" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="aldose 1-epimerase" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="aldose 1-epimerase" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6043" id="22">
@@ -1917,10 +1940,11 @@
           <attvalue for="11" value="200.13333333333333" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="choline binding protein CbpI" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="choline binding protein CbpI" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_4105" id="23">
@@ -1934,10 +1958,11 @@
           <attvalue for="11" value="199.13333333333333" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="choline binding protein I" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="choline binding protein I" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="maa" id="24">
@@ -1951,10 +1976,11 @@
           <attvalue for="11" value="197.13333333333333" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="glyoxalase family protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="glyoxalase family protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="licC_3" id="25">
@@ -1968,10 +1994,11 @@
           <attvalue for="11" value="157.14285714285714" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Predicted membrane protein (DUF2207)" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Predicted membrane protein (DUF2207)" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6045" id="26">
@@ -1985,10 +2012,11 @@
           <attvalue for="11" value="192.13333333333333" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="chlorohydrolase" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="chlorohydrolase" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_3157" id="27">
@@ -2002,10 +2030,11 @@
           <attvalue for="11" value="268.6363636363636" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="gp18" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="gp18" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_3144" id="28">
@@ -2019,10 +2048,11 @@
           <attvalue for="11" value="273.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_3469" id="29">
@@ -2036,10 +2066,11 @@
           <attvalue for="11" value="251.1" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="phage protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="phage protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_4136" id="30">
@@ -2053,10 +2084,11 @@
           <attvalue for="11" value="250.1" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="phage protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="phage protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_4951" id="31">
@@ -2070,10 +2102,11 @@
           <attvalue for="11" value="252.33333333333331" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_4952" id="32">
@@ -2087,10 +2120,11 @@
           <attvalue for="11" value="263.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="phage protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="phage protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5505" id="33">
@@ -2104,10 +2138,11 @@
           <attvalue for="11" value="259.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="bacteriophage maturation protease" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="bacteriophage maturation protease" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5506" id="34">
@@ -2121,10 +2156,11 @@
           <attvalue for="11" value="260.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="portal protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="portal protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5508" id="35">
@@ -2138,10 +2174,11 @@
           <attvalue for="11" value="265.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="prophage LambdaSa2, site-specific recombinase, phage integrase family" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="prophage LambdaSa2, site-specific recombinase, phage integrase family" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6135" id="36">
@@ -2155,10 +2192,11 @@
           <attvalue for="11" value="264.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="phage protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="phage protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5507" id="37">
@@ -2172,10 +2210,11 @@
           <attvalue for="11" value="261.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="phage protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="phage protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_4501" id="38">
@@ -2189,10 +2228,11 @@
           <attvalue for="11" value="262.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="bacteriophage terminase" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="bacteriophage terminase" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6133" id="39">
@@ -2206,10 +2246,11 @@
           <attvalue for="11" value="256.0" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="phage protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="phage protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="bca" id="40">
@@ -2223,10 +2264,11 @@
           <attvalue for="11" value="291.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="NTP pyrophosphohydrolase including oxidative damage repair enzymes" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="NTP pyrophosphohydrolase including oxidative damage repair enzymes" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5627" id="41">
@@ -2240,10 +2282,11 @@
           <attvalue for="11" value="266.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="bacteriophage transcriptional activator" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="bacteriophage transcriptional activator" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_3475" id="42">
@@ -2257,10 +2300,11 @@
           <attvalue for="11" value="187.8571428571429" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="heat shock protein GrpE" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="heat shock protein GrpE" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_4953" id="43">
@@ -2274,10 +2318,11 @@
           <attvalue for="11" value="261.27272727272725" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="PTS system mannose-specific transporter subunit IIAB" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_3153" id="44">
@@ -2291,10 +2336,11 @@
           <attvalue for="11" value="121.60714285714286" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5503" id="45">
@@ -2308,10 +2354,11 @@
           <attvalue for="11" value="257.75" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6036" id="46">
@@ -2325,10 +2372,11 @@
           <attvalue for="11" value="122.60714285714286" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="transcriptional regulator" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="transcriptional regulator" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6134" id="47">
@@ -2342,10 +2390,11 @@
           <attvalue for="11" value="257.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6148" id="48">
@@ -2359,10 +2408,11 @@
           <attvalue for="11" value="275.1818181818182" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5626" id="49">
@@ -2376,10 +2426,11 @@
           <attvalue for="11" value="258.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6468" id="50">
@@ -2393,10 +2444,11 @@
           <attvalue for="11" value="269.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6480" id="51">
@@ -2410,10 +2462,11 @@
           <attvalue for="11" value="272.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6132" id="52">
@@ -2427,10 +2480,11 @@
           <attvalue for="11" value="255.0" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="prophage pi2 protein 37" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="prophage pi2 protein 37" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_4531" id="53">
@@ -2444,10 +2498,11 @@
           <attvalue for="11" value="268.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="DNA-binding protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="DNA-binding protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5501" id="54">
@@ -2461,10 +2516,11 @@
           <attvalue for="11" value="253.0" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="phage major tail protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="phage major tail protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_5502" id="55">
@@ -2478,10 +2534,11 @@
           <attvalue for="11" value="254.0" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6467" id="56">
@@ -2495,10 +2552,11 @@
           <attvalue for="11" value="267.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6478" id="57">
@@ -2512,10 +2570,11 @@
           <attvalue for="11" value="271.90909090909093" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6479" id="58">
@@ -2529,10 +2588,11 @@
           <attvalue for="11" value="271.09090909090907" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6481" id="59">
@@ -2546,10 +2606,11 @@
           <attvalue for="11" value="271.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6482" id="60">
@@ -2563,10 +2624,11 @@
           <attvalue for="11" value="270.8" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="gp27" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="gp27" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6477" id="61">
@@ -2580,10 +2642,11 @@
           <attvalue for="11" value="272.72727272727275" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_6476" id="62">
@@ -2597,10 +2660,11 @@
           <attvalue for="11" value="273.54545454545456" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="putative phage DNA binding protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="putative phage DNA binding protein" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_2868" id="63">
@@ -2614,10 +2678,11 @@
           <attvalue for="11" value="274.4" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="integrase" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="integrase" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_3051" id="64">
@@ -2631,10 +2696,11 @@
           <attvalue for="11" value="267.8181818181818" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="gp19" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="gp19" />
         </attvalues>
       </edge>
       <edge source="group_4266" target="group_437" id="65">
@@ -2648,10 +2714,11 @@
           <attvalue for="11" value="231.16666666666663" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.4615386" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="PTS system mannose-specific transporter subunit IIAB" />
-          <attvalue for="17" value="Domain of uncharacterised function (DUF1858)" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="PTS system mannose-specific transporter subunit IIAB" />
+          <attvalue for="18" value="Domain of uncharacterised function (DUF1858)" />
         </attvalues>
       </edge>
       <edge source="group_3656" target="group_4441" id="66">
@@ -2665,10 +2732,11 @@
           <attvalue for="11" value="103.57142857142856" />
           <attvalue for="12" value="15" />
           <attvalue for="13" value="5.008633" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="4" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="14" value="state_1 ↔ state_4" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="4" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="histidine kinase" />
         </attvalues>
       </edge>
       <edge source="group_3656" target="group_1393" id="67">
@@ -2682,10 +2750,11 @@
           <attvalue for="11" value="137.6" />
           <attvalue for="12" value="28" />
           <attvalue for="13" value="8.968945" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="1" />
-          <attvalue for="16" value="coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_1" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="1" />
+          <attvalue for="17" value="coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_8256" id="68">
@@ -2699,10 +2768,11 @@
           <attvalue for="11" value="194.97142857142856" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="4.5581393" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="Int-Tn_1" id="69">
@@ -2716,10 +2786,11 @@
           <attvalue for="11" value="193.08860759493672" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="4.4160585" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_3705" id="70">
@@ -2733,10 +2804,11 @@
           <attvalue for="11" value="188.12820512820517" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="4.4160585" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_5408" id="71">
@@ -2750,10 +2822,11 @@
           <attvalue for="11" value="184.12820512820517" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="4.4160585" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_4837" id="72">
@@ -2767,10 +2840,11 @@
           <attvalue for="11" value="329.7058823529412" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_5357" id="73">
@@ -2784,10 +2858,11 @@
           <attvalue for="11" value="330.7058823529412" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="Mobile element protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="Mobile element protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_5358" id="74">
@@ -2801,10 +2876,11 @@
           <attvalue for="11" value="328.7058823529412" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="Helix-turn-helix domain" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="Helix-turn-helix domain" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_5359" id="75">
@@ -2818,10 +2894,11 @@
           <attvalue for="11" value="327.7058823529412" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="Mobile element protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="Mobile element protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="iap" id="76">
@@ -2835,10 +2912,11 @@
           <attvalue for="11" value="325.7058823529412" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="anaerobic benzoate catabolism transcriptional regulator" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="anaerobic benzoate catabolism transcriptional regulator" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_4892" id="77">
@@ -2852,10 +2930,11 @@
           <attvalue for="11" value="192.11688311688312" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="4.4160585" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="bacteriophage integrase" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="bacteriophage integrase" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_5412" id="78">
@@ -2869,10 +2948,11 @@
           <attvalue for="11" value="191.12820512820517" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="4.4160585" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_5411" id="79">
@@ -2886,10 +2966,11 @@
           <attvalue for="11" value="190.12820512820517" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="4.4160585" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="DNA-binding phage protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="DNA-binding phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_5991" id="80">
@@ -2903,10 +2984,11 @@
           <attvalue for="11" value="186.12820512820517" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="4.4160585" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_3024" id="81">
@@ -2920,10 +3002,11 @@
           <attvalue for="11" value="326.25" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="CbxX/CfqX family protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="CbxX/CfqX family protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_4895" id="82">
@@ -2937,10 +3020,11 @@
           <attvalue for="11" value="332.7058823529412" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="erm" id="83">
@@ -2954,10 +3038,11 @@
           <attvalue for="11" value="333.7058823529412" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="group_5422" id="84">
@@ -2971,10 +3056,11 @@
           <attvalue for="11" value="331.7058823529412" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="ImpB/MucB/SamB family protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="ImpB/MucB/SamB family protein" />
         </attvalues>
       </edge>
       <edge source="group_4441" target="tetM" id="85">
@@ -2988,10 +3074,11 @@
           <attvalue for="11" value="323.6470588235294" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="4.571429" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="histidine kinase" />
-          <attvalue for="17" value="Helix-turn-helix domain" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="histidine kinase" />
+          <attvalue for="18" value="Helix-turn-helix domain" />
         </attvalues>
       </edge>
       <edge source="gpsB" target="group_1130" id="86">
@@ -3005,10 +3092,11 @@
           <attvalue for="11" value="192.9705882352941" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="3" />
-          <attvalue for="16" value="oligopeptide ABC transporter oligopeptide-binding protein AliA" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_1 ↔ state_3" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="3" />
+          <attvalue for="17" value="oligopeptide ABC transporter oligopeptide-binding protein AliA" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="gpsB" target="group_2577" id="87">
@@ -3022,10 +3110,11 @@
           <attvalue for="11" value="184.16666666666663" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="8.398773" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="oligopeptide ABC transporter oligopeptide-binding protein AliA" />
-          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="14" value="state_1 ↔ state_2" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="oligopeptide ABC transporter oligopeptide-binding protein AliA" />
+          <attvalue for="18" value="DNA-3-methyladenine glycosylase I" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="ponA" id="88">
@@ -3039,10 +3128,11 @@
           <attvalue for="11" value="190.13513513513516" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="3" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_1 ↔ state_3" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="3" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_2568" id="89">
@@ -3056,10 +3146,11 @@
           <attvalue for="11" value="169.92" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="3" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_1 ↔ state_3" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="3" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_2556" id="90">
@@ -3073,10 +3164,11 @@
           <attvalue for="11" value="306.84615384615387" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="3" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_1 ↔ state_3" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="3" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5169" id="91">
@@ -3090,10 +3182,11 @@
           <attvalue for="11" value="308.61538461538464" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.084507" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="3" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_1 ↔ state_3" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="3" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_3703" id="92">
@@ -3107,10 +3200,11 @@
           <attvalue for="11" value="116.21794871794872" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.4054055" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="3-dehydroquinate synthase" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="3-dehydroquinate synthase" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_1077" id="93">
@@ -3124,10 +3218,11 @@
           <attvalue for="11" value="341.125" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.714286" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="translation factor" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="translation factor" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="pbpX_1" id="94">
@@ -3141,10 +3236,11 @@
           <attvalue for="11" value="184.94736842105263" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="transcriptional regulator" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="transcriptional regulator" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="gutB" id="95">
@@ -3158,10 +3254,11 @@
           <attvalue for="11" value="257.4931506849315" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="glutamyl-tRNA(Gln) amidotransferase, A subunit" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="glutamyl-tRNA(Gln) amidotransferase, A subunit" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_1119" id="96">
@@ -3175,10 +3272,11 @@
           <attvalue for="11" value="103.16216216216216" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="ABC transporter ATP-binding protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="ABC transporter ATP-binding protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_4837" id="97">
@@ -3192,10 +3290,11 @@
           <attvalue for="11" value="156.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5355" id="98">
@@ -3209,10 +3308,11 @@
           <attvalue for="11" value="164.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5357" id="99">
@@ -3226,10 +3326,11 @@
           <attvalue for="11" value="157.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="Mobile element protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Mobile element protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_4581" id="100">
@@ -3243,10 +3344,11 @@
           <attvalue for="11" value="151.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="RNA polymerase sigma factor" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="RNA polymerase sigma factor" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="ftsK_1" id="101">
@@ -3260,10 +3362,11 @@
           <attvalue for="11" value="162.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5358" id="102">
@@ -3277,10 +3380,11 @@
           <attvalue for="11" value="155.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="Helix-turn-helix domain" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Helix-turn-helix domain" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5359" id="103">
@@ -3294,10 +3398,11 @@
           <attvalue for="11" value="154.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="Mobile element protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Mobile element protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5416" id="104">
@@ -3311,10 +3416,11 @@
           <attvalue for="11" value="229.1904761904762" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.4054055" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="thioredoxin" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="thioredoxin" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5942" id="105">
@@ -3328,10 +3434,11 @@
           <attvalue for="11" value="163.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="iap" id="106">
@@ -3345,10 +3452,11 @@
           <attvalue for="11" value="152.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="anaerobic benzoate catabolism transcriptional regulator" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="anaerobic benzoate catabolism transcriptional regulator" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5361" id="107">
@@ -3362,10 +3470,11 @@
           <attvalue for="11" value="108.5" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="Int-Tn_2" id="108">
@@ -3379,10 +3488,11 @@
           <attvalue for="11" value="140.05882352941177" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="membrane protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="membrane protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_4888" id="109">
@@ -3396,10 +3506,11 @@
           <attvalue for="11" value="209.6164383561644" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="choline binding protein J" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="choline binding protein J" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5944" id="110">
@@ -3413,10 +3524,11 @@
           <attvalue for="11" value="109.28571428571428" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="membrane protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="membrane protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5945" id="111">
@@ -3430,10 +3542,11 @@
           <attvalue for="11" value="141.05882352941177" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="CBS domain membrane protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="CBS domain membrane protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5360" id="112">
@@ -3447,10 +3560,11 @@
           <attvalue for="11" value="144.9375" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="DNA-directed RNA polymerase subunit beta" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="DNA-directed RNA polymerase subunit beta" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_3024" id="113">
@@ -3464,10 +3578,11 @@
           <attvalue for="11" value="158.06666666666666" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="CbxX/CfqX family protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="CbxX/CfqX family protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_4895" id="114">
@@ -3481,10 +3596,11 @@
           <attvalue for="11" value="159.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="erm" id="115">
@@ -3498,10 +3614,11 @@
           <attvalue for="11" value="160.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_4882" id="116">
@@ -3515,10 +3632,11 @@
           <attvalue for="11" value="206.64285714285717" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="N-6 adenine-specific DNA methylase" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="N-6 adenine-specific DNA methylase" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_5422" id="117">
@@ -3532,10 +3650,11 @@
           <attvalue for="11" value="158.52941176470588" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="ImpB/MucB/SamB family protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="ImpB/MucB/SamB family protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_4894" id="118">
@@ -3549,10 +3668,11 @@
           <attvalue for="11" value="228.28571428571428" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="30S ribosomal protein S16" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="30S ribosomal protein S16" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="tetM" id="119">
@@ -3566,10 +3686,11 @@
           <attvalue for="11" value="152.75" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="Helix-turn-helix domain" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Helix-turn-helix domain" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_3724" id="120">
@@ -3583,10 +3704,11 @@
           <attvalue for="11" value="163.8125" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_1754" id="121">
@@ -3600,10 +3722,11 @@
           <attvalue for="11" value="304.15" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="galactose-1-phosphate uridylyltransferase" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="galactose-1-phosphate uridylyltransferase" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="galT_2" id="122">
@@ -3617,10 +3740,11 @@
           <attvalue for="11" value="263.5238095238095" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="anthranilate synthase component II (glutamine amido-transferase)" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="anthranilate synthase component II (glutamine amido-transferase)" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_1976" id="123">
@@ -3634,10 +3758,11 @@
           <attvalue for="11" value="234.16666666666663" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="anthranilate phosphoribosyltransferase" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="anthranilate phosphoribosyltransferase" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_4451" id="124">
@@ -3651,10 +3776,11 @@
           <attvalue for="11" value="305.15" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="galactokinase, (galactose kinase)" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="galactokinase, (galactose kinase)" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_1359" id="125">
@@ -3668,10 +3794,11 @@
           <attvalue for="11" value="264.42857142857144" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="anthranilate synthase component I" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="anthranilate synthase component I" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_1656" id="126">
@@ -3685,10 +3812,11 @@
           <attvalue for="11" value="159.2923076923077" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="filamentation induced by cAMP protein fic" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="filamentation induced by cAMP protein fic" />
         </attvalues>
       </edge>
       <edge source="group_1130" target="group_624" id="127">
@@ -3702,10 +3830,11 @@
           <attvalue for="11" value="214.1190476190476" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="5.5822783" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="choline binding protein C" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="choline binding protein C" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="pbpX_1" id="128">
@@ -3719,10 +3848,11 @@
           <attvalue for="11" value="153.60714285714286" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="8.307693" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="transcriptional regulator" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="transcriptional regulator" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="group_2704" id="129">
@@ -3736,10 +3866,11 @@
           <attvalue for="11" value="294.3191489361702" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="8.398773" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="type I restriction-modification system, R subunit" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="type I restriction-modification system, R subunit" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="group_4888" id="130">
@@ -3753,10 +3884,11 @@
           <attvalue for="11" value="179.1153846153846" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="8.398773" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="choline binding protein J" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="choline binding protein J" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="group_4895" id="131">
@@ -3770,10 +3902,11 @@
           <attvalue for="11" value="186.7333333333333" />
           <attvalue for="12" value="17" />
           <attvalue for="13" value="8.804878" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="erm" id="132">
@@ -3787,10 +3920,11 @@
           <attvalue for="11" value="187.7333333333333" />
           <attvalue for="12" value="17" />
           <attvalue for="13" value="8.804878" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="group_4882" id="133">
@@ -3804,10 +3938,11 @@
           <attvalue for="11" value="176.16" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="8.398773" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="N-6 adenine-specific DNA methylase" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="N-6 adenine-specific DNA methylase" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="group_5422" id="134">
@@ -3821,10 +3956,11 @@
           <attvalue for="11" value="185.7333333333333" />
           <attvalue for="12" value="17" />
           <attvalue for="13" value="8.804878" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="ImpB/MucB/SamB family protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="ImpB/MucB/SamB family protein" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="group_3724" id="135">
@@ -3838,10 +3974,11 @@
           <attvalue for="11" value="188.7333333333333" />
           <attvalue for="12" value="17" />
           <attvalue for="13" value="8.804878" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="group_4451" id="136">
@@ -3855,10 +3992,11 @@
           <attvalue for="11" value="323.42105263157896" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="8.398773" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="galactokinase, (galactose kinase)" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="galactokinase, (galactose kinase)" />
         </attvalues>
       </edge>
       <edge source="group_2577" target="group_624" id="137">
@@ -3872,10 +4010,11 @@
           <attvalue for="11" value="183.5" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="8.398773" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="DNA-3-methyladenine glycosylase I" />
-          <attvalue for="17" value="choline binding protein C" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="DNA-3-methyladenine glycosylase I" />
+          <attvalue for="18" value="choline binding protein C" />
         </attvalues>
       </edge>
       <edge source="group_2233" target="group_711" id="138">
@@ -3889,10 +4028,11 @@
           <attvalue for="11" value="174.57142857142858" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="oligopeptide binding lipoprotein" />
-          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="14" value="state_1 ↔ state_2" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="oligopeptide binding lipoprotein" />
+          <attvalue for="18" value="HAD superfamily hydrolase protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_5093" id="139">
@@ -3906,10 +4046,11 @@
           <attvalue for="11" value="208.4" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="bacteriocin" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="bacteriocin" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_4444" id="140">
@@ -3923,10 +4064,11 @@
           <attvalue for="11" value="378.0769230769231" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_4891" id="141">
@@ -3940,10 +4082,11 @@
           <attvalue for="11" value="255.0" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_5990" id="142">
@@ -3957,10 +4100,11 @@
           <attvalue for="11" value="256.3333333333333" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="prophage Sa05, P4 family DNA primase" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="prophage Sa05, P4 family DNA primase" />
         </attvalues>
       </edge>
       <edge source="group_711" target="Int-Tn_1" id="143">
@@ -3974,10 +4118,11 @@
           <attvalue for="11" value="248.3684210526316" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_3705" id="144">
@@ -3991,10 +4136,11 @@
           <attvalue for="11" value="250.7894736842105" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_5408" id="145">
@@ -4008,10 +4154,11 @@
           <attvalue for="11" value="252.68421052631575" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_4892" id="146">
@@ -4025,10 +4172,11 @@
           <attvalue for="11" value="248.8947368421053" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="bacteriophage integrase" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="bacteriophage integrase" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_5412" id="147">
@@ -4042,10 +4190,11 @@
           <attvalue for="11" value="249.3684210526316" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_3419" id="148">
@@ -4059,10 +4208,11 @@
           <attvalue for="11" value="255.47368421052636" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_5411" id="149">
@@ -4076,10 +4226,11 @@
           <attvalue for="11" value="249.8421052631579" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="DNA-binding phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="DNA-binding phage protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_5991" id="150">
@@ -4093,10 +4244,11 @@
           <attvalue for="11" value="251.73684210526315" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_4888" id="151">
@@ -4110,10 +4262,11 @@
           <attvalue for="11" value="344.8888888888889" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="choline binding protein J" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="choline binding protein J" />
         </attvalues>
       </edge>
       <edge source="group_711" target="sarA_2" id="152">
@@ -4127,10 +4280,11 @@
           <attvalue for="11" value="180.625" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="peptidase propeptide and ypeb domain-containing protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="peptidase propeptide and ypeb domain-containing protein" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_4882" id="153">
@@ -4144,10 +4298,11 @@
           <attvalue for="11" value="343.22222222222223" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="N-6 adenine-specific DNA methylase" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="N-6 adenine-specific DNA methylase" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_5418" id="154">
@@ -4161,10 +4316,11 @@
           <attvalue for="11" value="190.625" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="2-isopropylmalate synthase" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="2-isopropylmalate synthase" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_5996" id="155">
@@ -4178,10 +4334,11 @@
           <attvalue for="11" value="175.5" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="ion transporter" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="ion transporter" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_5997" id="156">
@@ -4195,10 +4352,11 @@
           <attvalue for="11" value="187.0" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="2.7984495" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="cytotoxic translational repressor of toxin-antitoxin stability system" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="cytotoxic translational repressor of toxin-antitoxin stability system" />
         </attvalues>
       </edge>
       <edge source="group_711" target="group_624" id="157">
@@ -4212,10 +4370,11 @@
           <attvalue for="11" value="371.8" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="3.0769231" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="HAD superfamily hydrolase protein" />
-          <attvalue for="17" value="choline binding protein C" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="HAD superfamily hydrolase protein" />
+          <attvalue for="18" value="choline binding protein C" />
         </attvalues>
       </edge>
       <edge source="group_2386" target="group_4888" id="158">
@@ -4229,10 +4388,11 @@
           <attvalue for="11" value="203.03614457831324" />
           <attvalue for="12" value="34" />
           <attvalue for="13" value="9.766816" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="putative metal-dependent membrane protease" />
-          <attvalue for="17" value="choline binding protein J" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="putative metal-dependent membrane protease" />
+          <attvalue for="18" value="choline binding protein J" />
         </attvalues>
       </edge>
       <edge source="group_2386" target="group_4882" id="159">
@@ -4246,10 +4406,11 @@
           <attvalue for="11" value="200.0875" />
           <attvalue for="12" value="35" />
           <attvalue for="13" value="10.372549" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="putative metal-dependent membrane protease" />
-          <attvalue for="17" value="N-6 adenine-specific DNA methylase" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="putative metal-dependent membrane protease" />
+          <attvalue for="18" value="N-6 adenine-specific DNA methylase" />
         </attvalues>
       </edge>
       <edge source="group_2386" target="group_3724" id="160">
@@ -4263,10 +4424,11 @@
           <attvalue for="11" value="166.11764705882354" />
           <attvalue for="12" value="37" />
           <attvalue for="13" value="10.463737" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="putative metal-dependent membrane protease" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="putative metal-dependent membrane protease" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_2751" target="sorB" id="161">
@@ -4280,10 +4442,11 @@
           <attvalue for="11" value="161.59574468085106" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="3.4977307" />
-          <attvalue for="14" value="1" />
+          <attvalue for="14" value="state_1 ↔ state_1" />
           <attvalue for="15" value="1" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="N-acetylgalactosamine-specific phosphotransferase EIIB" />
+          <attvalue for="16" value="1" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="N-acetylgalactosamine-specific phosphotransferase EIIB" />
         </attvalues>
       </edge>
       <edge source="sorB" target="group_4450" id="162">
@@ -4297,10 +4460,11 @@
           <attvalue for="11" value="181.2183908045977" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="3.4977307" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="1" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="N-acetylgalactosamine-specific phosphotransferase EIIB" />
+          <attvalue for="14" value="state_0 ↔ state_1" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="1" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="N-acetylgalactosamine-specific phosphotransferase EIIB" />
         </attvalues>
       </edge>
       <edge source="group_2421" target="folD" id="163">
@@ -4314,10 +4478,11 @@
           <attvalue for="11" value="149.33333333333334" />
           <attvalue for="12" value="5" />
           <attvalue for="13" value="2.2146835" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="amino acid ABC transporter ATP-binding protein" />
-          <attvalue for="17" value="FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="amino acid ABC transporter ATP-binding protein" />
+          <attvalue for="18" value="FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase" />
         </attvalues>
       </edge>
       <edge source="folD" target="group_860" id="164">
@@ -4331,10 +4496,11 @@
           <attvalue for="11" value="164.9" />
           <attvalue for="12" value="5" />
           <attvalue for="13" value="2.2146835" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Ser/Thr protein phosphatase family protein" />
-          <attvalue for="17" value="FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase" />
+          <attvalue for="14" value="state_1 ↔ state_2" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Ser/Thr protein phosphatase family protein" />
+          <attvalue for="18" value="FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase" />
         </attvalues>
       </edge>
       <edge source="folD" target="group_2416" id="165">
@@ -4348,10 +4514,11 @@
           <attvalue for="11" value="164.3" />
           <attvalue for="12" value="5" />
           <attvalue for="13" value="2.2146835" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="VncR, response regulator" />
-          <attvalue for="17" value="FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase" />
+          <attvalue for="14" value="state_1 ↔ state_2" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="VncR, response regulator" />
+          <attvalue for="18" value="FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase" />
         </attvalues>
       </edge>
       <edge source="folD" target="group_5893" id="166">
@@ -4365,10 +4532,11 @@
           <attvalue for="11" value="107.42857142857144" />
           <attvalue for="12" value="5" />
           <attvalue for="13" value="2.2209313" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="transposase" />
-          <attvalue for="17" value="FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase" />
+          <attvalue for="14" value="state_1 ↔ state_2" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="transposase" />
+          <attvalue for="18" value="FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase" />
         </attvalues>
       </edge>
       <edge source="celD" target="pyrF" id="167">
@@ -4382,10 +4550,11 @@
           <attvalue for="11" value="160.66666666666666" />
           <attvalue for="12" value="5" />
           <attvalue for="13" value="3.7396984" />
-          <attvalue for="14" value="1" />
-          <attvalue for="15" value="5" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="orotidine-5-phosphate decarboxylase" />
+          <attvalue for="14" value="state_1 ↔ state_5" />
+          <attvalue for="15" value="1" />
+          <attvalue for="16" value="5" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="orotidine-5-phosphate decarboxylase" />
         </attvalues>
       </edge>
       <edge source="group_2522" target="group_4408" id="168">
@@ -4399,10 +4568,11 @@
           <attvalue for="11" value="136.12244897959184" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="galactosyl transferase CpsE" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_1077" id="169">
@@ -4416,10 +4586,11 @@
           <attvalue for="11" value="241.625" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="4.0833335" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="translation factor" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="translation factor" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_4444" id="170">
@@ -4433,10 +4604,11 @@
           <attvalue for="11" value="132.140350877193" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.0833335" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_2046" id="171">
@@ -4450,10 +4622,11 @@
           <attvalue for="11" value="367.8421052631579" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="ABC transporter membrane protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="ABC transporter membrane protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="phnU" id="172">
@@ -4467,10 +4640,11 @@
           <attvalue for="11" value="334.7058823529412" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="Int-Tn_1" id="173">
@@ -4484,10 +4658,11 @@
           <attvalue for="11" value="159.1851851851852" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_1962" id="174">
@@ -4501,10 +4676,11 @@
           <attvalue for="11" value="318.3" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_3705" id="175">
@@ -4518,10 +4694,11 @@
           <attvalue for="11" value="154.19753086419752" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_5408" id="176">
@@ -4535,10 +4712,11 @@
           <attvalue for="11" value="150.19753086419752" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_5410" id="177">
@@ -4552,10 +4730,11 @@
           <attvalue for="11" value="153.19753086419752" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_5409" id="178">
@@ -4569,10 +4748,11 @@
           <attvalue for="11" value="151.19753086419752" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_2704" id="179">
@@ -4586,10 +4766,11 @@
           <attvalue for="11" value="130.51785714285714" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="type I restriction-modification system, R subunit" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="type I restriction-modification system, R subunit" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_4892" id="180">
@@ -4603,10 +4784,11 @@
           <attvalue for="11" value="158.175" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="bacteriophage integrase" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="bacteriophage integrase" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_5412" id="181">
@@ -4620,10 +4802,11 @@
           <attvalue for="11" value="157.19753086419752" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_3419" id="182">
@@ -4637,10 +4820,11 @@
           <attvalue for="11" value="144.20987654320987" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_5411" id="183">
@@ -4654,10 +4838,11 @@
           <attvalue for="11" value="156.19753086419752" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="DNA-binding phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="DNA-binding phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_5991" id="184">
@@ -4671,10 +4856,11 @@
           <attvalue for="11" value="152.19753086419752" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="phage protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="phage protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_5422" id="185">
@@ -4688,10 +4874,11 @@
           <attvalue for="11" value="305.7058823529412" />
           <attvalue for="12" value="6" />
           <attvalue for="13" value="3.985782" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="ImpB/MucB/SamB family protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="ImpB/MucB/SamB family protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="tetM" id="186">
@@ -4705,10 +4892,11 @@
           <attvalue for="11" value="297.6470588235294" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="Helix-turn-helix domain" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="Helix-turn-helix domain" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="group_3724" id="187">
@@ -4722,10 +4910,11 @@
           <attvalue for="11" value="308.7058823529412" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_4408" target="galT_2" id="188">
@@ -4739,10 +4928,11 @@
           <attvalue for="11" value="383.7894736842105" />
           <attvalue for="12" value="7" />
           <attvalue for="13" value="4.245283" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="galactosyl transferase CpsE" />
-          <attvalue for="17" value="anthranilate synthase component II (glutamine amido-transferase)" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="galactosyl transferase CpsE" />
+          <attvalue for="18" value="anthranilate synthase component II (glutamine amido-transferase)" />
         </attvalues>
       </edge>
       <edge source="group_860" target="glf" id="189">
@@ -4756,10 +4946,11 @@
           <attvalue for="11" value="204.08333333333331" />
           <attvalue for="12" value="5" />
           <attvalue for="13" value="2.5" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="Ser/Thr protein phosphatase family protein" />
-          <attvalue for="17" value="capsular polysaccharide synthesis protein" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="Ser/Thr protein phosphatase family protein" />
+          <attvalue for="18" value="capsular polysaccharide synthesis protein" />
         </attvalues>
       </edge>
       <edge source="glf" target="group_2416" id="190">
@@ -4773,10 +4964,11 @@
           <attvalue for="11" value="206.58333333333331" />
           <attvalue for="12" value="5" />
           <attvalue for="13" value="2.5" />
-          <attvalue for="14" value="0" />
-          <attvalue for="15" value="2" />
-          <attvalue for="16" value="VncR, response regulator" />
-          <attvalue for="17" value="capsular polysaccharide synthesis protein" />
+          <attvalue for="14" value="state_0 ↔ state_2" />
+          <attvalue for="15" value="0" />
+          <attvalue for="16" value="2" />
+          <attvalue for="17" value="VncR, response regulator" />
+          <attvalue for="18" value="capsular polysaccharide synthesis protein" />
         </attvalues>
       </edge>
       <edge source="glf" target="group_1186" id="191">
@@ -4790,10 +4982,11 @@
           <attvalue for="11" value="103.77777777777776" />
           <attvalue for="12" value="4" />
           <attvalue for="13" value="2.0769231" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="capsular polysaccharide synthesis protein" />
-          <attvalue for="17" value="pyruvate formate-lyase" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="capsular polysaccharide synthesis protein" />
+          <attvalue for="18" value="pyruvate formate-lyase" />
         </attvalues>
       </edge>
       <edge source="glf" target="group_3475" id="192">
@@ -4807,10 +5000,11 @@
           <attvalue for="11" value="138.0" />
           <attvalue for="12" value="5" />
           <attvalue for="13" value="2.5" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="capsular polysaccharide synthesis protein" />
-          <attvalue for="17" value="heat shock protein GrpE" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="capsular polysaccharide synthesis protein" />
+          <attvalue for="18" value="heat shock protein GrpE" />
         </attvalues>
       </edge>
       <edge source="glf" target="group_437" id="193">
@@ -4824,10 +5018,11 @@
           <attvalue for="11" value="173.0909090909091" />
           <attvalue for="12" value="5" />
           <attvalue for="13" value="2.8139534" />
-          <attvalue for="14" value="2" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="capsular polysaccharide synthesis protein" />
-          <attvalue for="17" value="Domain of uncharacterised function (DUF1858)" />
+          <attvalue for="14" value="state_2 ↔ state_0" />
+          <attvalue for="15" value="2" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="capsular polysaccharide synthesis protein" />
+          <attvalue for="18" value="Domain of uncharacterised function (DUF1858)" />
         </attvalues>
       </edge>
       <edge source="thrB_2" target="mutX_1" id="194">
@@ -4841,10 +5036,11 @@
           <attvalue for="11" value="119.14285714285714" />
           <attvalue for="12" value="36" />
           <attvalue for="13" value="16.89228" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="1" />
-          <attvalue for="16" value="choline binding protein J" />
-          <attvalue for="17" value="MutT/nudix family protein" />
+          <attvalue for="14" value="state_4 ↔ state_1" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="1" />
+          <attvalue for="17" value="choline binding protein J" />
+          <attvalue for="18" value="MutT/nudix family protein" />
         </attvalues>
       </edge>
       <edge source="group_1393" target="group_5291" id="195">
@@ -4858,10 +5054,11 @@
           <attvalue for="11" value="122.0" />
           <attvalue for="12" value="27" />
           <attvalue for="13" value="8.748056" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="1" />
-          <attvalue for="16" value="coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein" />
-          <attvalue for="17" value="ATP-dependent Clp protease, ATP-binding subunit ClpX" />
+          <attvalue for="14" value="state_4 ↔ state_1" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="1" />
+          <attvalue for="17" value="coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein" />
+          <attvalue for="18" value="ATP-dependent Clp protease, ATP-binding subunit ClpX" />
         </attvalues>
       </edge>
       <edge source="group_1393" target="group_2605" id="196">
@@ -4875,10 +5072,11 @@
           <attvalue for="11" value="103.25" />
           <attvalue for="12" value="28" />
           <attvalue for="13" value="8.968945" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="1" />
-          <attvalue for="16" value="coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein" />
-          <attvalue for="17" value="putative metal-binding, possibly nucleic acid-binding protein" />
+          <attvalue for="14" value="state_4 ↔ state_1" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="1" />
+          <attvalue for="17" value="coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein" />
+          <attvalue for="18" value="putative metal-binding, possibly nucleic acid-binding protein" />
         </attvalues>
       </edge>
       <edge source="group_1393" target="gutB" id="197">
@@ -4892,10 +5090,11 @@
           <attvalue for="11" value="136.11111111111111" />
           <attvalue for="12" value="24" />
           <attvalue for="13" value="8.1" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein" />
-          <attvalue for="17" value="glutamyl-tRNA(Gln) amidotransferase, A subunit" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein" />
+          <attvalue for="18" value="glutamyl-tRNA(Gln) amidotransferase, A subunit" />
         </attvalues>
       </edge>
       <edge source="group_4888" target="phnV_2" id="198">
@@ -4909,10 +5108,11 @@
           <attvalue for="11" value="109.8" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="9.309091" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="choline binding protein J" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="choline binding protein J" />
         </attvalues>
       </edge>
       <edge source="group_4888" target="group_1314" id="199">
@@ -4926,10 +5126,11 @@
           <attvalue for="11" value="202.43939393939397" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="9.68" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="permease" />
-          <attvalue for="17" value="choline binding protein J" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="permease" />
+          <attvalue for="18" value="choline binding protein J" />
         </attvalues>
       </edge>
       <edge source="group_4882" target="phnV_2" id="200">
@@ -4943,10 +5144,11 @@
           <attvalue for="11" value="106.85526315789474" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="9.309091" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="N-6 adenine-specific DNA methylase" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="N-6 adenine-specific DNA methylase" />
         </attvalues>
       </edge>
       <edge source="group_4882" target="group_1314" id="201">
@@ -4960,10 +5162,11 @@
           <attvalue for="11" value="199.46031746031747" />
           <attvalue for="12" value="13" />
           <attvalue for="13" value="9.68" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="permease" />
-          <attvalue for="17" value="N-6 adenine-specific DNA methylase" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="permease" />
+          <attvalue for="18" value="N-6 adenine-specific DNA methylase" />
         </attvalues>
       </edge>
       <edge source="group_3724" target="phnV_2" id="202">
@@ -4977,10 +5180,11 @@
           <attvalue for="11" value="238.33333333333331" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="8.981308" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_3024" target="phnV_2" id="203">
@@ -4994,10 +5198,11 @@
           <attvalue for="11" value="232.14285714285717" />
           <attvalue for="12" value="15" />
           <attvalue for="13" value="8.490566" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="CbxX/CfqX family protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="CbxX/CfqX family protein" />
         </attvalues>
       </edge>
       <edge source="erm" target="phnV_2" id="204">
@@ -5011,10 +5216,11 @@
           <attvalue for="11" value="237.33333333333331" />
           <attvalue for="12" value="15" />
           <attvalue for="13" value="8.490566" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_5422" target="phnV_2" id="205">
@@ -5028,10 +5234,11 @@
           <attvalue for="11" value="235.33333333333331" />
           <attvalue for="12" value="15" />
           <attvalue for="13" value="8.490566" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="ImpB/MucB/SamB family protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="ImpB/MucB/SamB family protein" />
         </attvalues>
       </edge>
       <edge source="tetM" target="phnV_2" id="206">
@@ -5045,10 +5252,11 @@
           <attvalue for="11" value="227.26666666666668" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="9.309091" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="Helix-turn-helix domain" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="Helix-turn-helix domain" />
         </attvalues>
       </edge>
       <edge source="group_2492" target="group_1349" id="207">
@@ -5062,10 +5270,11 @@
           <attvalue for="11" value="493.75" />
           <attvalue for="12" value="11" />
           <attvalue for="13" value="5.481203" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="lactose-specific phosphotransferase EIIA" />
-          <attvalue for="17" value="GntR family transcriptional regulator" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="lactose-specific phosphotransferase EIIA" />
+          <attvalue for="18" value="GntR family transcriptional regulator" />
         </attvalues>
       </edge>
       <edge source="phnV_2" target="group_5361" id="208">
@@ -5079,10 +5288,11 @@
           <attvalue for="11" value="205.42857142857144" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="8.009523" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="phnV_2" target="Int-Tn_2" id="209">
@@ -5096,10 +5306,11 @@
           <attvalue for="11" value="216.46666666666667" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="8.009523" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="membrane protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="membrane protein" />
         </attvalues>
       </edge>
       <edge source="phnV_2" target="group_5944" id="210">
@@ -5113,10 +5324,11 @@
           <attvalue for="11" value="205.66666666666663" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="8.009523" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="membrane protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="membrane protein" />
         </attvalues>
       </edge>
       <edge source="phnV_2" target="group_5945" id="211">
@@ -5130,10 +5342,11 @@
           <attvalue for="11" value="217.46666666666667" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="8.009523" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="CBS domain membrane protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="CBS domain membrane protein" />
         </attvalues>
       </edge>
       <edge source="phnV_2" target="group_5360" id="212">
@@ -5147,10 +5360,11 @@
           <attvalue for="11" value="219.92857142857144" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="8.009523" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="DNA-directed RNA polymerase subunit beta" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="DNA-directed RNA polymerase subunit beta" />
         </attvalues>
       </edge>
       <edge source="phnV_2" target="group_4448" id="213">
@@ -5164,10 +5378,11 @@
           <attvalue for="11" value="182.94444444444449" />
           <attvalue for="12" value="16" />
           <attvalue for="13" value="9.309091" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="sortase family protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="sortase family protein" />
         </attvalues>
       </edge>
       <edge source="phnV_2" target="group_624" id="214">
@@ -5181,10 +5396,11 @@
           <attvalue for="11" value="114.20454545454544" />
           <attvalue for="12" value="17" />
           <attvalue for="13" value="9.810811" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="phosphoglycerate mutase family protein" />
-          <attvalue for="17" value="choline binding protein C" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="phosphoglycerate mutase family protein" />
+          <attvalue for="18" value="choline binding protein C" />
         </attvalues>
       </edge>
       <edge source="group_624" target="group_1314" id="215">
@@ -5198,10 +5414,11 @@
           <attvalue for="11" value="206.90243902439025" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="10.666667" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="permease" />
-          <attvalue for="17" value="choline binding protein C" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="permease" />
+          <attvalue for="18" value="choline binding protein C" />
         </attvalues>
       </edge>
       <edge source="group_1077" target="group_1296" id="216">
@@ -5215,10 +5432,11 @@
           <attvalue for="11" value="109.91666666666669" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="4.05618" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="translation factor" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="translation factor" />
         </attvalues>
       </edge>
       <edge source="group_1962" target="group_1314" id="217">
@@ -5232,10 +5450,11 @@
           <attvalue for="11" value="208.94117647058823" />
           <attvalue for="12" value="14" />
           <attvalue for="13" value="10.372549" />
-          <attvalue for="14" value="4" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="permease" />
-          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_4 ↔ state_0" />
+          <attvalue for="15" value="4" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="permease" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_5996" target="group_1296" id="218">
@@ -5249,10 +5468,11 @@
           <attvalue for="11" value="120.22222222222224" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="4.05618" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="ion transporter" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="ion transporter" />
         </attvalues>
       </edge>
       <edge source="group_5997" target="group_1296" id="219">
@@ -5266,10 +5486,11 @@
           <attvalue for="11" value="119.85714285714286" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="4.05618" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="cytotoxic translational repressor of toxin-antitoxin stability system" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="cytotoxic translational repressor of toxin-antitoxin stability system" />
         </attvalues>
       </edge>
       <edge source="group_1296" target="group_5414" id="220">
@@ -5283,10 +5504,11 @@
           <attvalue for="11" value="137.58823529411765" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="4.05618" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
           <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="Uncharacterised protein" />
         </attvalues>
       </edge>
       <edge source="group_1296" target="group_5993" id="221">
@@ -5300,10 +5522,11 @@
           <attvalue for="11" value="138.35294117647058" />
           <attvalue for="12" value="8" />
           <attvalue for="13" value="4.05618" />
-          <attvalue for="14" value="3" />
-          <attvalue for="15" value="0" />
-          <attvalue for="16" value="Uncharacterised protein" />
-          <attvalue for="17" value="chlorohydrolase" />
+          <attvalue for="14" value="state_3 ↔ state_0" />
+          <attvalue for="15" value="3" />
+          <attvalue for="16" value="0" />
+          <attvalue for="17" value="Uncharacterised protein" />
+          <attvalue for="18" value="chlorohydrolase" />
         </attvalues>
       </edge>
       <edge source="gyrB" target="aguA" id="222">
@@ -5317,10 +5540,11 @@
           <attvalue for="11" value="120.28571428571428" />
           <attvalue for="12" value="3" />
           <attvalue for="13" value="2.5789473" />
-          <attvalue for="14" value="17" />
-          <attvalue for="15" value="19" />
-          <attvalue for="16" value="DNA gyrase subunit B" />
-          <attvalue for="17" value="agmatine deiminase" />
+          <attvalue for="14" value="type_46 ↔ type_51" />
+          <attvalue for="15" value="17" />
+          <attvalue for="16" value="19" />
+          <attvalue for="17" value="DNA gyrase subunit B" />
+          <attvalue for="18" value="agmatine deiminase" />
         </attvalues>
       </edge>
     </edges>

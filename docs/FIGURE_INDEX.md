@@ -1,14 +1,11 @@
 # Figure index
 
-PNG, PDF and SVG versions are under `docs/assets/figures`.
+Result figures are available as PNG, PDF and SVG under `docs/assets/figures`.
+The mathematical definitions in the README and scientific narrative are the
+authoritative method overview.
 
 | figure | question | evidence |
 |---|---|---|
-| FIG01 | Why Cinch? | conceptual |
-| FIG02 | How are P/T states encoded? | conceptual |
-| FIG03 | How are association, recurrence and linkage separated? | conceptual |
-| FIG04 | Total MI versus driver cells? | illustrative contingency |
-| FIG05 | What is the frozen processing order? | conceptual |
 | FIG06 | How do mean MIraw curves and phylo/order/bp availability compare? | fixed-width-bin lead view + 3,955,078-pair audit |
 | FIG07 | What are channel-specific order envelopes? | frozen summaries |
 | FIG08 | Why HC69? | frozen HC scan |

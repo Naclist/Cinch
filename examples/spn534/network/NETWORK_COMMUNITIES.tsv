@@ -1,12 +1,12 @@
 community	nodes	edges	top_loci	top_annotations
-1	60	59	group_4266;group_3921;group_6134;group_1888	PTS system mannose-specific transporter subunit IIAB;putative flavoprotein;phage protein;zinc metalloprotease ZmpC
+1	60	59	group_4266;group_3921;group_3153;group_4466	PTS system mannose-specific transporter subunit IIAB;putative flavoprotein;Uncharacterised protein;GNAT family acetyltransferase
 2	47	80	group_1130;phnV_2;group_4441;group_2577	Uncharacterised protein;phosphoglycerate mutase family protein;histidine kinase;DNA-3-methyladenine glycosylase I
-3	31	40	group_4408;group_711;group_1296;group_5996	galactosyl transferase CpsE;HAD superfamily hydrolase protein;Uncharacterised protein;ion transporter
+3	31	40	group_4408;group_711;group_1296;group_1077	galactosyl transferase CpsE;HAD superfamily hydrolase protein;Uncharacterised protein;translation factor
 4	9	9	glf;folD;group_2416;group_860	capsular polysaccharide synthesis protein;FolD bifunctional protein; includes: methylenetetrahydrofolate dehydrogenase, methenyltetrahydrofolate cyclohydrolase;VncR, response regulator;Ser/Thr protein phosphatase family protein
-5	4	3	group_1393;group_3656;group_2605;group_5291	coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein;Uncharacterised protein;putative metal-binding, possibly nucleic acid-binding protein;ATP-dependent Clp protease, ATP-binding subunit ClpX
-6	3	2	yxlF;group_1482;group_5417	Uncharacterised protein;cell division protein FtsZ;major facilitator superfamily permease
-7	3	2	sorB;group_2751;group_4450	N-acetylgalactosamine-specific phosphotransferase EIIB;Uncharacterised protein;Uncharacterised protein
-8	2	1	group_1922;group_2348	Uncharacterised protein;Uncharacterised protein
+5	4	3	group_1393;group_3656;group_5291;group_2605	coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase-like protein;Uncharacterised protein;ATP-dependent Clp protease, ATP-binding subunit ClpX;putative metal-binding, possibly nucleic acid-binding protein
+6	3	2	yxlF;group_5417;group_1482	Uncharacterised protein;major facilitator superfamily permease;cell division protein FtsZ
+7	3	2	sorB;group_4450;group_2751	N-acetylgalactosamine-specific phosphotransferase EIIB;Uncharacterised protein;Uncharacterised protein
+8	2	1	group_2348;group_1922	Uncharacterised protein;Uncharacterised protein
 9	2	1	pyrF;celD	orotidine-5-phosphate decarboxylase;Uncharacterised protein
 10	2	1	mutX_1;thrB_2	MutT/nudix family protein;choline binding protein J
 11	2	1	group_1349;group_2492	GntR family transcriptional regulator;lactose-specific phosphotransferase EIIA
