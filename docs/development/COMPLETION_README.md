@@ -27,9 +27,12 @@
 | M05 | Blockwise four-channel engine | TESTED | exact A/B, sparse distance, real locus/sample ladders, 2.32× prescreen and up to 3.24× compiled-engine gains | association core scaling and full 25K pair run |
 | M06 | Advanced statistics | TESTED | SHC/ARACNE/Diff-GWES kernels plus PP SHC/BH/ARACNE workflow | workflow-scale profile |
 | M07 | Staged CLI/end-to-end workflow | VALIDATED | 12 public SPN534 assemblies, real FASTA E2E, stage timings and reports | none within M07; production acceptance remains M08 |
-| M08 | Production acceptance | BLOCKED | target workload recorded | data and HPC execution |
+| M08 | Production acceptance | DEFERRED | target workload recorded | user-owned data and HPC execution |
+| P2 | Population/habitat conditional association | VALIDATED | four channels, overlap, permutations, BH, CLI, Cases A-J | real study-specific habitat validation |
 
 [COMPUTED | HIGH] Predefined completion is `37/45 = 82.2%`; see `MASTER_PLAN.md`.
+
+[COMPUTED | HIGH] P2 is separately `16/16` at the controlled-method level. P0 25K-locus and P1 full-SPN534 acceptance are explicitly user-deferred and are not relabelled as validated.
 
 ## Scientific feature preservation
 
@@ -39,6 +42,7 @@
 | HC recurrence/Neff | `filtering.py` | unchanged frozen_v1 | baseline tested only |
 | Weighted MI/EpiDis/BH | dev2 `core/statistics.py` | `cinch/statistics` | zero max absolute difference over 10,000 random valid inputs; unified tests pass |
 | SHC permutation/ARACNE/Diff-GWES | dev2 frozen snapshots | kernels plus staged PP SHC/BH/ARACNE filter | PP workflow tested; Diff-GWES remains kernel-level |
+| Population/habitat conditional association | new extension with frozen Diff-GWES boundary | all-channel categorical kernels plus `conditional-associate` | Cases A-J and CLI E2E validated |
 | Indexed mapping/allele nomenclature | frozen mapper plus dev2 `Cinch_v8.py` | mappy/minimap2 index, deterministic hash-sorted alleles, atomic per-genome cache | controlled cases pass; historical uberBlast equivalence unresolved |
 
 ## Confirmed performance improvements
@@ -65,6 +69,8 @@
 - [KNOWN | HIGH] The 224-genome/25,000-reference production dataset is not present in this repository.
 - [KNOWN | HIGH] Full 312,487,500-pair execution has not been resource-estimated. The optional compiled scorer removes most Python contingency work locally, but output volume, high-cardinality cost, and parallel scaling remain blockers.
 
+[KNOWN | HIGH] The first two items are user-deferred P0/P1 acceptance work and do not block P2. P2 has no remaining implementation gate; its next scientific gate is validation on a real metadata-rich habitat study.
+
 ## Known scientific discrepancies
 
 - [KNOWN | HIGH] frozen_v1 MI is unweighted and four-channel; dev2 weighted MI is a separate binary formulation.
@@ -74,8 +80,9 @@
 
 ## Tests executed
 
-- [COMPUTED | HIGH] Unified branch: 45 passed on Python 3.12.14 with NumPy 2.3.5 and optional Numba 0.63.1.
+- [COMPUTED | HIGH] Unified branch: 60 passed in 2.74 s on Python 3.12.14 with optional Numba installed.
 - [COMPUTED | HIGH] CINCH-dev2 baseline: 7 passed on Python 3.12.14.
+- [COMPUTED | HIGH] P2 controlled suite: 15 passed, covering Cases A-J, metadata failure, all-channel CLI output, non-identifiability output, zero-margin driver support, permutation-invariant support selection, and stable empty audit schemas.
 
 ## Tests not executed
 
@@ -83,9 +90,9 @@
 
 ## Next three priority actions
 
-1. [KNOWN | HIGH] Extend the real SPN534 ladder beyond 48 samples and test association process/core scaling.
-2. [KNOWN | HIGH] Profile high-cardinality compiled contingency behavior and 25K-locus output/resource feasibility after the current kernel and distance gains.
-3. [KNOWN | HIGH] Execute full 534-genome/public-reference or historical-reference validation when the required reference/profile becomes available.
+1. [KNOWN | HIGH] Apply P2 to a real metadata-rich environmental/hospital dataset with justified within-population exchangeability.
+2. [KNOWN | HIGH] Predeclare the real candidate family, background contrast, support thresholds, and covariate strategy before inference.
+3. [KNOWN | HIGH] Leave P0 25K and P1 full-SPN534 acceptance to the user unless a specific defect is reported.
 
 ## Current recommended usage
 

@@ -13,6 +13,7 @@ from .workflow.profile import run_profile_conversion
 from .workflow.association import run_association
 from .workflow.advanced_filter import run_advanced_filter
 from .workflow.reporting import run_report
+from .workflow.conditional_association import run_conditional_association
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -58,6 +59,27 @@ def build_parser() -> argparse.ArgumentParser:
     report = sub.add_parser("report", help="render report-only outputs from a staged advanced-filter result")
     report.add_argument("--filter-results", required=True, type=Path)
     report.add_argument("-o", "--output", required=True, type=Path)
+    conditional = sub.add_parser(
+        "conditional-associate",
+        help="population- and categorical-background-conditioned PP/PT/TP/TT association",
+    )
+    conditional.add_argument("--profile", required=True, type=Path)
+    conditional.add_argument("--metadata", required=True, type=Path)
+    conditional.add_argument("--population-column", required=True)
+    conditional.add_argument("--background-column", required=True)
+    conditional.add_argument("--reference-background", required=True)
+    conditional.add_argument("--comparison-background", required=True)
+    conditional.add_argument("--channels", nargs="+", choices=list(("PP", "PT", "TP", "TT")),
+                             default=list(("PP", "PT", "TP", "TT")))
+    conditional.add_argument("--pairs", type=Path, help="optional locus-pair/channel candidate table")
+    conditional.add_argument("--permutations", type=int, default=999)
+    conditional.add_argument("--seed", type=int, default=42)
+    conditional.add_argument("--min-eligible-samples", type=int, default=20)
+    conditional.add_argument("--min-population-cell", type=int, default=4)
+    conditional.add_argument("--min-shared-populations", type=int, default=2)
+    conditional.add_argument("--min-background-samples", type=int, default=10)
+    conditional.add_argument("--min-state-count", type=int, default=1)
+    conditional.add_argument("-o", "--output", required=True, type=Path)
     wgs = sub.add_parser("wgs", help="build a complete unfiltered PP/PT/TP/TT dependency landscape from genomes")
     wgs.add_argument("genomes", nargs="+", type=Path, help="input genome FASTA files")
     wgs.add_argument("-r", "--reference", required=True, type=Path, help="reference CDS FASTA with unique locus IDs")
@@ -112,6 +134,21 @@ def main(argv: list[str] | None = None) -> int:
             )
         elif args.command == "report":
             output = run_report(args.filter_results, args.output)
+        elif args.command == "conditional-associate":
+            output = run_conditional_association(
+                args.profile, args.metadata, args.output,
+                population_column=args.population_column,
+                background_column=args.background_column,
+                reference_background=args.reference_background,
+                comparison_background=args.comparison_background,
+                channels=tuple(args.channels), pairs_path=args.pairs,
+                permutations=args.permutations, seed=args.seed,
+                minimum_eligible_samples=args.min_eligible_samples,
+                minimum_population_cell=args.min_population_cell,
+                minimum_shared_populations=args.min_shared_populations,
+                minimum_background_samples=args.min_background_samples,
+                minimum_state_count=args.min_state_count,
+            )
         elif args.command == "wgs":
             output = run_wgs(args.reference, args.genomes, args.prefix, args.threads, args.output,
                              args.phenotype, args.min_identity, args.min_informative,

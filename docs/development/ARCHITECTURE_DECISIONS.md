@@ -80,3 +80,18 @@
 - [COMPUTED | HIGH] Engineering review: the 48-genome map→associate→filter→report chain completes; 45 tests pass; three repeats per association engine are recorded.
 - [COMPUTED | HIGH] Integration review: the same staged schemas and SHC metadata scale from 12 to 48 genomes without an adapter or output-schema change.
 - [COMPUTED | HIGH] Scope review: the alternative reference, 99 permutations, single-core association, 400 loci, and absent historical profile prevent a frozen/full-scale claim; completion remains 37/45.
+
+## ADR-006: P2 standardized background estimand
+
+[KNOWN | HIGH] Habitat/background contrasts use common-support population weights proportional to the smaller background-specific sample count in each population with adequate samples in both backgrounds. State variation is diagnostic rather than an eligibility selector, keeping the tested support invariant under background-label permutation. Empirical habitat-specific population mixtures are reported diagnostically but are not compared as the differential estimand.
+
+## ADR-007: P2 randomization nulls
+
+[KNOWN | HIGH] Population-conditioned association permutes channel-valid `Y` states within population and uses a one-sided MI statistic. Differential association permutes categorical background labels within population, fixes observed common support/weights, and uses a two-sided absolute delta-MI statistic. Alleles are never coerced to binary for PT/TP/TT.
+
+## P2 four-review record
+
+- [COMPUTED | HIGH] Scientific review: global, population-conditioned, standardized background and frozen Diff-GWES estimands remain distinct; Cases A-J pass and perfect confounding is not identifiable.
+- [COMPUTED | HIGH] Engineering review: exact metadata QC, deterministic seeds, atomic outputs, complete tested/excluded audit and per-family BH are implemented; 15 P2 tests pass.
+- [COMPUTED | HIGH] Integration review: `conditional-associate` consumes PROFILE_V2 and candidate association tables and emits all eight required artifacts across PP/PT/TP/TT.
+- [KNOWN | HIGH] Scope review: categorical two-background inference is validated on controlled data; continuous metadata, multi-background omnibus tests and real habitat biology remain outside this P2 release.

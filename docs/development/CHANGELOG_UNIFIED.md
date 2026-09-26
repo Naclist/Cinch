@@ -66,3 +66,11 @@
 - [COMPUTED | HIGH] Added compiled sparse order/bp aggregation after profiling identified it as the dominant remaining association-stage cost.
 - [COMPUTED | HIGH] On nested 12/24/48-genome real subsets, compiled medians improved 2.71×/2.86×/3.24×; distance/non-floating outputs were exact and maximum floating difference was 2.22e-15.
 - [COMPUTED | HIGH] Completed the 48-genome map→associate→SHC/BH/ARACNE→report chain; association core scaling and 25K all-pair acceptance remain open.
+
+## 2026-09-27 — P2 population- and habitat-dependent association
+
+- [COMPUTED | HIGH] Added categorical global, population-conditioned, and common-support standardized background MI across PP/PT/TP/TT.
+- [COMPUTED | HIGH] Added exact metadata QC, population/background overlap diagnostics, non-identifiability statuses, population-preserving one-/two-sided permutations, complete hypothesis audits, and declared-family BH correction.
+- [COMPUTED | HIGH] Added `cinch conditional-associate` with the eight required outputs and optional candidate-pair input.
+- [COMPUTED | HIGH] Cases A-J pass, including multiallelic TT, separate PT/TP conditioning, missing/type ambiguity, unbalanced support, perfect confounding, and exact frozen Diff-GWES compatibility.
+- [KNOWN | HIGH] P0 25K and P1 full-SPN534 acceptance are now user-deferred; they are neither deleted nor relabelled as validated.

@@ -27,6 +27,8 @@
 | 2026-09-27 | public SPN534 ladder | nested 12/24/48 genomes × 400 alternative CDS; three repeats/engine | staged `associate` | 2.71×/2.86×/3.24× medians | exact distance/non-float outputs; max float difference 2.22e-15 |
 | 2026-09-27 | public SPN534 subset | 48 genomes × 400 alternative CDS | staged CLI | map→associate→advanced-filter→report completed | 48/48 FASTA and GFF3 historical SHA256 matches; alternative reference |
 | 2026-09-27 | unified current | Python 3.12.14, NumPy 2.3.5, Numba 0.63.1 | `pytest -q` | 45 passed in 2.45 s | full suite including pairwise-absent-state and compiled-distance regressions |
+| 2026-09-27 | P2 conditional association | deterministic controlled Cases A-J plus support/audit regressions | `pytest -q tests/test_conditional_association.py` | 15 passed in 1.31 s | population confounding, habitat coexistence/exclusion/null, overlap, TT/PT/TP, missingness, imbalance, non-identifiability CLI output, permutation-invariant support, stable audit schemas, legacy Diff-GWES |
+| 2026-09-27 | unified current with P2 | Python 3.12.14, optional Numba installed | `pytest -q` | 60 passed in 2.74 s | complete repository regression after P2 integration |
 
 ## Evidence limitations
 

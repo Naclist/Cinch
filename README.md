@@ -264,15 +264,34 @@ cinch associate \
   --profile mapped/profiles/PROFILE_V2.npz \
   --coordinates mapped/mapping/COORDINATES.tsv \
   -o associated-numba --block-pairs 100000 --engine numba
+
+cinch conditional-associate \
+  --profile mapped/profiles/PROFILE_V2.npz \
+  --metadata sample_metadata.tsv \
+  --population-column tree_shc \
+  --background-column habitat \
+  --reference-background soil \
+  --comparison-background hospital \
+  --channels PP PT TP TT \
+  --permutations 999 --seed 42 \
+  -o conditional_results
 ```
 
 `map` caches each indexed genome independently. `profile` refuses to guess whether
 legacy non-calls mean absence or unresolved. `associate` preserves frozen
 PP/PT/TP/TT semantics and writes atomic resumable blocks. `--engine numba` is an
 optional tolerance-equivalent compiled scorer; the default remains Python. This
-staged path is not yet a production replacement: categorical advanced testing and
-production-scale pair throughput are still incomplete. See [`docs/STAGED_WORKFLOW.md`](docs/STAGED_WORKFLOW.md)
+staged path is not yet a production replacement: all-channel categorical
+population/background testing is implemented, while production-scale pair throughput
+and full frozen-reference acceptance remain incomplete. See [`docs/STAGED_WORKFLOW.md`](docs/STAGED_WORKFLOW.md)
 and [`docs/development/COMPLETION_README.md`](docs/development/COMPLETION_README.md).
+
+The conditional workflow accepts categorical backgrounds only. It uses a common
+population-support distribution for both backgrounds and reports
+`NOT_IDENTIFIABLE` when population/background overlap is insufficient. Its
+results are context-dependent statistical associations, not proof of epistasis,
+adaptation, fitness interaction or causality. See
+[`docs/CONDITIONAL_ASSOCIATION.md`](docs/CONDITIONAL_ASSOCIATION.md).
 
 ## Repository map and boundaries
 
@@ -282,7 +301,7 @@ and [`docs/development/COMPLETION_README.md`](docs/development/COMPLETION_README
 | [`cinch/mapping`](cinch/mapping) | indexed genome mapper, deterministic alleles and per-genome cache |
 | [`cinch/profiles`](cinch/profiles) | explicit presence/type schema and legacy adapters |
 | [`cinch/association`](cinch/association) | bounded four-channel blocks and high-order kernels |
-| [`cinch/population`](cinch/population) | SHC-conditioned MI and permutation kernels |
+| [`cinch/population`](cinch/population) | SHC and categorical population/background MI and permutation kernels |
 | [`cinch/network`](cinch/network) | ARACNE triangle pruning |
 | [`docs/SCIENTIFIC_NARRATIVE.md`](docs/SCIENTIFIC_NARRATIVE.md) | full mathematical/scientific walkthrough |
 | [`docs/FIGURE_INDEX.md`](docs/FIGURE_INDEX.md) | result figures and exact evidence source |

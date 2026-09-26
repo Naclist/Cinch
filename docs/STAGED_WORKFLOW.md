@@ -51,6 +51,17 @@ cinch advanced-filter \
   -o filtered --permutations 999
 
 cinch report --filter-results filtered -o report
+
+cinch conditional-associate \
+  --profile mapped/profiles/PROFILE_V2.npz \
+  --metadata sample_metadata.tsv \
+  --population-column tree_shc \
+  --background-column habitat \
+  --reference-background soil \
+  --comparison-background hospital \
+  --channels PP PT TP TT \
+  --permutations 999 --seed 42 \
+  -o conditional_results
 ```
 
 [KNOWN | HIGH] The frozen `cinch wgs` and `cinch filter` commands remain available and unchanged. The current `filter` consumes a complete frozen WGS result, not staged block output.
@@ -62,5 +73,7 @@ cinch report --filter-results filtered -o report
 ## Incomplete stage graph
 
 [KNOWN | HIGH] `advanced-filter` applies the preserved binary SHC permutation, BH correction, and ARACNE only to PP edges. It does not misapply the binary test to PT/TP/TT categorical states. `report` is read-only with respect to statistical results.
+
+[KNOWN | HIGH] `conditional-associate` is a separate all-channel workflow. It computes global MI, empirical population-conditioned MI, and common-support standardized background MI. It tests residual population-conditioned association by permuting `Y` within population and tests differential association by permuting categorical background labels within population. It never routes PT/TP/TT through the PP binary kernel.
 
 [KNOWN | HIGH] Pair/channel scoring still enumerates the full hypothesis universe. Optional compiled scoring/distance aggregation reduces local cost, and nested 12/24/48-genome public SPN534 real-FASTA runs pass, but association core scaling, the historical reference, full 534-genome validation, and 25K all-pair acceptance remain pending. Therefore the staged workflow is not yet the production replacement for frozen `cinch wgs`/`filter`.

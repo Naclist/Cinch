@@ -18,13 +18,16 @@
 | M05 | Implement bounded-memory PP/PT/TP/TT pair engine | frozen channel semantics; dev2 kernels | blockwise pair engine; necessary-state prescreen; optional compiled scorer/distance aggregation; restartable output; sparse distances | M04 | exact/tolerance-bounded equality for metrics/drivers/distances | real 50–400-locus and 12–48-sample ladders complete; core scaling and 25K pairs pending | TESTED | exact distance/non-float A/B; up to 3.24× compiled gain at 400 loci; `ASSOCIATION_BLOCKS.md` |
 | M06 | Integrate population and advanced statistics | HC/Neff; weighting; SHC; BH; ARACNE; Diff-GWES | separate named methods and workflows | M05 | zero-difference kernel migration and controlled PP workflow | kernels profiled; workflow-scale profile absent | TESTED | 37-test suite; cross-source comparison; staged SHC/BH/ARACNE test |
 | M07 | Expose staged `cinch` workflow and unified schemas | all prior modules | `map`, `profile`, `associate`, `filter`, `report`, `wgs` | M03-M06 | controlled and public SPN534-subset E2E pass with explicit reference boundary | real stage timing plus mapping/association resume evidence | VALIDATED | 45 tests; public 12- and 48-genome E2E; staged reports |
-| M08 | Production acceptance at 224 genomes × 25,000 loci | production inputs or approved equivalent | benchmark report and release decision | M07 | mandatory gates in assignment satisfied | actual wall time, CPU, RSS and throughput | BLOCKED | production dataset and HPC run not yet supplied/executed |
+| M08 | Production acceptance at 224 genomes × 25,000 loci | production inputs or approved equivalent | benchmark report and release decision | M07 | mandatory gates in assignment satisfied | actual wall time, CPU, RSS and throughput | DEFERRED | user explicitly owns P0/P1 large-scale acceptance |
+| P2 | Population- and habitat-dependent four-channel association | PROFILE_V2; categorical metadata; frozen Diff-GWES | `conditional-associate`; audited estimands/permutations/FDR | M04/M06/M07 | Cases A-J and CLI E2E; non-identifiability enforced | controlled workflow execution | VALIDATED | `P2_CONDITIONAL_ASSOCIATION_STATUS.md`; 15 P2 tests |
 
 ## Predefined completion calculation
 
 [KNOWN | HIGH] Each milestone has five equal gates: implementation, engineering tests, scientific validation, performance evidence, and documentation. Project completion is `satisfied gates / 45`; blocked or deferred gates count as unsatisfied. No subjective weighting is permitted.
 
 [COMPUTED | HIGH] M00-M02, M04, and M07 satisfy twenty-five gates. M03 and M05 each satisfy four gates. M06 satisfies four gates but lacks workflow-scale performance evidence. M08 satisfies zero gates. Overall completion is therefore `37/45 = 82.2%`.
+
+[KNOWN | HIGH] The historical 45-gate integration score is retained for audit continuity. P0 25K and P1 full-SPN534 acceptance are user-deferred, not validated. P2 is tracked separately and reaches `16/16` controlled scientific/engineering gates without borrowing credit from P0/P1.
 
 ## M03 mapping-semantics checkpoint
 

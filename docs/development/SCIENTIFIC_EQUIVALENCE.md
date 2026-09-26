@@ -12,6 +12,10 @@
 | SHC conditional permutation | dev2 snapshot | extracted module with same exchangeability and RNG | exact kernels; workflow output pending | 100 seeded datasets + synthetic strata | exact p, `1e-12` CMI | kernel max abs diff `0`; seeded test passes | TESTED |
 | ARACNE | dev2 snapshot | adjacency-triangle implementation | identical deleted edge set including ties | hand triangles + cross-source frame | exact | exact frame equality | TESTED |
 | Diff-GWES | dev2 snapshot | optional high-order module | exact statistic; full candidate workflow pending | 100 seeded datasets + modifier hand case | `1e-12` statistic | kernel max abs diff `0`; EpiDis identity passes | TESTED |
+| frozen Diff-GWES background statistic | preserved dev2 snapshot | `cinch.association.high_order.background_stat` | exact dictionary result | controlled 120-sample binary input | exact | exact equality | VALIDATED |
+| population-conditioned categorical MI | new P2 estimand | `cinch.population.population_conditioned_mi` | mathematical/controlled reference | population-only confounding case | `1e-12` | within-population MI `0` under exact construction | VALIDATED |
+| standardized habitat delta MI | new P2 estimand | common-support population standardization | planted direction/null and non-identifiability | Cases B-F/I | `1e-12` for exact designs | expected direction/null recovered | VALIDATED |
+| categorical P2 permutation | new P2 null | Y-within-population and background-within-population | deterministic and support preserving | Cases A-D/I | exact seed reproducibility | controlled assertions pass | VALIDATED |
 
 ## Non-equivalences that must remain explicit
 
