@@ -9,7 +9,7 @@ from pathlib import Path
 import pandas as pd
 
 from cinch.association import write_association_blocks
-from cinch.frozen_v1.mapping import pair_order_distance
+from cinch.distance import SparseOrderDistance
 from cinch.profiles import load_profile
 
 
@@ -34,11 +34,9 @@ def run_association(
     output.mkdir(parents=True, exist_ok=True)
     profile = load_profile(profile_path)
     coordinates = _read_coordinates(coordinates_path)
-    distances = pair_order_distance(coordinates, len(profile.loci), minimum_order_observations)
-    distances.insert(2, "locus_A", profile.loci[distances.i.to_numpy(int)])
-    distances.insert(3, "locus_B", profile.loci[distances.j.to_numpy(int)])
-    distance_path = output / "DISTANCES.parquet"
-    distances.to_parquet(distance_path, index=False)
+    distances = SparseOrderDistance(coordinates, len(profile.loci), minimum_order_observations)
+    distance_path = output / "OBSERVED_PHYSICAL_DISTANCES.parquet"
+    distances.observed_frame(profile.loci).to_parquet(distance_path, index=False)
     manifest = write_association_blocks(
         profile, distances, output / "association",
         minimum_informative=minimum_informative,

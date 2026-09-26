@@ -25,6 +25,17 @@ from cinch.profiles import StateProfile
 from .blocks import PairBlock, iter_pair_blocks
 
 
+class _FrameDistanceLookup:
+    def __init__(self, distances: pd.DataFrame):
+        self.values = _distance_lookup(distances)
+
+    def get_pair(self, left: int, right: int) -> dict:
+        try:
+            return self.values[(left, right)]
+        except KeyError as error:
+            raise ValueError(f"missing distance row for pair {(left, right)}") from error
+
+
 def _distance_lookup(distances: pd.DataFrame) -> dict[tuple[int, int], dict]:
     required = {"i", "j"}
     if not required.issubset(distances.columns):
@@ -41,21 +52,26 @@ def _distance_lookup(distances: pd.DataFrame) -> dict[tuple[int, int], dict]:
     return lookup
 
 
+def _distance_source(distances):
+    if hasattr(distances, "get_pair"):
+        return distances
+    if isinstance(distances, pd.DataFrame):
+        return _FrameDistanceLookup(distances)
+    raise TypeError("distances must be a DataFrame or expose get_pair(i, j)")
+
+
 def _score_block(
     block: PairBlock,
     presence: np.ndarray,
     pooled_types: np.ndarray,
     loci: np.ndarray,
-    distances: dict[tuple[int, int], dict],
+    distances,
     minimum_informative: int,
     minimum_state_count: int,
 ) -> dict[str, pd.DataFrame]:
     outputs: dict[str, list[dict]] = {channel: [] for channel in CHANNELS}
     for left, right in block.pairs:
-        try:
-            distance = distances[(left, right)]
-        except KeyError as error:
-            raise ValueError(f"missing distance row for pair {(left, right)}") from error
+        distance = distances.get_pair(left, right)
         for channel in CHANNELS:
             x, y = channel_vectors(presence, pooled_types, left, right, channel)
             metrics = contingency(x, y)
@@ -95,7 +111,7 @@ def iter_scored_blocks(
     """Return a lazy block iterator and the once-computed rare-state audit."""
 
     pooled_types, rare_audit = pool_rare_states(profile.types, minimum_state_count)
-    lookup = _distance_lookup(distances)
+    lookup = _distance_source(distances)
 
     def generate() -> Iterator[tuple[PairBlock, dict[str, pd.DataFrame]]]:
         for block in iter_pair_blocks(len(profile.loci), block_pairs):
@@ -107,17 +123,22 @@ def iter_scored_blocks(
     return generate(), pd.DataFrame(rare_audit)
 
 
-def _input_digest(profile: StateProfile, distances: pd.DataFrame, configuration: dict) -> str:
+def _input_digest(profile: StateProfile, distances, configuration: dict) -> str:
     digest = hashlib.sha256()
     for array in (profile.samples, profile.loci, profile.presence, profile.types):
         contiguous = np.ascontiguousarray(array)
         digest.update(str(contiguous.dtype).encode())
         digest.update(str(contiguous.shape).encode())
         digest.update(contiguous.tobytes())
-    canonical = distances.sort_values(["i", "j"], kind="mergesort").reset_index(drop=True)
-    digest.update(json.dumps(canonical.columns.tolist()).encode())
-    digest.update(json.dumps([str(dtype) for dtype in canonical.dtypes]).encode())
-    digest.update(pd.util.hash_pandas_object(canonical, index=True).to_numpy().tobytes())
+    if hasattr(distances, "digest"):
+        digest.update(str(distances.digest()).encode())
+    elif isinstance(distances, pd.DataFrame):
+        canonical = distances.sort_values(["i", "j"], kind="mergesort").reset_index(drop=True)
+        digest.update(json.dumps(canonical.columns.tolist()).encode())
+        digest.update(json.dumps([str(dtype) for dtype in canonical.dtypes]).encode())
+        digest.update(pd.util.hash_pandas_object(canonical, index=True).to_numpy().tobytes())
+    else:
+        raise TypeError("distance source requires a stable digest")
     digest.update(json.dumps(configuration, sort_keys=True).encode())
     return digest.hexdigest()
 
@@ -175,7 +196,7 @@ def write_association_blocks(
         }, manifest_path)
     pooled_types, rare_rows = pool_rare_states(profile.types, minimum_state_count)
     rare_audit = pd.DataFrame(rare_rows)
-    lookup = _distance_lookup(distances)
+    lookup = _distance_source(distances)
     _write_parquet_atomic(rare_audit, output_directory / "RARE_STATE_AUDIT.parquet")
     completed, resumed, row_counts = 0, 0, {channel: 0 for channel in CHANNELS}
     for block in iter_pair_blocks(len(profile.loci), block_pairs):

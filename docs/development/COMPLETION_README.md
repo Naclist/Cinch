@@ -24,7 +24,7 @@
 | M02 | Unified exact statistical API | VALIDATED | 17 tests; zero dev2 diff; measured microbenchmark | extend later with categorical kernels |
 | M03 | Mapper backends and resumability | TESTED | 24-test suite; mapper benchmark; preserved `Cinch_v8.py` | legacy uberBlast equivalence and representative biological validation |
 | M04 | Unified profile/state model | VALIDATED | explicit schema, legacy policy adapter, frozen/V2 round trips | none |
-| M05 | Blockwise four-channel engine | TESTED | exact frozen A/B, atomic resume, controlled memory benchmark | streaming distances and scaling ladder |
+| M05 | Blockwise four-channel engine | TESTED | exact frozen A/B, sparse distance, atomic resume, memory benchmark | n/p/core scaling ladder |
 | M06 | Advanced statistics | TESTED | SHC/ARACNE/Diff-GWES kernels, zero-difference migration, timing | staged workflow and workflow-scale profile |
 | M07 | Staged CLI/end-to-end workflow | IN_PROGRESS | map/profile/associate controlled E2E and resume | advanced filter/report and representative E2E |
 | M08 | Production acceptance | BLOCKED | target workload recorded | data and HPC execution |
@@ -57,7 +57,7 @@
 
 - [KNOWN | HIGH] `uberBlast` and `configure` redistribution/installability are unresolved.
 - [KNOWN | HIGH] The 224-genome/25,000-reference production dataset is not present in this repository.
-- [KNOWN | HIGH] Full 312,487,500-pair execution has not been resource-estimated; the block engine exists, but distance materialization and per-pair Python scoring remain scaling blockers.
+- [KNOWN | HIGH] Full 312,487,500-pair execution has not been resource-estimated; sparse distance and block output exist, but per-pair/channel Python scoring remains a runtime blocker.
 
 ## Known scientific discrepancies
 
@@ -68,7 +68,7 @@
 
 ## Tests executed
 
-- [COMPUTED | HIGH] Unified branch: 35 passed on Python 3.12.14.
+- [COMPUTED | HIGH] Unified branch: 36 passed on Python 3.12.14.
 - [COMPUTED | HIGH] CINCH-dev2 baseline: 7 passed on Python 3.12.14.
 
 ## Tests not executed
@@ -77,8 +77,8 @@
 
 ## Next three priority actions
 
-1. [KNOWN | HIGH] Replace the O(p²) distance DataFrame/lookup with blockwise coordinate-distance production.
-2. [KNOWN | HIGH] Run the pair-engine n/p/block-size scaling ladder and profile the contingency loop.
+1. [KNOWN | HIGH] Run the pair-engine n/p/block-size scaling ladder and profile the contingency loop.
+2. [KNOWN | HIGH] Replace the per-pair Python contingency loop only after profiler attribution.
 3. [KNOWN | HIGH] Complete staged SHC/BH/ARACNE filtering and report-only commands.
 
 ## Current recommended usage

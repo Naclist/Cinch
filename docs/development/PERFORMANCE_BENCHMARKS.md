@@ -10,6 +10,7 @@
 |---|---|---|---|
 | frozen mapper threading | source inspection of `map_genomes`/`run_wgs` | serial; thread count recorded only | no claimed parallel speedup |
 | frozen coordinate distance | source inspection | Python pair enumeration plus dense row for every pair | O(p²) rows and unsuitable at 25K |
+| unified physical distance | controlled frozen comparison | sparse observed-pair source with exact reliable order/bp values | no dense missing-pair table; production memory unmeasured |
 | frozen association | source inspection | nested Python pairs × four channels × DataFrame distance lookup | principal architectural risk |
 | dev2 Numba kernels | source inspection and source tests | compiled triangular kernels exist in frozen scripts | candidate architecture; not unified benchmark evidence |
 | unified weighted MI | 1,000,000 valid binary mass triplets, five repeats | best 0.083142542 s; 12,027,537 pairs/s | isolated vectorized kernel only; excludes state construction and I/O |
@@ -27,7 +28,7 @@
 | 3 | moderate subset | scaling and resume | NOT_STARTED |
 | 4 | full reference, limited genomes | mapper/index memory | NOT_STARTED |
 | 5 | 224 genomes × 25K reference | mapping wall/CPU/RSS | BLOCKED: inputs absent |
-| 6 | full pairwise workflow | pairs/s, wall/CPU/RSS/disk | BLOCKED: streaming distance provider absent and resources unestimated |
+| 6 | full pairwise workflow | pairs/s, wall/CPU/RSS/disk | BLOCKED: Python scoring throughput and resources unestimated |
 
 ## Optimization decision log ODL-001
 

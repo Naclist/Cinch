@@ -18,6 +18,10 @@
 
 [KNOWN | HIGH] This benchmark excludes Parquet I/O and native allocations invisible to `tracemalloc`. It proves bounded Python result accumulation, not 25K-locus readiness.
 
-## Remaining scaling defect
+## Sparse physical-distance source
 
-[KNOWN | HIGH] The current API still receives a materialized all-pair distance DataFrame and builds a keyed lookup, both O(p²). A streaming/block distance provider must replace this before the full 25,000-locus target can pass its memory gate.
+[KNOWN | HIGH] Staged association uses `SparseOrderDistance`, which stores only locus pairs observed on at least one same-sample contig. Unobserved pairs are generated lazily as `NO_SAME_CONTIG_OBSERVATION`; observed pairs below the reliability count remain distinct as `INSUFFICIENT_SAME_CONTIG_OBSERVATIONS`.
+
+[COMPUTED | HIGH] Controlled tests show exact order/bp equality with frozen_v1 for reliable pairs. The full pair hypothesis universe is unchanged; sparse storage changes representation only.
+
+[KNOWN | HIGH] Per-pair/channel contingency construction remains a Python loop, so the 25,000-locus runtime gate is still open.

@@ -41,4 +41,4 @@ cinch associate \
 
 ## Incomplete stage graph
 
-[KNOWN | HIGH] A staged advanced-filter command and a report-only command are not implemented. The staged association path still materializes an O(p²) distance table. Therefore the staged workflow is an integration preview, not the production replacement for frozen `cinch wgs`/`filter`.
+[KNOWN | HIGH] A staged advanced-filter command and a report-only command are not implemented. Staged association stores only observed same-contig physical relationships, but pair/channel scoring still enumerates the full hypothesis universe in Python. Therefore the staged workflow is an integration preview, not the production replacement for frozen `cinch wgs`/`filter`.
