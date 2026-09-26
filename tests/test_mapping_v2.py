@@ -77,6 +77,17 @@ def test_indexed_mapper_exact_snp_reverse_indel_and_no_hit(tmp_path: Path):
     assert calls["absent"].callability_reason == "UNRESOLVED_NO_HIT"
 
 
+def test_no_hit_can_be_explicitly_classified_as_absence(tmp_path: Path):
+    ref = tmp_path / "ref.fasta"
+    genome = tmp_path / "sample.fasta"
+    write_fasta(ref, [("absent", sequence(101))])
+    write_fasta(genome, [("unrelated", sequence(102))])
+    explicit = MappingConfig(**(config().to_dict() | {"no_hit_policy": "absence"}))
+    result, _ = map_one_genome(ref, genome, tmp_path / "cache", tmp_path / "indexes", explicit)
+    assert result.calls[0].presence_state == 0
+    assert result.calls[0].callability_reason == "CONFIDENT_ABSENCE_BY_POLICY"
+
+
 def test_indexed_mapper_marks_multicopy_and_partial_states(tmp_path: Path):
     full = sequence(10)
     partial = sequence(11)

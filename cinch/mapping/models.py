@@ -17,6 +17,7 @@ class MappingConfig:
     minimum_chain_score: int = 20
     minimum_dp_score: int = 20
     competition_score_ratio: float = 0.99
+    no_hit_policy: str = "unresolved"
     backend: str = "mappy"
     schema_version: str = "CINCH_MAPPING_V2"
 
@@ -31,6 +32,8 @@ class MappingConfig:
             raise ValueError("competition_score_ratio must be in (0, 1]")
         if self.best_n < 1 or self.kmer_size < 7 or self.minimizer_window < 1:
             raise ValueError("invalid mapper search parameters")
+        if self.no_hit_policy not in {"unresolved", "absence"}:
+            raise ValueError("no_hit_policy must be 'unresolved' or 'absence'")
 
     def to_dict(self) -> dict:
         return asdict(self)

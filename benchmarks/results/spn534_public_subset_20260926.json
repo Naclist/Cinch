@@ -1,0 +1,42 @@
+{
+  "scope": "public SPN534 real-genome engineering validation; nonhistorical reconstructed CDS reference",
+  "datasets_cli_version": "18.37.0",
+  "assemblies": 12,
+  "selection": "one fold A and one fold B assembly from each tree SHC 1-6",
+  "provenance": {
+    "genome_fasta_historical_sha256_matches": 12,
+    "gff3_historical_sha256_matches": 12,
+    "mismatches": 0,
+    "download_zip_sha256": "5fd3cd9ec50f5330270da6acb416a6215c77d4dbb818204e91e989e1efa85b02",
+    "historical_reference_allele_fasta_available": false,
+    "alternative_reference_source": "GCF_900037015.1 NCBI cds_from_genomic.fna",
+    "alternative_reference_200cds_sha256": "892157733771bff667380a015f71a089e83f931c0b3c3c7900f332de4f6f52b3"
+  },
+  "real_genome_ladder": [
+    {"loci": 50, "pairs": 1225, "map_wall_s": 2.56, "map_user_s": 6.47, "map_sys_s": 0.76, "map_max_rss_bytes": 303906816, "associate_wall_s": 1.18, "associate_user_s": 1.08, "associate_sys_s": 0.08, "associate_max_rss_bytes": 222019584},
+    {"loci": 100, "pairs": 4950, "map_wall_s": 2.66, "map_user_s": 6.86, "map_sys_s": 0.76, "map_max_rss_bytes": 309821440, "associate_wall_s": 1.78, "associate_user_s": 1.68, "associate_sys_s": 0.08, "associate_max_rss_bytes": 229900288},
+    {"loci": 200, "pairs": 19900, "map_wall_s": 2.88, "map_user_s": 7.67, "map_sys_s": 0.76, "map_max_rss_bytes": 307691520, "associate_wall_s": 4.23, "associate_user_s": 4.11, "associate_sys_s": 0.11, "associate_max_rss_bytes": 253198336, "prescreen_associate_wall_s": 2.41, "prescreen_speedup": 1.7552},
+    {"loci": 400, "pairs": 79800, "map_wall_s": 3.83, "map_user_s": 10.00, "map_sys_s": 0.94, "map_max_rss_bytes": 311508992, "associate_wall_s": 13.80, "associate_user_s": 13.55, "associate_sys_s": 0.22, "associate_max_rss_bytes": 314556416, "prescreen_associate_wall_s": 5.95, "prescreen_speedup": 2.3193}
+  ],
+  "e2e_200_loci": {
+    "eligible_rows": {"PP": 120, "PT": 1393, "TP": 1415, "TT": 16048},
+    "advanced_filter_wall_s": 1.03,
+    "report_wall_s": 1.22,
+    "pp_candidates": 120,
+    "shc_permutation_eligible": 4,
+    "bh_significant": 0,
+    "aracne_direct": 0,
+    "permutations": 99
+  },
+  "synthetic_25k_mapper": {
+    "scope": "engineering stress only",
+    "genomes": 1,
+    "loci": 25000,
+    "length_nt": 150,
+    "wall_s": 17.86,
+    "kernel_s": 16.894257208012277,
+    "queries_per_second": 1479.792789477805,
+    "max_rss_bytes": 302399488,
+    "callable": 25000
+  }
+}

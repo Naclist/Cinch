@@ -59,3 +59,10 @@
 - [COMPUTED | HIGH] Engineering review: deterministic edge-derived RNG seeds, aligned sample checks, input hashes, atomic outputs, and report artifacts pass the 37-test suite.
 - [COMPUTED | HIGH] Integration review: `advanced-filter` consumes association blocks/profile/SHC/weights and `report` consumes immutable filter outputs; frozen `filter` is unchanged.
 - [COMPUTED | HIGH] Scope review: public SPN534 real-genome E2E now outranks further local workflow embellishment.
+
+## Public SPN534 and scaling review
+
+- [COMPUTED | HIGH] Scientific review: real FASTA provenance is exact for the selected assemblies; the alternative CDS reference and absence policy are explicit; frozen full-result reproduction is not claimed.
+- [COMPUTED | HIGH] Engineering review: all five staged operations complete; 39 tests pass; real 400-locus optimized outputs are exactly equal to the pre-prescreen outputs.
+- [COMPUTED | HIGH] Integration review: SPN sample IDs align to committed SHC metadata, and mapper state semantics feed every downstream channel and PP-only SHC workflow without adapters outside the repository.
+- [COMPUTED | HIGH] Scope review: per-pair Python channel dispatch remains the largest measured bottleneck; the rejected dense-code contingency experiment improved only 1.9% and is not retained.

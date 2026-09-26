@@ -18,15 +18,19 @@
 | unified pair blocks | 224 samples × 80 loci; 3,160 pairs; four channels | 3.171 s and 2.99 MB traced peak versus frozen 3.212 s and 20.27 MB | exact row counts; 85.2% lower traced Python peak; I/O excluded |
 | SHC permutation kernel | 1,000 samples; 20 SHCs; 199 permutations; one edge | 0.07095 s; 2,805 permutations/s | single run; excludes edge scheduling and I/O |
 | sparse ARACNE | 500 nodes; 1,000 edges | 0.01542 s; 64,831 input edges/s | adjacency-triangle kernel; single run |
+| public SPN map ladder | 12 real genomes × 50/100/200/400 alternative CDS | 2.56/2.66/2.88/3.83 s wall | four workers; includes process/import/index/output overhead |
+| public SPN association ladder | 12 real genomes × 50/100/200/400 loci | 1.18/1.78/4.23/13.80 s wall | full PP/PT/TP/TT, before necessary-state prescreen |
+| necessary-state prescreen | 12 real genomes × 200/400 loci | 4.23→2.41 s and 13.80→5.95 s | exact outputs; 1.76×/2.32× |
+| 25K synthetic mapper | 1 synthetic genome × 25,000 150-nt loci | 17.86 s wall; 302.4 MB RSS; 1,480 queries/s | engineering stress only |
 
 ## Benchmark ladder
 
 | Level | Workload | Required measures | Status |
 |---|---|---|---|
 | 1 | synthetic correctness cases | wall, RSS, equality | COMPLETE: mapping controlled cases and exact pair A/B pass |
-| 2 | small representative genomes/reference | mapping and pair throughput | PARTIAL: synthetic mapper throughput measured; representative genomes absent |
+| 2 | small representative genomes/reference | mapping and pair throughput | COMPLETE: 12 public SPN genomes, 50–400 CDS |
 | 3 | moderate subset | scaling and resume | NOT_STARTED |
-| 4 | full reference, limited genomes | mapper/index memory | NOT_STARTED |
+| 4 | full reference, limited genomes | mapper/index memory | PARTIAL: synthetic 25K × 1; biological 25K reference absent |
 | 5 | 224 genomes × 25K reference | mapping wall/CPU/RSS | BLOCKED: inputs absent |
 | 6 | full pairwise workflow | pairs/s, wall/CPU/RSS/disk | BLOCKED: Python scoring throughput and resources unestimated |
 

@@ -129,6 +129,14 @@ def run_advanced_filter(
             })
         records.append(record)
     results = pd.DataFrame(records)
+    defaults = {
+        "eligible_for_permutation": pd.Series(dtype=bool),
+        "conditional_mi_zscore": pd.Series(dtype=float),
+        "phylo_perm_p": pd.Series(dtype=float),
+    }
+    for column, empty in defaults.items():
+        if column not in results:
+            results[column] = empty
     results["phylo_perm_q"] = np.nan
     eligible = results.eligible_for_permutation.astype(bool) if len(results) else pd.Series(dtype=bool)
     if eligible.any():

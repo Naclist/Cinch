@@ -49,3 +49,11 @@
 - [COMPUTED | HIGH] Added deterministic PP-only SHC permutation, BH correction, ARACNE pruning, hashed provenance, and atomic outputs.
 - [COMPUTED | HIGH] Added a report-only stage with tabular summary and SHC diagnostic figures.
 - [KNOWN | HIGH] Binary SHC permutation was not generalized to categorical PT/TP/TT states without a validated statistical definition.
+
+## 2026-09-26 — Public SPN534 real-genome validation
+
+- [COMPUTED | HIGH] Downloaded 12 versioned SPN534 RefSeq assemblies spanning tree SHC 1–6 and folds A/B; all genome FASTA and GFF3 checksums match historical provenance.
+- [COMPUTED | HIGH] Added explicit mapper no-hit policy so PP absence assumptions cannot be introduced silently.
+- [COMPUTED | HIGH] Completed map→profile output→associate→SHC/BH/ARACNE→report on real FASTA using a documented alternative NCBI CDS reference.
+- [COMPUTED | HIGH] Added a 50/100/200/400-locus real-data ladder and a 25K-locus synthetic mapper stress test.
+- [COMPUTED | HIGH] Added necessary global-state prescreening; real 400-locus association improved 2.32× with exact all-channel outputs.

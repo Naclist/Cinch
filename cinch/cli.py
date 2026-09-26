@@ -28,6 +28,8 @@ def build_parser() -> argparse.ArgumentParser:
     mapping.add_argument("--detection-coverage", type=float, default=.60)
     mapping.add_argument("--callable-coverage", type=float, default=.95)
     mapping.add_argument("--min-mapq", type=int, default=0)
+    mapping.add_argument("--no-hit-policy", choices=["unresolved", "absence"], default="unresolved",
+                         help="interpret zero alignment hits explicitly; absence enables PP but assumes adequate assembly/search sensitivity")
     profile = sub.add_parser("profile", help="convert a legacy allele table using an explicit missingness policy")
     profile.add_argument("source", type=Path, help="sample-by-locus TSV/CSV; first column is sample ID")
     profile.add_argument("-o", "--output", required=True, type=Path)
@@ -83,6 +85,7 @@ def main(argv: list[str] | None = None) -> int:
                 detection_coverage=args.detection_coverage,
                 callable_coverage=args.callable_coverage,
                 minimum_mapq=args.min_mapq,
+                no_hit_policy=args.no_hit_policy,
             )
             output = run_mapping(args.reference, args.genomes, args.output, args.threads, config)
         elif args.command == "profile":

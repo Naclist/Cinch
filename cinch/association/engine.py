@@ -66,6 +66,8 @@ def _score_block(
     pooled_types: np.ndarray,
     loci: np.ndarray,
     distances,
+    presence_variable: np.ndarray,
+    type_variable: np.ndarray,
     minimum_informative: int,
     minimum_state_count: int,
 ) -> dict[str, pd.DataFrame]:
@@ -73,6 +75,14 @@ def _score_block(
     for left, right in block.pairs:
         distance = distances.get_pair(left, right)
         for channel in CHANNELS:
+            if channel == "PP" and not (presence_variable[left] and presence_variable[right]):
+                continue
+            if channel == "PT" and not (presence_variable[left] and type_variable[right]):
+                continue
+            if channel == "TP" and not (type_variable[left] and presence_variable[right]):
+                continue
+            if channel == "TT" and not (type_variable[left] and type_variable[right]):
+                continue
             x, y = channel_vectors(presence, pooled_types, left, right, channel)
             metrics = contingency(x, y)
             if metrics is None:
@@ -111,12 +121,19 @@ def iter_scored_blocks(
     """Return a lazy block iterator and the once-computed rare-state audit."""
 
     pooled_types, rare_audit = pool_rare_states(profile.types, minimum_state_count)
+    presence_variable = np.array([
+        len(np.unique(column[column >= 0])) >= 2 for column in profile.presence.T
+    ], dtype=bool)
+    type_variable = np.array([
+        len(np.unique(column[column >= 0])) >= 2 for column in pooled_types.T
+    ], dtype=bool)
     lookup = _distance_source(distances)
 
     def generate() -> Iterator[tuple[PairBlock, dict[str, pd.DataFrame]]]:
         for block in iter_pair_blocks(len(profile.loci), block_pairs):
             yield block, _score_block(
                 block, profile.presence, pooled_types, profile.loci, lookup,
+                presence_variable, type_variable,
                 minimum_informative, minimum_state_count,
             )
 
@@ -195,6 +212,12 @@ def write_association_blocks(
             "configuration": configuration,
         }, manifest_path)
     pooled_types, rare_rows = pool_rare_states(profile.types, minimum_state_count)
+    presence_variable = np.array([
+        len(np.unique(column[column >= 0])) >= 2 for column in profile.presence.T
+    ], dtype=bool)
+    type_variable = np.array([
+        len(np.unique(column[column >= 0])) >= 2 for column in pooled_types.T
+    ], dtype=bool)
     rare_audit = pd.DataFrame(rare_rows)
     lookup = _distance_source(distances)
     _write_parquet_atomic(rare_audit, output_directory / "RARE_STATE_AUDIT.parquet")
@@ -211,6 +234,7 @@ def write_association_blocks(
             continue
         frames = _score_block(
             block, profile.presence, pooled_types, profile.loci, lookup,
+            presence_variable, type_variable,
             minimum_informative, minimum_state_count,
         )
         for channel, frame in frames.items():

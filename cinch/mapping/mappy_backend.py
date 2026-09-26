@@ -102,8 +102,11 @@ def _call_locus(locus_id: str, query: str, aligner, config: MappingConfig) -> Lo
         and hit.mapq >= config.minimum_mapq
     )
     if not accepted:
-        reason = "PARTIAL_OR_LOW_CONFIDENCE" if raw else "UNRESOLVED_NO_HIT"
-        return LocusCall(locus_id, -1, False, reason, None, raw)
+        if raw:
+            return LocusCall(locus_id, -1, False, "PARTIAL_OR_LOW_CONFIDENCE", None, raw)
+        if config.no_hit_policy == "absence":
+            return LocusCall(locus_id, 0, False, "CONFIDENT_ABSENCE_BY_POLICY", None, raw)
+        return LocusCall(locus_id, -1, False, "UNRESOLVED_NO_HIT", None, raw)
     best_matches = max(hit.matches for hit in accepted)
     best = tuple(hit for hit in accepted if hit.matches == best_matches)
     full = tuple(hit for hit in best if hit.coverage >= config.callable_coverage)

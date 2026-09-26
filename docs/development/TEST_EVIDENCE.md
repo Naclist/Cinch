@@ -18,7 +18,12 @@
 | 2026-09-26 | unified M06 | controlled synthetic kernels | `benchmark_advanced_statistics.py` | SHC 2,805 permutations/s; ARACNE 64,831 edges/s | isolated single-run timing |
 | 2026-09-26 | unified M07 | Python 3.12.14 | `pytest -q` | 36 passed in 1.63 s | profile conversion → sparse distance → association CLI, manifest and resume |
 | 2026-09-26 | unified M06/M07 | Python 3.12.14 | `pytest -q` | 37 passed in 3.38 s | staged PP SHC permutation, BH, ARACNE and report artifacts |
+| 2026-09-26 | public SPN534 subset | 12 versioned assemblies | NCBI Datasets 18.37.0 + SHA256 audit | 12/12 genome FASTA and 12/12 GFF3 exact historical matches | raw-input provenance |
+| 2026-09-26 | public SPN534 subset | 12 genomes × 200 alternative CDS | staged CLI | map→profile output→associate→advanced-filter→report completed | real FASTA E2E; not frozen reproduction |
+| 2026-09-26 | public SPN534 subset | 12 genomes × 400 CDS | old/new association A/B | PP/PT/TP/TT frames exact; 13.80→5.95 s | necessary-state prescreen equivalence and performance |
+| 2026-09-26 | synthetic stress | 1 genome × 25,000 loci | `benchmark_mapper.py` | 17.86 s external wall; 302.4 MB RSS; 25,000 callable | engineering only |
+| 2026-09-26 | unified current | Python 3.12.14 | `pytest -q` | 39 passed in 2.05 s | full local suite after SPN/no-hit changes |
 
 ## Evidence limitations
 
-[KNOWN | HIGH] Existing tests validate process-based mapping, cache reuse, mapping edge cases, deterministic nomenclature, exact blockwise numerical equivalence, and controlled staged filtering/reporting. They do not validate legacy uberBlast equivalence, biological sensitivity/specificity, 25K-locus runtime, or public SPN534 genome E2E execution.
+[KNOWN | HIGH] Tests and executed benchmarks validate process-based mapping, resume, mapping edge cases, deterministic nomenclature, exact blockwise equivalence, staged filtering/reporting, public SPN-subset E2E, and a 25K-locus mapper stress case. They do not validate legacy uberBlast equivalence, full 534-genome biological sensitivity/specificity, or 25K-locus all-pair execution.

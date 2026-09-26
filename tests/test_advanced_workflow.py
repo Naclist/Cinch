@@ -40,3 +40,26 @@ def test_staged_shc_bh_aracne_and_report(tmp_path):
     assert (report / "REPORT.md").is_file()
     assert (report / "SUMMARY.tsv").is_file()
     assert (report / "SHC_FILTER_DIAGNOSTICS.png").is_file()
+
+
+def test_advanced_filter_accepts_empty_pp_candidate_blocks(tmp_path):
+    samples = np.array(["s1", "s2"])
+    profile_path = save_profile(
+        StateProfile(samples, np.array(["A"]), np.ones((2, 1), np.int8), np.zeros((2, 1), np.int32)),
+        tmp_path / "profile.npz",
+    )
+    association = tmp_path / "association"
+    (association / "blocks" / "PP").mkdir(parents=True)
+    (association / "MANIFEST.json").write_text('{"schema":"test"}\n')
+    pd.DataFrame(columns=["edge_id", "i", "j", "locus_A", "locus_B", "channel"]).to_parquet(
+        association / "blocks" / "PP" / "block_00000000.parquet", index=False,
+    )
+    shc = tmp_path / "shc.tsv"
+    pd.DataFrame({"sample_id": samples, "shc": [0, 0]}).to_csv(shc, sep="\t", index=False)
+    output = run_advanced_filter(
+        association, profile_path, shc, tmp_path / "filtered",
+        permutations=9, minimum_cluster_size=2, minimum_informative_clusters=1,
+    )
+    result = pd.read_parquet(output / "SHC_ALL_PP_CANDIDATES.parquet")
+    assert result.empty
+    assert {"eligible_for_permutation", "phylo_perm_q", "passes_shc_bh"}.issubset(result.columns)
