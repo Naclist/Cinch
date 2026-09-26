@@ -24,12 +24,12 @@
 | M02 | Unified exact statistical API | VALIDATED | 17 tests; zero dev2 diff; measured microbenchmark | extend later with categorical kernels |
 | M03 | Mapper backends and resumability | TESTED | 24-test suite; mapper benchmark; preserved `Cinch_v8.py` | legacy uberBlast equivalence and representative biological validation |
 | M04 | Unified profile/state model | VALIDATED | explicit schema, legacy policy adapter, frozen/V2 round trips | none |
-| M05 | Blockwise four-channel engine | NOT_STARTED | complexity audit | implementation and benchmark |
+| M05 | Blockwise four-channel engine | TESTED | exact frozen A/B, atomic resume, controlled memory benchmark | streaming distances and scaling ladder |
 | M06 | Advanced statistics | NOT_STARTED | distinct definitions inventoried | integration/regression |
 | M07 | Staged CLI/end-to-end workflow | NOT_STARTED | target commands decided | implementation/E2E |
 | M08 | Production acceptance | BLOCKED | target workload recorded | data and HPC execution |
 
-[COMPUTED | HIGH] Predefined completion is `24/45 = 53.3%`; see `MASTER_PLAN.md`.
+[COMPUTED | HIGH] Predefined completion is `28/45 = 62.2%`; see `MASTER_PLAN.md`.
 
 ## Scientific feature preservation
 
@@ -45,6 +45,8 @@
 
 [COMPUTED | HIGH] Unified weighted MI processed 1,000,000 valid mass triplets at a best observed 12,027,537 pairs/s over five runs on the local Python 3.12.14/NumPy 2.5.3 environment. This is a kernel microbenchmark, not end-to-end throughput.
 
+[COMPUTED | HIGH] At 224 samples × 80 loci, lazy blocks reduced traced peak Python allocation from 20.27 MB to 2.99 MB with exact row equality. Runtime changed from 3.212 s to 3.171 s; no material speedup is claimed.
+
 ## Unverified performance assumptions
 
 [COMPUTED | HIGH] On 12 synthetic genomes × 200 exact loci, the indexed mapper completed in 0.534 s with one worker and 0.468 s with four workers, a measured 1.14× speedup. Two workers were slower than one. This workload is dominated by process/index overhead and is not biological validation.
@@ -55,7 +57,7 @@
 
 - [KNOWN | HIGH] `uberBlast` and `configure` redistribution/installability are unresolved.
 - [KNOWN | HIGH] The 224-genome/25,000-reference production dataset is not present in this repository.
-- [KNOWN | HIGH] Full 312,487,500-pair execution has not been resource-estimated from a unified block engine because that engine does not yet exist.
+- [KNOWN | HIGH] Full 312,487,500-pair execution has not been resource-estimated; the block engine exists, but distance materialization and per-pair Python scoring remain scaling blockers.
 
 ## Known scientific discrepancies
 
@@ -66,7 +68,7 @@
 
 ## Tests executed
 
-- [COMPUTED | HIGH] Unified branch: 27 passed on Python 3.12.14.
+- [COMPUTED | HIGH] Unified branch: 30 passed on Python 3.12.14.
 - [COMPUTED | HIGH] CINCH-dev2 baseline: 7 passed on Python 3.12.14.
 
 ## Tests not executed
@@ -75,9 +77,9 @@
 
 ## Next three priority actions
 
-1. [KNOWN | HIGH] Prototype bounded block enumeration for PP while preserving the full eligible hypothesis universe.
-2. [KNOWN | HIGH] Validate block outputs against exhaustive frozen_v1 scoring before integrating advanced statistics.
-3. [KNOWN | HIGH] Benchmark memory and throughput before connecting SHC/permutation modules.
+1. [KNOWN | HIGH] Replace the O(p²) distance DataFrame/lookup with blockwise coordinate-distance production.
+2. [KNOWN | HIGH] Run the pair-engine n/p/block-size scaling ladder and profile the contingency loop.
+3. [KNOWN | HIGH] Integrate SHC, ARACNE, and high-order modules as separately named methods.
 
 ## Current recommended usage
 
@@ -85,4 +87,4 @@
 
 ## Release readiness
 
-[COMPUTED | HIGH] Not ready for unified research use; the M03 scientific-equivalence gate and mandatory M05-M08 gates remain open.
+[COMPUTED | HIGH] Not ready for unified research use; the M03 and M05 performance/equivalence gaps and mandatory M06-M08 gates remain open.

@@ -1,0 +1,20 @@
+{
+  "scope": "controlled computational benchmark only; excludes block I/O",
+  "samples": 224,
+  "loci": 80,
+  "pairs": 3160,
+  "block_pairs": 256,
+  "frozen": {
+    "seconds": 3.211506833002204,
+    "tracemalloc_peak_bytes": 20266160,
+    "rows": {"PP": 3160, "PT": 3160, "TP": 3160, "TT": 3160}
+  },
+  "blockwise": {
+    "seconds": 3.1707837499998277,
+    "tracemalloc_peak_bytes": 2991529,
+    "rows": {"PP": 3160, "PT": 3160, "TP": 3160, "TT": 3160}
+  },
+  "row_counts_equal": true,
+  "peak_python_memory_ratio": 0.14761202911651738,
+  "runtime_ratio": 0.9873196337046846
+}

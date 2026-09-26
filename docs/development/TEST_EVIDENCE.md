@@ -11,6 +11,8 @@
 | 2026-09-26 | unified M03 | Python 3.12.14, mappy 2.31 | `pytest -q` | 24 passed in 1.54 s | frozen/statistics plus controlled indexed mapping and resume workflow |
 | 2026-09-26 | unified M03 | 12 synthetic genomes × 200 exact loci | `benchmark_mapper.py --genomes 12 --loci 200 --length 300 --threads 1 2 4` | 0.534/0.560/0.468 s; 4-worker speedup 1.14× | computational benchmark only |
 | 2026-09-26 | unified M04 | Python 3.12.14 | `pytest -q` | 27 passed in 1.55 s | state invariants, explicit legacy missing policy, V2/frozen round trips |
+| 2026-09-26 | unified M05 | Python 3.12.14 | `pytest -q` | 30 passed in 1.67 s | exact frozen/block equality, triangular universe, resume/input drift |
+| 2026-09-26 | unified M05 | 224 samples × 80 loci | `benchmark_pair_blocks.py` | 3.212→3.171 s; traced peak 20.27→2.99 MB; row counts equal | computational benchmark; Parquet I/O excluded |
 
 ## Evidence limitations
 

@@ -14,17 +14,18 @@
 | dev2 Numba kernels | source inspection and source tests | compiled triangular kernels exist in frozen scripts | candidate architecture; not unified benchmark evidence |
 | unified weighted MI | 1,000,000 valid binary mass triplets, five repeats | best 0.083142542 s; 12,027,537 pairs/s | isolated vectorized kernel only; excludes state construction and I/O |
 | unified indexed mapper | 12 synthetic genomes × 200 exact 300-nt loci | 1/2/4 workers: 0.534/0.560/0.468 s; 4-worker speedup 1.14× | small controlled workload; process/index overhead dominates; no biological claim |
+| unified pair blocks | 224 samples × 80 loci; 3,160 pairs; four channels | 3.171 s and 2.99 MB traced peak versus frozen 3.212 s and 20.27 MB | exact row counts; 85.2% lower traced Python peak; I/O excluded |
 
 ## Benchmark ladder
 
 | Level | Workload | Required measures | Status |
 |---|---|---|---|
-| 1 | synthetic correctness cases | wall, RSS, equality | PARTIAL: mapping controlled cases pass; pair engine absent |
+| 1 | synthetic correctness cases | wall, RSS, equality | COMPLETE: mapping controlled cases and exact pair A/B pass |
 | 2 | small representative genomes/reference | mapping and pair throughput | PARTIAL: synthetic mapper throughput measured; representative genomes absent |
 | 3 | moderate subset | scaling and resume | NOT_STARTED |
 | 4 | full reference, limited genomes | mapper/index memory | NOT_STARTED |
 | 5 | 224 genomes × 25K reference | mapping wall/CPU/RSS | BLOCKED: inputs absent |
-| 6 | full pairwise workflow | pairs/s, wall/CPU/RSS/disk | BLOCKED: engine absent and resources unestimated |
+| 6 | full pairwise workflow | pairs/s, wall/CPU/RSS/disk | BLOCKED: streaming distance provider absent and resources unestimated |
 
 ## Optimization decision log ODL-001
 
