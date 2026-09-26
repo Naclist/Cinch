@@ -1,6 +1,6 @@
 source_repository	source_commit	source_version	import_date	original_path	new_path	action	status
 https://github.com/Naclist/Cinch	98c41ef081be4face6b32cb61b557964537cb353	frozen_v1	2026-09-26	cinch/frozen_v1	cinch/frozen_v1	preserved	complete
-https://github.com/Naclist/Cinch-dev2	ec1eaa5cf3c0c46a0d4d2babd52a768d23f9f57a	0.1.0.dev0	2026-09-26	src/cinch_dev2/core/statistics.py	cinch/statistics/	adapted	planned
+https://github.com/Naclist/Cinch-dev2	ec1eaa5cf3c0c46a0d4d2babd52a768d23f9f57a	0.1.0.dev0	2026-09-26	src/cinch_dev2/core/statistics.py	cinch/statistics/	adapted	validated
 https://github.com/Naclist/Cinch-dev2	ec1eaa5cf3c0c46a0d4d2babd52a768d23f9f57a	0.1.0.dev0	2026-09-26	src/cinch_dev2/scripts/snapshots/Cinch_v8.py	cinch/legacy/dev2/Cinch_v8.py	preserved	planned
 https://github.com/Naclist/Cinch-dev2	ec1eaa5cf3c0c46a0d4d2babd52a768d23f9f57a	0.1.0.dev0	2026-09-26	src/cinch_dev2/scripts/snapshots/hiercc_shc_phylo_correct_mi.py	cinch/population/shc.py	adapted	planned
 https://github.com/Naclist/Cinch-dev2	ec1eaa5cf3c0c46a0d4d2babd52a768d23f9f57a	0.1.0.dev0	2026-09-26	src/cinch_dev2/scripts/snapshots/spydrpick_locus_wg_nmi.py	cinch/network/aracne.py	adapted	planned

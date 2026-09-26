@@ -1,0 +1,18 @@
+{
+  "pairs": 1000000,
+  "repeats": 5,
+  "seed": 20260926,
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "seconds": [
+    0.1192625839903485,
+    0.09327850000408944,
+    0.09280899999430403,
+    0.08610783399490174,
+    0.08314254200377036
+  ],
+  "best_seconds": 0.08314254200377036,
+  "pairs_per_second_best": 12027536.997300996,
+  "finite_mi": 1000000,
+  "scope": "isolated weighted binary MI kernel; excludes state construction and I/O"
+}

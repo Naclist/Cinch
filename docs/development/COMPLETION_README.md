@@ -13,7 +13,7 @@
 
 ## Current architecture
 
-[COMPUTED | HIGH] Production behavior remains `cinch/frozen_v1`; the integration branch currently adds governance only. No frozen implementation has been overwritten.
+[COMPUTED | HIGH] Production WGS behavior remains `cinch/frozen_v1`; differentiated weighted MI, EpiDis, and BH APIs now exist under `cinch/statistics`. No frozen implementation has been overwritten.
 
 ## Overall milestone status
 
@@ -21,7 +21,7 @@
 |---|---|---|---|---|
 | M00 | Source freeze and audit system | VALIDATED | source SHAs; baseline tests | none |
 | M01 | Full architecture audit | VALIDATED | inventory, decisions, Checkpoint 1 review | keep inventory current |
-| M02 | Unified exact statistical API | IN_PROGRESS | plan and source crosswalk | implement and test |
+| M02 | Unified exact statistical API | VALIDATED | 17 tests; zero dev2 diff; measured microbenchmark | extend later with categorical kernels |
 | M03 | Mapper backends and resumability | NOT_STARTED | mapping audit | all code and controlled cases |
 | M04 | Unified profile/state model | NOT_STARTED | state discrepancy recorded | adapter and tests |
 | M05 | Blockwise four-channel engine | NOT_STARTED | complexity audit | implementation and benchmark |
@@ -29,7 +29,7 @@
 | M07 | Staged CLI/end-to-end workflow | NOT_STARTED | target commands decided | implementation/E2E |
 | M08 | Production acceptance | BLOCKED | target workload recorded | data and HPC execution |
 
-[COMPUTED | HIGH] Predefined completion is `10/45 = 22.2%`; see `MASTER_PLAN.md`.
+[COMPUTED | HIGH] Predefined completion is `15/45 = 33.3%`; see `MASTER_PLAN.md`.
 
 ## Scientific feature preservation
 
@@ -37,13 +37,13 @@
 |---|---|---|---|
 | PP/PT/TP/TT | `cinch/frozen_v1/statistics.py` | unchanged frozen_v1 | baseline tested only |
 | HC recurrence/Neff | `filtering.py` | unchanged frozen_v1 | baseline tested only |
-| Weighted MI/EpiDis/BH | dev2 `core/statistics.py` | planned under `cinch/statistics` | dev2 unit tests passed; not migrated |
+| Weighted MI/EpiDis/BH | dev2 `core/statistics.py` | `cinch/statistics` | zero max absolute difference over 10,000 random valid inputs; unified tests pass |
 | SHC permutation/ARACNE/Diff-GWES | dev2 frozen snapshots | planned distinct modules | historical evidence only; not integrated |
 | HPC mapping/allele nomenclature | dev2 `Cinch_v8.py` | planned backend adapter | external dependencies unresolved |
 
 ## Confirmed performance improvements
 
-[COMPUTED | HIGH] None have been implemented or measured on this branch.
+[COMPUTED | HIGH] Unified weighted MI processed 1,000,000 valid mass triplets at a best observed 12,027,537 pairs/s over five runs on the local Python 3.12.14/NumPy 2.5.3 environment. This is a kernel microbenchmark, not end-to-end throughput.
 
 ## Unverified performance assumptions
 
@@ -64,7 +64,7 @@
 
 ## Tests executed
 
-- [COMPUTED | HIGH] CINCH baseline: 12 passed on Python 3.12.14.
+- [COMPUTED | HIGH] Unified branch: 17 passed on Python 3.12.14.
 - [COMPUTED | HIGH] CINCH-dev2 baseline: 7 passed on Python 3.12.14.
 
 ## Tests not executed
@@ -73,8 +73,8 @@
 
 ## Next three priority actions
 
-1. [KNOWN | HIGH] Import the exact dev2 statistical primitives under differentiated unified names and add cross-repository numerical tests.
-2. [KNOWN | HIGH] Define the mapper backend/cache contract and fix `by_contig` reconstruction without changing coordinates.
+1. [KNOWN | HIGH] Define the mapper backend/cache contract and fix `by_contig` reconstruction without changing coordinates.
+2. [KNOWN | HIGH] Add controlled mapper cases and deterministic allele nomenclature before enabling parallel completion.
 3. [KNOWN | HIGH] Prototype bounded block enumeration for PP while preserving the full eligible hypothesis universe.
 
 ## Current recommended usage

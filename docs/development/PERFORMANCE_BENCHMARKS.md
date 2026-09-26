@@ -12,6 +12,7 @@
 | frozen coordinate distance | source inspection | Python pair enumeration plus dense row for every pair | O(p²) rows and unsuitable at 25K |
 | frozen association | source inspection | nested Python pairs × four channels × DataFrame distance lookup | principal architectural risk |
 | dev2 Numba kernels | source inspection and source tests | compiled triangular kernels exist in frozen scripts | candidate architecture; not unified benchmark evidence |
+| unified weighted MI | 1,000,000 valid binary mass triplets, five repeats | best 0.083142542 s; 12,027,537 pairs/s | isolated vectorized kernel only; excludes state construction and I/O |
 
 ## Benchmark ladder
 
