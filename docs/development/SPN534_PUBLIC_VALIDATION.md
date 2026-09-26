@@ -22,9 +22,17 @@
 
 [KNOWN | HIGH] Frozen PP/PT/TP/TT formulas, state drivers, order/bp aggregation, HC recurrence, and Neff remain regression-tested at kernel or frozen-asset level. Exact full SPN534 result reproduction requires the omitted historical reference/profile/pair inputs and identical configuration.
 
+## Larger public subset and optimization evidence
+
+[COMPUTED | HIGH] A deterministic nested 12/24/48-assembly ladder selects one/two/four samples from every tree-SHC × fold stratum. For the 48-set, all 48 genome FASTA and all 48 GFF3 files match the historical SHA256 manifest. Eight-worker mapping against the same 400-CDS alternative reference completed in 7.31 s wall time, used 41.05 CPU-seconds, and peaked at 373.0 MB RSS.
+
+[COMPUTED | HIGH] At 48 samples, the compiled A/B retained 1,016/7,226/10,155/76,038 PP/PT/TP/TT rows. The 66,621-row physical-distance frame, state drivers, identifiers, eligibility, and all other non-floating fields were exact; maximum floating difference was `2.22e-15`. Three-run median time fell from 8.74 to 2.70 s and median RSS from 458.2 to 386.3 MB.
+
+[COMPUTED | HIGH] The 48-genome advanced stage processed 1,016 PP candidates with 99 permutations: 371 were permutation-eligible, 79 passed BH at 0.05, and ARACNE retained 50 direct edges. Filter and report took 3.96 and 1.41 s. These counts use the alternative reference and reduced permutation count, so they are not frozen biological results.
+
 ## Four-review record
 
 - [COMPUTED | HIGH] Scientific: absence semantics are explicit; low-confidence calls are not converted to absence; no frozen reproduction claim is made.
-- [COMPUTED | HIGH] Engineering: map, profile serialization, associate, advanced-filter, and report complete on real FASTA; downloaded genome/GFF provenance matches.
+- [COMPUTED | HIGH] Engineering: map, profile serialization, associate, advanced-filter, and report complete on 48 real FASTA; downloaded genome/GFF provenance matches; 45 tests pass after compiled kernel/distance integration.
 - [COMPUTED | HIGH] Integration: the real run exercises indexed mapping, deterministic alleles, sparse distances, all four channels, SHC/BH/ARACNE, and reporting.
-- [COMPUTED | HIGH] Scope: pairwise runtime, not mapping or reporting, is the largest remaining measured bottleneck; private Bacillus HPC acceptance remains separate.
+- [COMPUTED | HIGH] Scope: pairwise runtime was the largest measured bottleneck and was reduced locally; broader sample/core scaling, full SPN534, 25K all-pair, and private Bacillus HPC acceptance remain separate open gates.

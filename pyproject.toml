@@ -22,7 +22,8 @@ dependencies = [
 
 [project.optional-dependencies]
 mapping = ["mappy>=2.31,<3"]
-test = ["pytest>=8", "mappy>=2.31,<3"]
+performance = ["numba>=0.61,<0.64"]
+test = ["pytest>=8", "mappy>=2.31,<3", "numba>=0.61,<0.64"]
 
 [project.scripts]
 cinch = "cinch.cli:main"

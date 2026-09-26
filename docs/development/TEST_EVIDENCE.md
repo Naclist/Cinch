@@ -23,7 +23,11 @@
 | 2026-09-26 | public SPN534 subset | 12 genomes × 400 CDS | old/new association A/B | PP/PT/TP/TT frames exact; 13.80→5.95 s | necessary-state prescreen equivalence and performance |
 | 2026-09-26 | synthetic stress | 1 genome × 25,000 loci | `benchmark_mapper.py` | 17.86 s external wall; 302.4 MB RSS; 25,000 callable | engineering only |
 | 2026-09-26 | unified current | Python 3.12.14 | `pytest -q` | 39 passed in 2.05 s | full local suite after SPN/no-hit changes |
+| 2026-09-27 | optional compiled association | Python 3.12.14, NumPy 2.3.5, Numba 0.63.1 | randomized and real SPN A/B | all non-floats exact; max float difference 6.66e-16 | three random multiallelic/missingness cases plus 79,800 real pairs |
+| 2026-09-27 | public SPN534 ladder | nested 12/24/48 genomes × 400 alternative CDS; three repeats/engine | staged `associate` | 2.71×/2.86×/3.24× medians | exact distance/non-float outputs; max float difference 2.22e-15 |
+| 2026-09-27 | public SPN534 subset | 48 genomes × 400 alternative CDS | staged CLI | map→associate→advanced-filter→report completed | 48/48 FASTA and GFF3 historical SHA256 matches; alternative reference |
+| 2026-09-27 | unified current | Python 3.12.14, NumPy 2.3.5, Numba 0.63.1 | `pytest -q` | 45 passed in 2.45 s | full suite including pairwise-absent-state and compiled-distance regressions |
 
 ## Evidence limitations
 
-[KNOWN | HIGH] Tests and executed benchmarks validate process-based mapping, resume, mapping edge cases, deterministic nomenclature, exact blockwise equivalence, staged filtering/reporting, public SPN-subset E2E, and a 25K-locus mapper stress case. They do not validate legacy uberBlast equivalence, full 534-genome biological sensitivity/specificity, or 25K-locus all-pair execution.
+[KNOWN | HIGH] Tests and executed benchmarks validate process-based mapping, resume, mapping edge cases, deterministic nomenclature, exact/tolerance-bounded blockwise equivalence, staged filtering/reporting, public SPN-subset E2E, and a 25K-locus mapper stress case. They do not validate legacy uberBlast equivalence, full 534-genome biological sensitivity/specificity, sample/core scaling, or 25K-locus all-pair execution.

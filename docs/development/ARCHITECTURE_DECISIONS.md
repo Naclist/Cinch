@@ -66,3 +66,17 @@
 - [COMPUTED | HIGH] Engineering review: all five staged operations complete; 39 tests pass; real 400-locus optimized outputs are exactly equal to the pre-prescreen outputs.
 - [COMPUTED | HIGH] Integration review: SPN sample IDs align to committed SHC metadata, and mapper state semantics feed every downstream channel and PP-only SHC workflow without adapters outside the repository.
 - [COMPUTED | HIGH] Scope review: per-pair Python channel dispatch remains the largest measured bottleneck; the rejected dense-code contingency experiment improved only 1.9% and is not retained.
+
+## Optional compiled scorer review
+
+- [COMPUTED | HIGH] Scientific review: randomized and real SPN A/B comparisons preserve pair/channel eligibility, state drivers, distance annotations, and all non-floating fields; maximum floating difference is 6.66e-16.
+- [COMPUTED | HIGH] Engineering review: 43 tests pass; the dependency is optional; engine identity enters the resume digest; three-run timing and RSS are recorded.
+- [COMPUTED | HIGH] Integration review: `cinch associate --engine numba` writes the same schema and consumes the same V2 profile/distance inputs; the default remains `python` and frozen commands are untouched.
+- [COMPUTED | HIGH] Scope review: the later 12/24/48 ladder and compiled distance aggregation raise the measured local gain to 2.71×/2.86×/3.24×, but do not close core, high-cardinality, 534-genome, or 25K all-pair gates; completion remains 37/45.
+
+## SPN48 and compiled-distance review
+
+- [COMPUTED | HIGH] Scientific review: 48-set raw provenance is exact; full distance frames and non-floating association outputs match Python; the pairwise-absent global-state driver bug is covered by a regression test.
+- [COMPUTED | HIGH] Engineering review: the 48-genome map→associate→filter→report chain completes; 45 tests pass; three repeats per association engine are recorded.
+- [COMPUTED | HIGH] Integration review: the same staged schemas and SHC metadata scale from 12 to 48 genomes without an adapter or output-schema change.
+- [COMPUTED | HIGH] Scope review: the alternative reference, 99 permutations, single-core association, 400 loci, and absent historical profile prevent a frozen/full-scale claim; completion remains 37/45.

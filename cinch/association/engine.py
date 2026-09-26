@@ -23,6 +23,7 @@ from cinch.frozen_v1.statistics import (
 from cinch.profiles import StateProfile
 
 from .blocks import PairBlock, iter_pair_blocks
+from .numba_kernel import METRIC_NAMES, available as numba_available, score_block_metrics
 
 
 class _FrameDistanceLookup:
@@ -73,7 +74,7 @@ def _score_block(
 ) -> dict[str, pd.DataFrame]:
     outputs: dict[str, list[dict]] = {channel: [] for channel in CHANNELS}
     for left, right in block.pairs:
-        distance = distances.get_pair(left, right)
+        distance = None
         for channel in CHANNELS:
             if channel == "PP" and not (presence_variable[left] and presence_variable[right]):
                 continue
@@ -95,6 +96,8 @@ def _score_block(
             )
             if not eligible:
                 continue
+            if distance is None:
+                distance = distances.get_pair(left, right)
             outputs[channel].append({
                 "edge_id": f"{channel}:{loci[left]}--{loci[right]}",
                 "i": left,
@@ -110,6 +113,45 @@ def _score_block(
     return {channel: pd.DataFrame(rows) for channel, rows in outputs.items()}
 
 
+def _score_block_numba(
+    block: PairBlock, presence: np.ndarray, pooled_types: np.ndarray, loci: np.ndarray,
+    distances, presence_variable: np.ndarray, type_variable: np.ndarray,
+    minimum_informative: int, minimum_state_count: int, type_cardinality: np.ndarray,
+) -> dict[str, pd.DataFrame]:
+    if not numba_available():
+        raise RuntimeError("Numba engine requires `pip install -e '.[performance]'`")
+    pairs = np.asarray(block.pairs, dtype=np.int32)
+    scored = score_block_metrics(
+        presence, pooled_types, pairs, presence_variable, type_variable,
+        minimum_informative, minimum_state_count, type_cardinality,
+    )
+    integer_metrics = {
+        "informative_N", "n_states_A", "n_states_B", "min_state_count",
+        "enriched_driver_A_state", "enriched_driver_B_state", "enriched_observed",
+        "depleted_driver_A_state", "depleted_driver_B_state", "depleted_observed",
+    }
+    outputs: dict[str, list[dict]] = {channel: [] for channel in CHANNELS}
+    for pair_index, (left, right) in enumerate(block.pairs):
+        distance = None
+        for channel_index, channel in enumerate(CHANNELS):
+            if scored[pair_index, channel_index, 0] != 1.0:
+                continue
+            if distance is None:
+                distance = distances.get_pair(left, right)
+            metrics = {
+                name: int(scored[pair_index, channel_index, index + 1]) if name in integer_metrics
+                else float(scored[pair_index, channel_index, index + 1])
+                for index, name in enumerate(METRIC_NAMES)
+            }
+            outputs[channel].append({
+                "edge_id": f"{channel}:{loci[left]}--{loci[right]}", "i": left, "j": right,
+                "locus_A": str(loci[left]), "locus_B": str(loci[right]), "channel": channel,
+                "display_channel": DISPLAY[channel], "orientation": ORIENTATION[channel],
+                **metrics, **distance,
+            })
+    return {channel: pd.DataFrame(rows) for channel, rows in outputs.items()}
+
+
 def iter_scored_blocks(
     profile: StateProfile,
     distances: pd.DataFrame,
@@ -117,8 +159,12 @@ def iter_scored_blocks(
     minimum_informative: int,
     minimum_state_count: int,
     block_pairs: int,
+    engine: str = "python",
 ) -> tuple[Iterator[tuple[PairBlock, dict[str, pd.DataFrame]]], pd.DataFrame]:
     """Return a lazy block iterator and the once-computed rare-state audit."""
+
+    if engine not in {"python", "numba"}:
+        raise ValueError("engine must be 'python' or 'numba'")
 
     pooled_types, rare_audit = pool_rare_states(profile.types, minimum_state_count)
     presence_variable = np.array([
@@ -127,15 +173,23 @@ def iter_scored_blocks(
     type_variable = np.array([
         len(np.unique(column[column >= 0])) >= 2 for column in pooled_types.T
     ], dtype=bool)
+    type_cardinality = np.array([
+        int(column[column >= 0].max()) + 1 if np.any(column >= 0) else 1
+        for column in pooled_types.T
+    ], dtype=np.int32)
     lookup = _distance_source(distances)
 
     def generate() -> Iterator[tuple[PairBlock, dict[str, pd.DataFrame]]]:
         for block in iter_pair_blocks(len(profile.loci), block_pairs):
-            yield block, _score_block(
+            arguments = (
                 block, profile.presence, pooled_types, profile.loci, lookup,
-                presence_variable, type_variable,
-                minimum_informative, minimum_state_count,
+                presence_variable, type_variable, minimum_informative, minimum_state_count,
             )
+            frames = (
+                _score_block_numba(*arguments, type_cardinality)
+                if engine == "numba" else _score_block(*arguments)
+            )
+            yield block, frames
 
     return generate(), pd.DataFrame(rare_audit)
 
@@ -186,15 +240,19 @@ def write_association_blocks(
     minimum_informative: int,
     minimum_state_count: int,
     block_pairs: int = 100_000,
+    engine: str = "python",
 ) -> dict:
     """Write atomic channel blocks and skip only complete compatible blocks."""
 
     output_directory = Path(output_directory)
     output_directory.mkdir(parents=True, exist_ok=True)
+    if engine not in {"python", "numba"}:
+        raise ValueError("engine must be 'python' or 'numba'")
     configuration = {
         "minimum_informative": minimum_informative,
         "minimum_state_count": minimum_state_count,
         "block_pairs": block_pairs,
+        "engine": engine,
     }
     digest = _input_digest(profile, distances, configuration)
     manifest_path = output_directory / "MANIFEST.json"
@@ -218,6 +276,10 @@ def write_association_blocks(
     type_variable = np.array([
         len(np.unique(column[column >= 0])) >= 2 for column in pooled_types.T
     ], dtype=bool)
+    type_cardinality = np.array([
+        int(column[column >= 0].max()) + 1 if np.any(column >= 0) else 1
+        for column in pooled_types.T
+    ], dtype=np.int32)
     rare_audit = pd.DataFrame(rare_rows)
     lookup = _distance_source(distances)
     _write_parquet_atomic(rare_audit, output_directory / "RARE_STATE_AUDIT.parquet")
@@ -232,10 +294,13 @@ def write_association_blocks(
             for channel, target in targets.items():
                 row_counts[channel] += len(pd.read_parquet(target, columns=[]))
             continue
-        frames = _score_block(
+        arguments = (
             block, profile.presence, pooled_types, profile.loci, lookup,
-            presence_variable, type_variable,
-            minimum_informative, minimum_state_count,
+            presence_variable, type_variable, minimum_informative, minimum_state_count,
+        )
+        frames = (
+            _score_block_numba(*arguments, type_cardinality)
+            if engine == "numba" else _score_block(*arguments)
         )
         for channel, frame in frames.items():
             _write_parquet_atomic(frame, targets[channel])

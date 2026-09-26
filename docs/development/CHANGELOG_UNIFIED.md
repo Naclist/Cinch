@@ -57,3 +57,12 @@
 - [COMPUTED | HIGH] Completed map→profile output→associate→SHC/BH/ARACNE→report on real FASTA using a documented alternative NCBI CDS reference.
 - [COMPUTED | HIGH] Added a 50/100/200/400-locus real-data ladder and a 25K-locus synthetic mapper stress test.
 - [COMPUTED | HIGH] Added necessary global-state prescreening; real 400-locus association improved 2.32× with exact all-channel outputs.
+
+## 2026-09-27 — Optional compiled four-channel scorer
+
+- [COMPUTED | HIGH] Added an opt-in Numba engine that computes all legal PP/PT/TP/TT contingency metrics per block while preserving the default Python path.
+- [COMPUTED | HIGH] Added randomized multiallelic/missingness equivalence tests and retained the kernel only after the full 43-test suite passed.
+- [COMPUTED | HIGH] An initial 12-genome/400-locus A/B showed a meaningful scorer gain, then the larger 48-genome test exposed a zero-margin driver defect; the defect was fixed and regression-tested before acceptance.
+- [COMPUTED | HIGH] Added compiled sparse order/bp aggregation after profiling identified it as the dominant remaining association-stage cost.
+- [COMPUTED | HIGH] On nested 12/24/48-genome real subsets, compiled medians improved 2.71×/2.86×/3.24×; distance/non-floating outputs were exact and maximum floating difference was 2.22e-15.
+- [COMPUTED | HIGH] Completed the 48-genome map→associate→SHC/BH/ARACNE→report chain; association core scaling and 25K all-pair acceptance remain open.

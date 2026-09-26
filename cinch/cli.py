@@ -43,6 +43,7 @@ def build_parser() -> argparse.ArgumentParser:
     associate.add_argument("--min-state-count", type=int, default=3)
     associate.add_argument("--min-order-observations", type=int, default=5)
     associate.add_argument("--block-pairs", type=int, default=100_000)
+    associate.add_argument("--engine", choices=["python", "numba"], default="python")
     advanced = sub.add_parser("advanced-filter", help="SHC permutation, BH, and ARACNE filtering for PP edges")
     advanced.add_argument("--association", required=True, type=Path, help="association stage directory containing blocks/")
     advanced.add_argument("--profile", required=True, type=Path)
@@ -99,6 +100,7 @@ def main(argv: list[str] | None = None) -> int:
                 minimum_state_count=args.min_state_count,
                 minimum_order_observations=args.min_order_observations,
                 block_pairs=args.block_pairs,
+                engine=args.engine,
             )
         elif args.command == "advanced-filter":
             output = run_advanced_filter(

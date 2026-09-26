@@ -1,0 +1,89 @@
+{
+  "scope": "nested 12/24/48 public SPN534 assemblies x 400 alternative-reference loci",
+  "configuration": {
+    "pair_universe": 79800,
+    "minimum_informative": 6,
+    "minimum_state_count": 1,
+    "minimum_order_observations": 2,
+    "block_pairs": 2000,
+    "repeats": 3
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "numba": "0.63.1",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "mapping_48x400": {
+    "workers": 8,
+    "wall_seconds": 7.31,
+    "cpu_seconds": 41.05,
+    "mean_cpu_cores_used": 5.6156,
+    "max_rss_bytes": 373047296
+  },
+  "association_ladder": [
+    {
+      "samples": 12,
+      "python_wall_seconds": [6.80, 6.56, 6.43],
+      "numba_wall_seconds": [2.43, 2.40, 2.42],
+      "python_median_wall_seconds": 6.56,
+      "numba_median_wall_seconds": 2.42,
+      "median_speedup": 2.7107438016528924,
+      "python_median_max_rss_bytes": 356335616,
+      "numba_median_max_rss_bytes": 364724224,
+      "numba_median_pairs_per_second": 32975.20661157025,
+      "max_float_absolute_difference": 6.661338147750939e-16
+    },
+    {
+      "samples": 24,
+      "python_wall_seconds": [7.41, 7.18, 7.31],
+      "numba_wall_seconds": [2.56, 2.58, 2.55],
+      "python_median_wall_seconds": 7.31,
+      "numba_median_wall_seconds": 2.56,
+      "median_speedup": 2.85546875,
+      "python_median_max_rss_bytes": 393740288,
+      "numba_median_max_rss_bytes": 368181248,
+      "numba_median_pairs_per_second": 31171.875,
+      "max_float_absolute_difference": 1.3322676295501878e-15
+    },
+    {
+      "samples": 48,
+      "python_wall_seconds": [8.84, 8.71, 8.74],
+      "numba_wall_seconds": [2.91, 2.70, 2.68],
+      "python_median_wall_seconds": 8.74,
+      "numba_median_wall_seconds": 2.70,
+      "median_speedup": 3.237037037037037,
+      "python_median_max_rss_bytes": 458211328,
+      "numba_median_max_rss_bytes": 386301952,
+      "numba_median_pairs_per_second": 29555.555555555555,
+      "max_float_absolute_difference": 2.220446049250313e-15
+    }
+  ],
+  "equivalence": {
+    "distance_frames_exact_at_all_sample_sizes": true,
+    "non_float_association_fields_exact_at_all_sample_sizes": true,
+    "float_tolerance": 1e-12
+  },
+  "e2e_48x400": {
+    "eligible_rows": {"PP": 1016, "PT": 7226, "TP": 10155, "TT": 76038},
+    "advanced_filter_wall_seconds": 3.96,
+    "report_wall_seconds": 1.41,
+    "pp_candidates": 1016,
+    "permutation_eligible": 371,
+    "bh_significant": 79,
+    "aracne_direct": 50,
+    "permutations": 99
+  },
+  "provenance": {
+    "genome_fasta_historical_sha256_matches": 48,
+    "gff3_historical_sha256_matches": 48,
+    "mismatches": 0,
+    "download_zip_sha256": "fd232af7420e62705c3426607932d88a08cc76dcbc1d62e0fe67ab0b65d21ee1"
+  },
+  "limitations": [
+    "The reference is a nonhistorical 400-CDS reconstruction.",
+    "The PP filter uses 99 permutations and is workflow evidence, not final biological inference.",
+    "This does not validate the full 534-genome result or a 25,000-locus all-pair run.",
+    "Association is single-core; core scaling is unmeasured."
+  ]
+}

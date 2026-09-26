@@ -28,13 +28,16 @@ def run_association(
     minimum_state_count: int,
     minimum_order_observations: int,
     block_pairs: int,
+    engine: str = "python",
 ) -> Path:
     profile_path, coordinates_path = Path(profile_path).resolve(), Path(coordinates_path).resolve()
     output = Path(output).resolve()
     output.mkdir(parents=True, exist_ok=True)
     profile = load_profile(profile_path)
     coordinates = _read_coordinates(coordinates_path)
-    distances = SparseOrderDistance(coordinates, len(profile.loci), minimum_order_observations)
+    distances = SparseOrderDistance(
+        coordinates, len(profile.loci), minimum_order_observations, engine=engine,
+    )
     distance_path = output / "OBSERVED_PHYSICAL_DISTANCES.parquet"
     distances.observed_frame(profile.loci).to_parquet(distance_path, index=False)
     manifest = write_association_blocks(
@@ -42,6 +45,7 @@ def run_association(
         minimum_informative=minimum_informative,
         minimum_state_count=minimum_state_count,
         block_pairs=block_pairs,
+        engine=engine,
     )
     stage = {
         "schema": "CINCH_ASSOCIATION_STAGE_V1",
@@ -49,6 +53,8 @@ def run_association(
         "coordinates": str(coordinates_path),
         "distance_output": distance_path.name,
         "association_output": "association",
+        "distance_engine": engine,
+        "minimum_order_observations": minimum_order_observations,
         "association_manifest": manifest,
     }
     temporary = output / f".MANIFEST.json.{os.getpid()}.tmp"

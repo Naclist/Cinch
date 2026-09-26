@@ -257,13 +257,21 @@ cinch associate \
   --profile mapped/profiles/PROFILE_V2.npz \
   --coordinates mapped/mapping/COORDINATES.tsv \
   -o associated --block-pairs 100000
+
+# optional compiled scorer
+python -m pip install -e ".[performance]"
+cinch associate \
+  --profile mapped/profiles/PROFILE_V2.npz \
+  --coordinates mapped/mapping/COORDINATES.tsv \
+  -o associated-numba --block-pairs 100000 --engine numba
 ```
 
 `map` caches each indexed genome independently. `profile` refuses to guess whether
 legacy non-calls mean absence or unresolved. `associate` preserves frozen
-PP/PT/TP/TT semantics and writes atomic resumable blocks. This staged path is not
-yet a production replacement: advanced filter/report glue and production-scale
-pair throughput are still incomplete. See [`docs/STAGED_WORKFLOW.md`](docs/STAGED_WORKFLOW.md)
+PP/PT/TP/TT semantics and writes atomic resumable blocks. `--engine numba` is an
+optional tolerance-equivalent compiled scorer; the default remains Python. This
+staged path is not yet a production replacement: categorical advanced testing and
+production-scale pair throughput are still incomplete. See [`docs/STAGED_WORKFLOW.md`](docs/STAGED_WORKFLOW.md)
 and [`docs/development/COMPLETION_README.md`](docs/development/COMPLETION_README.md).
 
 ## Repository map and boundaries

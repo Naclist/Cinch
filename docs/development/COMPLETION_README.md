@@ -24,7 +24,7 @@
 | M02 | Unified exact statistical API | VALIDATED | 17 tests; zero dev2 diff; measured microbenchmark | extend later with categorical kernels |
 | M03 | Mapper backends and resumability | TESTED | public SPN12 genomes; resume; 25K synthetic reference; audit | legacy uberBlast equivalence and broader biological validation |
 | M04 | Unified profile/state model | VALIDATED | explicit schema, legacy policy adapter, frozen/V2 round trips | none |
-| M05 | Blockwise four-channel engine | TESTED | exact A/B, sparse distance, real 50–400-locus ladder, 2.32× prescreen gain | n/core scaling and full 25K pair run |
+| M05 | Blockwise four-channel engine | TESTED | exact A/B, sparse distance, real locus/sample ladders, 2.32× prescreen and up to 3.24× compiled-engine gains | association core scaling and full 25K pair run |
 | M06 | Advanced statistics | TESTED | SHC/ARACNE/Diff-GWES kernels plus PP SHC/BH/ARACNE workflow | workflow-scale profile |
 | M07 | Staged CLI/end-to-end workflow | VALIDATED | 12 public SPN534 assemblies, real FASTA E2E, stage timings and reports | none within M07; production acceptance remains M08 |
 | M08 | Production acceptance | BLOCKED | target workload recorded | data and HPC execution |
@@ -49,19 +49,21 @@
 
 [COMPUTED | HIGH] On 12 public SPN534 assemblies, the scientifically safe global-state prescreen reduced 400-locus association wall time from 13.80 s to 5.95 s (2.32×) with exact PP/PT/TP/TT DataFrame equality. At 200 loci it reduced 4.23 s to 2.41 s (1.76×).
 
+[COMPUTED | HIGH] On nested 12/24/48-genome profiles at 400 loci, the optional Numba scorer plus compiled sparse-distance aggregation reduced three-run median association wall time from 6.56/7.31/8.74 s to 2.42/2.56/2.70 s (2.71×/2.86×/3.24×). Distance frames and non-floating results were exact; maximum floating difference was `2.22e-15`. At 48 samples median peak RSS fell 15.7%, while at 12 it rose 2.4%.
+
 [COMPUTED | HIGH] A synthetic 25,000-locus × 1-genome mapping stress test completed in 17.86 s external wall time at 302.4 MB maximum RSS. This is engineering evidence only, not biological validation or full pairwise acceptance.
 
 ## Unverified performance assumptions
 
 [COMPUTED | HIGH] On 12 synthetic genomes × 200 exact loci, the indexed mapper completed in 0.534 s with one worker and 0.468 s with four workers, a measured 1.14× speedup. Two workers were slower than one. This workload is dominated by process/index overhead and is not biological validation.
 
-[COMPUTED | HIGH] Blockwise enumeration and sparse distance storage are implemented and measured. Compiled all-channel block scoring remains an unimplemented candidate; a local dense-code contingency rewrite was rejected after only 1.9% real-data improvement.
+[COMPUTED | HIGH] Blockwise enumeration, sparse distance storage, optional compiled all-channel scoring, and compiled sparse-distance aggregation are implemented and measured. A separate dense-code Python contingency rewrite was rejected after only 1.9% real-data improvement. Sample scaling is measured to 48 genomes; association core scaling and 25K-pair feasibility remain unmeasured.
 
 ## Current blockers
 
 - [KNOWN | HIGH] `uberBlast` and `configure` redistribution/installability are unresolved.
 - [KNOWN | HIGH] The 224-genome/25,000-reference production dataset is not present in this repository.
-- [KNOWN | HIGH] Full 312,487,500-pair execution has not been resource-estimated; sparse distance and block output exist, but per-pair/channel Python scoring remains a runtime blocker.
+- [KNOWN | HIGH] Full 312,487,500-pair execution has not been resource-estimated. The optional compiled scorer removes most Python contingency work locally, but output volume, high-cardinality cost, and parallel scaling remain blockers.
 
 ## Known scientific discrepancies
 
@@ -72,7 +74,7 @@
 
 ## Tests executed
 
-- [COMPUTED | HIGH] Unified branch: 39 passed on Python 3.12.14.
+- [COMPUTED | HIGH] Unified branch: 45 passed on Python 3.12.14 with NumPy 2.3.5 and optional Numba 0.63.1.
 - [COMPUTED | HIGH] CINCH-dev2 baseline: 7 passed on Python 3.12.14.
 
 ## Tests not executed
@@ -81,8 +83,8 @@
 
 ## Next three priority actions
 
-1. [KNOWN | HIGH] Design compiled multi-channel block scoring to remove remaining per-pair Python dispatch, retaining exact outputs.
-2. [KNOWN | HIGH] Extend real SPN534 subsets in sample count and reference size within local resources.
+1. [KNOWN | HIGH] Extend the real SPN534 ladder beyond 48 samples and test association process/core scaling.
+2. [KNOWN | HIGH] Profile high-cardinality compiled contingency behavior and 25K-locus output/resource feasibility after the current kernel and distance gains.
 3. [KNOWN | HIGH] Execute full 534-genome/public-reference or historical-reference validation when the required reference/profile becomes available.
 
 ## Current recommended usage
