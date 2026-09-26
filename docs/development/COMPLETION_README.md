@@ -23,13 +23,13 @@
 | M01 | Full architecture audit | VALIDATED | inventory, decisions, Checkpoint 1 review | keep inventory current |
 | M02 | Unified exact statistical API | VALIDATED | 17 tests; zero dev2 diff; measured microbenchmark | extend later with categorical kernels |
 | M03 | Mapper backends and resumability | TESTED | 24-test suite; mapper benchmark; preserved `Cinch_v8.py` | legacy uberBlast equivalence and representative biological validation |
-| M04 | Unified profile/state model | NOT_STARTED | state discrepancy recorded | adapter and tests |
+| M04 | Unified profile/state model | VALIDATED | explicit schema, legacy policy adapter, frozen/V2 round trips | none |
 | M05 | Blockwise four-channel engine | NOT_STARTED | complexity audit | implementation and benchmark |
 | M06 | Advanced statistics | NOT_STARTED | distinct definitions inventoried | integration/regression |
 | M07 | Staged CLI/end-to-end workflow | NOT_STARTED | target commands decided | implementation/E2E |
 | M08 | Production acceptance | BLOCKED | target workload recorded | data and HPC execution |
 
-[COMPUTED | HIGH] Predefined completion is `19/45 = 42.2%`; see `MASTER_PLAN.md`.
+[COMPUTED | HIGH] Predefined completion is `24/45 = 53.3%`; see `MASTER_PLAN.md`.
 
 ## Scientific feature preservation
 
@@ -66,7 +66,7 @@
 
 ## Tests executed
 
-- [COMPUTED | HIGH] Unified branch: 24 passed on Python 3.12.14.
+- [COMPUTED | HIGH] Unified branch: 27 passed on Python 3.12.14.
 - [COMPUTED | HIGH] CINCH-dev2 baseline: 7 passed on Python 3.12.14.
 
 ## Tests not executed
@@ -75,9 +75,9 @@
 
 ## Next three priority actions
 
-1. [KNOWN | HIGH] Implement the explicit presence/type profile schema and legacy conversion policies.
-2. [KNOWN | HIGH] Prototype bounded block enumeration for PP while preserving the full eligible hypothesis universe.
-3. [KNOWN | HIGH] Validate block outputs against exhaustive frozen_v1 scoring before integrating advanced statistics.
+1. [KNOWN | HIGH] Prototype bounded block enumeration for PP while preserving the full eligible hypothesis universe.
+2. [KNOWN | HIGH] Validate block outputs against exhaustive frozen_v1 scoring before integrating advanced statistics.
+3. [KNOWN | HIGH] Benchmark memory and throughput before connecting SHC/permutation modules.
 
 ## Current recommended usage
 
@@ -85,4 +85,4 @@
 
 ## Release readiness
 
-[COMPUTED | HIGH] Not ready for unified research use; the M03 scientific-equivalence gate and mandatory M04-M08 gates remain open.
+[COMPUTED | HIGH] Not ready for unified research use; the M03 scientific-equivalence gate and mandatory M05-M08 gates remain open.

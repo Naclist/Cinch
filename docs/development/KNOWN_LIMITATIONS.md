@@ -7,6 +7,6 @@
 - [KNOWN | HIGH] order/bp distance currently materializes every locus pair and cannot scale to 25K loci.
 - [KNOWN | HIGH] pair scoring currently accumulates Python dictionaries/Pandas rows for all eligible pairs.
 - [KNOWN | HIGH] `configure` and `uberBlast` are not redistributed and their license/install contracts remain unresolved.
-- [KNOWN | HIGH] `cinch map` and its resumable per-genome cache are implemented; the profile adapter, block engine, advanced statistics, full staged CLI, and full-scale benchmark are not implemented.
+- [KNOWN | HIGH] `cinch map`, its resumable per-genome cache, and explicit profile adapters are implemented; the block engine, advanced statistics, full staged CLI, and full-scale benchmark are not implemented.
 - [COMPUTED | HIGH] Small synthetic mapping scaled poorly: 2 workers were 0.95× and 4 workers 1.14× relative to one worker; larger representative workloads remain unmeasured.
 - [KNOWN | HIGH] Existing historical validation is not an unseen biological validation cohort.

@@ -2,29 +2,15 @@
 
 from __future__ import annotations
 
-import os
-import tempfile
 import time
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
 
 from cinch.frozen_v1.mapping import file_hash
 from cinch.frozen_v1.utils import software_versions, write_json, write_tsv
 from cinch.mapping import MappingConfig, map_genomes_indexed
-
-
-def _atomic_npz(path: Path, **arrays) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    descriptor, temporary = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".npz", dir=path.parent)
-    os.close(descriptor)
-    temporary_path = Path(temporary)
-    try:
-        np.savez_compressed(temporary_path, **arrays)
-        os.replace(temporary_path, path)
-    finally:
-        temporary_path.unlink(missing_ok=True)
+from cinch.profiles import StateProfile, save_profile
 
 
 def run_mapping(
@@ -41,12 +27,18 @@ def run_mapping(
     for directory in (output, output / "profiles", output / "mapping", output / "manifest"):
         directory.mkdir(parents=True, exist_ok=True)
     mapped = map_genomes_indexed(reference, genomes, output, threads=threads, config=config)
-    _atomic_npz(
+    save_profile(
+        StateProfile(
+            samples=mapped["samples"], loci=mapped["loci"],
+            presence=mapped["presence"], types=mapped["types"],
+            metadata={
+                "schema": "CINCH_STATE_PROFILE_V2",
+                "source": "indexed_mapping",
+                "presence_states": {"-1": "unresolved", "0": "absent", "1": "present"},
+                "type_missing": -1,
+            },
+        ),
         output / "profiles" / "PROFILE_V2.npz",
-        samples=mapped["samples"],
-        loci=mapped["loci"],
-        presence=mapped["presence"],
-        types=mapped["types"],
     )
     write_tsv(mapped["trace"], output / "mapping" / "CALL_TRACE.tsv")
     write_tsv(mapped["coordinates"], output / "mapping" / "COORDINATES.tsv")
