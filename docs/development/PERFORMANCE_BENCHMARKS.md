@@ -13,13 +13,14 @@
 | frozen association | source inspection | nested Python pairs × four channels × DataFrame distance lookup | principal architectural risk |
 | dev2 Numba kernels | source inspection and source tests | compiled triangular kernels exist in frozen scripts | candidate architecture; not unified benchmark evidence |
 | unified weighted MI | 1,000,000 valid binary mass triplets, five repeats | best 0.083142542 s; 12,027,537 pairs/s | isolated vectorized kernel only; excludes state construction and I/O |
+| unified indexed mapper | 12 synthetic genomes × 200 exact 300-nt loci | 1/2/4 workers: 0.534/0.560/0.468 s; 4-worker speedup 1.14× | small controlled workload; process/index overhead dominates; no biological claim |
 
 ## Benchmark ladder
 
 | Level | Workload | Required measures | Status |
 |---|---|---|---|
-| 1 | synthetic correctness cases | wall, RSS, equality | NOT_STARTED |
-| 2 | small representative genomes/reference | mapping and pair throughput | NOT_STARTED |
+| 1 | synthetic correctness cases | wall, RSS, equality | PARTIAL: mapping controlled cases pass; pair engine absent |
+| 2 | small representative genomes/reference | mapping and pair throughput | PARTIAL: synthetic mapper throughput measured; representative genomes absent |
 | 3 | moderate subset | scaling and resume | NOT_STARTED |
 | 4 | full reference, limited genomes | mapper/index memory | NOT_STARTED |
 | 5 | 224 genomes × 25K reference | mapping wall/CPU/RSS | BLOCKED: inputs absent |

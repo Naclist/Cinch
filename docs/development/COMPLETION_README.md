@@ -13,7 +13,7 @@
 
 ## Current architecture
 
-[COMPUTED | HIGH] Production WGS behavior remains `cinch/frozen_v1`; differentiated weighted MI, EpiDis, and BH APIs now exist under `cinch/statistics`. No frozen implementation has been overwritten.
+[COMPUTED | HIGH] Production WGS behavior remains `cinch/frozen_v1`; differentiated weighted MI, EpiDis, and BH APIs exist under `cinch/statistics`, and an opt-in indexed/resumable mapper exists under `cinch/mapping`. No frozen implementation has been overwritten.
 
 ## Overall milestone status
 
@@ -22,14 +22,14 @@
 | M00 | Source freeze and audit system | VALIDATED | source SHAs; baseline tests | none |
 | M01 | Full architecture audit | VALIDATED | inventory, decisions, Checkpoint 1 review | keep inventory current |
 | M02 | Unified exact statistical API | VALIDATED | 17 tests; zero dev2 diff; measured microbenchmark | extend later with categorical kernels |
-| M03 | Mapper backends and resumability | NOT_STARTED | mapping audit | all code and controlled cases |
+| M03 | Mapper backends and resumability | TESTED | 24-test suite; mapper benchmark; preserved `Cinch_v8.py` | legacy uberBlast equivalence and representative biological validation |
 | M04 | Unified profile/state model | NOT_STARTED | state discrepancy recorded | adapter and tests |
 | M05 | Blockwise four-channel engine | NOT_STARTED | complexity audit | implementation and benchmark |
 | M06 | Advanced statistics | NOT_STARTED | distinct definitions inventoried | integration/regression |
 | M07 | Staged CLI/end-to-end workflow | NOT_STARTED | target commands decided | implementation/E2E |
 | M08 | Production acceptance | BLOCKED | target workload recorded | data and HPC execution |
 
-[COMPUTED | HIGH] Predefined completion is `15/45 = 33.3%`; see `MASTER_PLAN.md`.
+[COMPUTED | HIGH] Predefined completion is `19/45 = 42.2%`; see `MASTER_PLAN.md`.
 
 ## Scientific feature preservation
 
@@ -39,7 +39,7 @@
 | HC recurrence/Neff | `filtering.py` | unchanged frozen_v1 | baseline tested only |
 | Weighted MI/EpiDis/BH | dev2 `core/statistics.py` | `cinch/statistics` | zero max absolute difference over 10,000 random valid inputs; unified tests pass |
 | SHC permutation/ARACNE/Diff-GWES | dev2 frozen snapshots | planned distinct modules | historical evidence only; not integrated |
-| HPC mapping/allele nomenclature | dev2 `Cinch_v8.py` | planned backend adapter | external dependencies unresolved |
+| Indexed mapping/allele nomenclature | frozen mapper plus dev2 `Cinch_v8.py` | mappy/minimap2 index, deterministic hash-sorted alleles, atomic per-genome cache | controlled cases pass; historical uberBlast equivalence unresolved |
 
 ## Confirmed performance improvements
 
@@ -47,7 +47,9 @@
 
 ## Unverified performance assumptions
 
-[INFERRED | HIGH] Genome-parallel indexed alignment, integer encoding, blockwise pair enumeration, compiled contingency kernels, and sparse distance storage are candidates; none is reported as a measured improvement yet.
+[COMPUTED | HIGH] On 12 synthetic genomes × 200 exact loci, the indexed mapper completed in 0.534 s with one worker and 0.468 s with four workers, a measured 1.14× speedup. Two workers were slower than one. This workload is dominated by process/index overhead and is not biological validation.
+
+[INFERRED | HIGH] Integer encoding, blockwise pair enumeration, compiled contingency kernels, and sparse distance storage remain unmeasured candidates.
 
 ## Current blockers
 
@@ -64,18 +66,18 @@
 
 ## Tests executed
 
-- [COMPUTED | HIGH] Unified branch: 17 passed on Python 3.12.14.
+- [COMPUTED | HIGH] Unified branch: 24 passed on Python 3.12.14.
 - [COMPUTED | HIGH] CINCH-dev2 baseline: 7 passed on Python 3.12.14.
 
 ## Tests not executed
 
-[KNOWN | HIGH] Controlled cross-mapper cases, blockwise statistical equivalence, end-to-end unified execution, and production-scale benchmarks remain unexecuted.
+[KNOWN | HIGH] Legacy uberBlast cross-mapper equivalence, blockwise statistical equivalence, end-to-end unified execution, and production-scale benchmarks remain unexecuted.
 
 ## Next three priority actions
 
-1. [KNOWN | HIGH] Define the mapper backend/cache contract and fix `by_contig` reconstruction without changing coordinates.
-2. [KNOWN | HIGH] Add controlled mapper cases and deterministic allele nomenclature before enabling parallel completion.
-3. [KNOWN | HIGH] Prototype bounded block enumeration for PP while preserving the full eligible hypothesis universe.
+1. [KNOWN | HIGH] Implement the explicit presence/type profile schema and legacy conversion policies.
+2. [KNOWN | HIGH] Prototype bounded block enumeration for PP while preserving the full eligible hypothesis universe.
+3. [KNOWN | HIGH] Validate block outputs against exhaustive frozen_v1 scoring before integrating advanced statistics.
 
 ## Current recommended usage
 
@@ -83,4 +85,4 @@
 
 ## Release readiness
 
-[COMPUTED | HIGH] Not ready for unified research use; mandatory M03-M08 gates remain open.
+[COMPUTED | HIGH] Not ready for unified research use; the M03 scientific-equivalence gate and mandatory M04-M08 gates remain open.

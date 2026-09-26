@@ -76,6 +76,6 @@ def test_neff_exact():
 
 def test_cli_exposes_wgs_and_filter():
     parser = build_parser()
+    assert parser.parse_args(["map", "g.fasta", "-r", "ref.fasta", "-o", "mapped"]).command == "map"
     assert parser.parse_args(["filter", "--wgs_results", "x", "--hc", "69",
                               "--order-threshold", "100"]).command == "filter"
-
