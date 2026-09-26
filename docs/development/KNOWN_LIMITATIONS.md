@@ -7,6 +7,6 @@
 - [KNOWN | HIGH] order/bp distance currently materializes every locus pair and cannot scale to 25K loci.
 - [KNOWN | HIGH] frozen pair scoring accumulates all rows; the unified block engine bounds output accumulation but still receives/materializes an O(p²) distance table and executes Python per pair/channel.
 - [KNOWN | HIGH] `configure` and `uberBlast` are not redistributed and their license/install contracts remain unresolved.
-- [KNOWN | HIGH] Mapping, profiles, block association, and advanced-statistics kernels are implemented; streaming distances, the advanced staged workflow, full staged CLI, and full-scale benchmark are not implemented.
+- [KNOWN | HIGH] Staged map/profile/associate and advanced-statistics kernels are implemented; streaming distances, staged advanced filtering/reporting, and full-scale benchmark are not implemented.
 - [COMPUTED | HIGH] Small synthetic mapping scaled poorly: 2 workers were 0.95× and 4 workers 1.14× relative to one worker; larger representative workloads remain unmeasured.
 - [KNOWN | HIGH] Existing historical validation is not an unseen biological validation cohort.

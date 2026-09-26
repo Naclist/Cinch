@@ -9,6 +9,8 @@ from .frozen_v1.filtering import SelectionRequiredError, run_filter
 from .frozen_v1.wgs import run_wgs
 from .mapping import MappingConfig
 from .workflow.mapping import run_mapping
+from .workflow.profile import run_profile_conversion
+from .workflow.association import run_association
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -24,6 +26,19 @@ def build_parser() -> argparse.ArgumentParser:
     mapping.add_argument("--detection-coverage", type=float, default=.60)
     mapping.add_argument("--callable-coverage", type=float, default=.95)
     mapping.add_argument("--min-mapq", type=int, default=0)
+    profile = sub.add_parser("profile", help="convert a legacy allele table using an explicit missingness policy")
+    profile.add_argument("source", type=Path, help="sample-by-locus TSV/CSV; first column is sample ID")
+    profile.add_argument("-o", "--output", required=True, type=Path)
+    profile.add_argument("--missing-policy", required=True, choices=["absence", "unresolved"])
+    profile.add_argument("--separator", help="explicit field separator; default auto-detect")
+    associate = sub.add_parser("associate", help="restartable blockwise PP/PT/TP/TT association stage")
+    associate.add_argument("--profile", required=True, type=Path, help="validated PROFILE_V2/UNIFIED_STATES npz")
+    associate.add_argument("--coordinates", required=True, type=Path, help="mapping coordinates TSV or Parquet")
+    associate.add_argument("-o", "--output", required=True, type=Path)
+    associate.add_argument("--min-informative", type=int, default=20)
+    associate.add_argument("--min-state-count", type=int, default=3)
+    associate.add_argument("--min-order-observations", type=int, default=5)
+    associate.add_argument("--block-pairs", type=int, default=100_000)
     wgs = sub.add_parser("wgs", help="build a complete unfiltered PP/PT/TP/TT dependency landscape from genomes")
     wgs.add_argument("genomes", nargs="+", type=Path, help="input genome FASTA files")
     wgs.add_argument("-r", "--reference", required=True, type=Path, help="reference CDS FASTA with unique locus IDs")
@@ -54,12 +69,26 @@ def main(argv: list[str] | None = None) -> int:
                 minimum_mapq=args.min_mapq,
             )
             output = run_mapping(args.reference, args.genomes, args.output, args.threads, config)
+        elif args.command == "profile":
+            output = run_profile_conversion(
+                args.source, args.output, missing_policy=args.missing_policy, separator=args.separator,
+            )
+        elif args.command == "associate":
+            output = run_association(
+                args.profile, args.coordinates, args.output,
+                minimum_informative=args.min_informative,
+                minimum_state_count=args.min_state_count,
+                minimum_order_observations=args.min_order_observations,
+                block_pairs=args.block_pairs,
+            )
         elif args.command == "wgs":
             output = run_wgs(args.reference, args.genomes, args.prefix, args.threads, args.output,
                              args.phenotype, args.min_identity, args.min_informative,
                              args.min_state_count, args.min_order_observations)
-        else:
+        elif args.command == "filter":
             output = run_filter(args.wgs_results, args.hc, args.order_threshold, args.minimum_populations)
+        else:  # pragma: no cover - argparse enforces known commands
+            raise ValueError(f"unknown command {args.command}")
         print(f"RESULT_DIR={output}")
         return 0
     except SelectionRequiredError as error:

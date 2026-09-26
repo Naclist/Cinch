@@ -16,6 +16,7 @@
 | 2026-09-26 | unified M06 vs dev2 `ec1eaa5` | 100 seeded cases | direct cross-source comparison | max abs diff 0; ARACNE and stable seeds exact | SHC/MI/high-order migration |
 | 2026-09-26 | unified M06 | Python 3.12.14 | `pytest -q` | 34 passed in 1.61 s | hand cases and advanced-kernel invariants |
 | 2026-09-26 | unified M06 | controlled synthetic kernels | `benchmark_advanced_statistics.py` | SHC 2,805 permutations/s; ARACNE 64,831 edges/s | isolated single-run timing |
+| 2026-09-26 | unified M07 | Python 3.12.14 | `pytest -q` | 35 passed in 2.09 s | profile conversion → distance → association CLI, manifest and resume |
 
 ## Evidence limitations
 

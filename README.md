@@ -246,11 +246,36 @@ The toy's `--hc 2` is a toy-specific HC level, not the SPN534 recurrence-count
 criterion. SPN534 provenance, versioned assembly mappings and SHA256 manifests are
 under [`examples/spn534/provenance`](examples/spn534/provenance).
 
+## Unified staged integration preview
+
+The integration branch also exposes explicit restart boundaries:
+
+```bash
+cinch map -r reference.cds.fasta -o mapped -t 4 genomes/*.fasta
+cinch profile legacy.tsv -o converted --missing-policy unresolved
+cinch associate \
+  --profile mapped/profiles/PROFILE_V2.npz \
+  --coordinates mapped/mapping/COORDINATES.tsv \
+  -o associated --block-pairs 100000
+```
+
+`map` caches each indexed genome independently. `profile` refuses to guess whether
+legacy non-calls mean absence or unresolved. `associate` preserves frozen
+PP/PT/TP/TT semantics and writes atomic resumable blocks. This staged path is not
+yet a production replacement: advanced filter/report glue and streaming physical
+distance are still incomplete. See [`docs/STAGED_WORKFLOW.md`](docs/STAGED_WORKFLOW.md)
+and [`docs/development/COMPLETION_README.md`](docs/development/COMPLETION_README.md).
+
 ## Repository map and boundaries
 
 | path | purpose |
 |---|---|
 | [`cinch/frozen_v1`](cinch/frozen_v1) | state construction, MI/NMI, hierarchy, order distance, recurrence and Neff |
+| [`cinch/mapping`](cinch/mapping) | indexed genome mapper, deterministic alleles and per-genome cache |
+| [`cinch/profiles`](cinch/profiles) | explicit presence/type schema and legacy adapters |
+| [`cinch/association`](cinch/association) | bounded four-channel blocks and high-order kernels |
+| [`cinch/population`](cinch/population) | SHC-conditioned MI and permutation kernels |
+| [`cinch/network`](cinch/network) | ARACNE triangle pruning |
 | [`docs/SCIENTIFIC_NARRATIVE.md`](docs/SCIENTIFIC_NARRATIVE.md) | full mathematical/scientific walkthrough |
 | [`docs/FIGURE_INDEX.md`](docs/FIGURE_INDEX.md) | result figures and exact evidence source |
 | [`docs/DEVELOPMENT_HISTORY.md`](docs/DEVELOPMENT_HISTORY.md) | decisions, failures and frozen/future boundaries |
