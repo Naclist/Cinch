@@ -15,6 +15,8 @@
 | unified weighted MI | 1,000,000 valid binary mass triplets, five repeats | best 0.083142542 s; 12,027,537 pairs/s | isolated vectorized kernel only; excludes state construction and I/O |
 | unified indexed mapper | 12 synthetic genomes × 200 exact 300-nt loci | 1/2/4 workers: 0.534/0.560/0.468 s; 4-worker speedup 1.14× | small controlled workload; process/index overhead dominates; no biological claim |
 | unified pair blocks | 224 samples × 80 loci; 3,160 pairs; four channels | 3.171 s and 2.99 MB traced peak versus frozen 3.212 s and 20.27 MB | exact row counts; 85.2% lower traced Python peak; I/O excluded |
+| SHC permutation kernel | 1,000 samples; 20 SHCs; 199 permutations; one edge | 0.07095 s; 2,805 permutations/s | single run; excludes edge scheduling and I/O |
+| sparse ARACNE | 500 nodes; 1,000 edges | 0.01542 s; 64,831 input edges/s | adjacency-triangle kernel; single run |
 
 ## Benchmark ladder
 

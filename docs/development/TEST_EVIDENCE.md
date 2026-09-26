@@ -13,6 +13,9 @@
 | 2026-09-26 | unified M04 | Python 3.12.14 | `pytest -q` | 27 passed in 1.55 s | state invariants, explicit legacy missing policy, V2/frozen round trips |
 | 2026-09-26 | unified M05 | Python 3.12.14 | `pytest -q` | 30 passed in 1.67 s | exact frozen/block equality, triangular universe, resume/input drift |
 | 2026-09-26 | unified M05 | 224 samples × 80 loci | `benchmark_pair_blocks.py` | 3.212→3.171 s; traced peak 20.27→2.99 MB; row counts equal | computational benchmark; Parquet I/O excluded |
+| 2026-09-26 | unified M06 vs dev2 `ec1eaa5` | 100 seeded cases | direct cross-source comparison | max abs diff 0; ARACNE and stable seeds exact | SHC/MI/high-order migration |
+| 2026-09-26 | unified M06 | Python 3.12.14 | `pytest -q` | 34 passed in 1.61 s | hand cases and advanced-kernel invariants |
+| 2026-09-26 | unified M06 | controlled synthetic kernels | `benchmark_advanced_statistics.py` | SHC 2,805 permutations/s; ARACNE 64,831 edges/s | isolated single-run timing |
 
 ## Evidence limitations
 

@@ -16,7 +16,7 @@
 | M03 | Implement mapper backend contract and correct frozen mapper defects | frozen_v1 mapping; legacy `Cinch_v8.py` | backend interface; corrected internal backend; preserved legacy source | M02 | controlled cases classified for frozen/indexed backends; uberBlast comparison blocked | real threads; reusable index; resumable per genome | TESTED | 24-test suite; controlled mapper benchmark; semantics below |
 | M04 | Unify presence/type profiles and compatibility adapters | frozen states; legacy profiles | explicit state schema and adapters | M03 | deterministic sample/locus/type ordering; missingness round-trip | five bytes/cell raw state arrays | VALIDATED | `docs/PROFILE_SCHEMA.md`; 27-test suite |
 | M05 | Implement bounded-memory PP/PT/TP/TT pair engine | frozen channel semantics; dev2 kernels | blockwise pair engine; restartable block output | M04 | exhaustive small-case equality for pair universe, MI/NMI, drivers | preliminary 224×80 benchmark complete; scaling ladder incomplete | TESTED | exact A/B test; 30-test suite; `ASSOCIATION_BLOCKS.md` |
-| M06 | Integrate population and advanced statistics | HC/Neff; weighting; SHC; BH; ARACNE; Diff-GWES | separate named methods and workflows | M05 | formula/output regressions with documented tolerances | permutation and graph stages profiled | NOT_STARTED | none |
+| M06 | Integrate population and advanced statistics | HC/Neff; weighting; SHC; BH; ARACNE; Diff-GWES | separate named methods and workflows | M05 | zero-difference kernel migration and hand cases | permutation and graph kernels profiled; workflow profile absent | TESTED | 34-test suite; 100-case cross-source comparison; controlled timing |
 | M07 | Expose staged `cinch` workflow and unified schemas | all prior modules | `map`, `profile`, `associate`, `filter`, `report`, `wgs` | M03-M06 | representative end-to-end run; cache invalidation; schema compatibility | bounded stages and resume evidence | NOT_STARTED | none |
 | M08 | Production acceptance at 224 genomes × 25,000 loci | production inputs or approved equivalent | benchmark report and release decision | M07 | mandatory gates in assignment satisfied | actual wall time, CPU, RSS and throughput | BLOCKED | production dataset and HPC run not yet supplied/executed |
 
@@ -24,7 +24,7 @@
 
 [KNOWN | HIGH] Each milestone has five equal gates: implementation, engineering tests, scientific validation, performance evidence, and documentation. Project completion is `satisfied gates / 45`; blocked or deferred gates count as unsatisfied. No subjective weighting is permitted.
 
-[COMPUTED | HIGH] M00-M02 and M04 satisfy twenty gates. M03 satisfies four gates but lacks legacy scientific equivalence. M05 satisfies implementation, engineering-test, scientific-equivalence, and documentation gates but lacks the required scaling ladder. M06-M08 satisfy zero gates. Overall completion is therefore `28/45 = 62.2%`.
+[COMPUTED | HIGH] M00-M02 and M04 satisfy twenty gates. M03 satisfies four gates but lacks legacy scientific equivalence. M05 satisfies four gates but lacks the required scaling ladder. M06 satisfies engineering-test, scientific-equivalence, and documentation gates, but lacks complete workflow integration and workflow-scale profiling. M07-M08 satisfy zero gates. Overall completion is therefore `31/45 = 68.9%`.
 
 ## M03 mapping-semantics checkpoint
 

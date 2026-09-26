@@ -25,11 +25,11 @@
 | M03 | Mapper backends and resumability | TESTED | 24-test suite; mapper benchmark; preserved `Cinch_v8.py` | legacy uberBlast equivalence and representative biological validation |
 | M04 | Unified profile/state model | VALIDATED | explicit schema, legacy policy adapter, frozen/V2 round trips | none |
 | M05 | Blockwise four-channel engine | TESTED | exact frozen A/B, atomic resume, controlled memory benchmark | streaming distances and scaling ladder |
-| M06 | Advanced statistics | NOT_STARTED | distinct definitions inventoried | integration/regression |
+| M06 | Advanced statistics | TESTED | SHC/ARACNE/Diff-GWES kernels, zero-difference migration, timing | staged workflow and workflow-scale profile |
 | M07 | Staged CLI/end-to-end workflow | NOT_STARTED | target commands decided | implementation/E2E |
 | M08 | Production acceptance | BLOCKED | target workload recorded | data and HPC execution |
 
-[COMPUTED | HIGH] Predefined completion is `28/45 = 62.2%`; see `MASTER_PLAN.md`.
+[COMPUTED | HIGH] Predefined completion is `31/45 = 68.9%`; see `MASTER_PLAN.md`.
 
 ## Scientific feature preservation
 
@@ -38,7 +38,7 @@
 | PP/PT/TP/TT | `cinch/frozen_v1/statistics.py` | unchanged frozen_v1 | baseline tested only |
 | HC recurrence/Neff | `filtering.py` | unchanged frozen_v1 | baseline tested only |
 | Weighted MI/EpiDis/BH | dev2 `core/statistics.py` | `cinch/statistics` | zero max absolute difference over 10,000 random valid inputs; unified tests pass |
-| SHC permutation/ARACNE/Diff-GWES | dev2 frozen snapshots | planned distinct modules | historical evidence only; not integrated |
+| SHC permutation/ARACNE/Diff-GWES | dev2 frozen snapshots | `cinch.population`, `cinch.network`, `cinch.association.high_order` | kernels have zero-difference migration evidence; workflow absent |
 | Indexed mapping/allele nomenclature | frozen mapper plus dev2 `Cinch_v8.py` | mappy/minimap2 index, deterministic hash-sorted alleles, atomic per-genome cache | controlled cases pass; historical uberBlast equivalence unresolved |
 
 ## Confirmed performance improvements
@@ -68,7 +68,7 @@
 
 ## Tests executed
 
-- [COMPUTED | HIGH] Unified branch: 30 passed on Python 3.12.14.
+- [COMPUTED | HIGH] Unified branch: 34 passed on Python 3.12.14.
 - [COMPUTED | HIGH] CINCH-dev2 baseline: 7 passed on Python 3.12.14.
 
 ## Tests not executed
@@ -79,7 +79,7 @@
 
 1. [KNOWN | HIGH] Replace the O(p²) distance DataFrame/lookup with blockwise coordinate-distance production.
 2. [KNOWN | HIGH] Run the pair-engine n/p/block-size scaling ladder and profile the contingency loop.
-3. [KNOWN | HIGH] Integrate SHC, ARACNE, and high-order modules as separately named methods.
+3. [KNOWN | HIGH] Connect SHC, BH, ARACNE, and high-order kernels through a restartable workflow stage.
 
 ## Current recommended usage
 
