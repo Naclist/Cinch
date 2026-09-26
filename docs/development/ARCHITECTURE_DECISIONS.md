@@ -45,3 +45,10 @@
 - [COMPUTED | HIGH] Engineering review: both baselines install under Python 3.12 and pass their existing tests; frozen_v1 threading and dense-pair limits are confirmed.
 - [COMPUTED | HIGH] Integration review: every required capability maps to a destination or preserved legacy area; no source implementation was deleted.
 - [COMPUTED | HIGH] Scope review: the next critical path is exact statistical API integration, followed by mapping correctness and scalability; cosmetic work is deferred.
+
+## Checkpoints 2–6 four-review record
+
+- [COMPUTED | HIGH] Scientific review: block outputs are exactly equal to frozen PP/PT/TP/TT small cases; advanced kernels have zero cross-source difference; indexed mapping differences are explicit and not called equivalent to uberBlast.
+- [COMPUTED | HIGH] Engineering review: 36 tests pass; mapper and pair/advanced microbenchmarks are recorded; atomic cache/output recovery is exercised.
+- [COMPUTED | HIGH] Integration review: map/profile/associate share the V2 state schema; frozen wgs/filter remain intact; advanced workflow glue is still absent.
+- [COMPUTED | HIGH] Scope review: production pair throughput, advanced filter/report glue, and 224×25K acceptance dominate remaining work; cosmetic repository work remains deferred.
