@@ -17,7 +17,8 @@
 | 2026-09-26 | unified M06 | Python 3.12.14 | `pytest -q` | 34 passed in 1.61 s | hand cases and advanced-kernel invariants |
 | 2026-09-26 | unified M06 | controlled synthetic kernels | `benchmark_advanced_statistics.py` | SHC 2,805 permutations/s; ARACNE 64,831 edges/s | isolated single-run timing |
 | 2026-09-26 | unified M07 | Python 3.12.14 | `pytest -q` | 36 passed in 1.63 s | profile conversion → sparse distance → association CLI, manifest and resume |
+| 2026-09-26 | unified M06/M07 | Python 3.12.14 | `pytest -q` | 37 passed in 3.38 s | staged PP SHC permutation, BH, ARACNE and report artifacts |
 
 ## Evidence limitations
 
-[KNOWN | HIGH] Existing tests validate process-based mapping, per-genome cache reuse, indels, truncations, competing loci, strand/coordinate handling, and deterministic nomenclature. They do not validate legacy uberBlast installation/equivalence, biological sensitivity/specificity, 25K-locus memory, blockwise numerical equivalence, or end-to-end integration.
+[KNOWN | HIGH] Existing tests validate process-based mapping, cache reuse, mapping edge cases, deterministic nomenclature, exact blockwise numerical equivalence, and controlled staged filtering/reporting. They do not validate legacy uberBlast equivalence, biological sensitivity/specificity, 25K-locus runtime, or public SPN534 genome E2E execution.

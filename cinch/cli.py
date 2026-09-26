@@ -11,6 +11,8 @@ from .mapping import MappingConfig
 from .workflow.mapping import run_mapping
 from .workflow.profile import run_profile_conversion
 from .workflow.association import run_association
+from .workflow.advanced_filter import run_advanced_filter
+from .workflow.reporting import run_report
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -39,6 +41,20 @@ def build_parser() -> argparse.ArgumentParser:
     associate.add_argument("--min-state-count", type=int, default=3)
     associate.add_argument("--min-order-observations", type=int, default=5)
     associate.add_argument("--block-pairs", type=int, default=100_000)
+    advanced = sub.add_parser("advanced-filter", help="SHC permutation, BH, and ARACNE filtering for PP edges")
+    advanced.add_argument("--association", required=True, type=Path, help="association stage directory containing blocks/")
+    advanced.add_argument("--profile", required=True, type=Path)
+    advanced.add_argument("--shc", required=True, type=Path, help="table with sample_id and shc")
+    advanced.add_argument("--weights", type=Path, help="optional table with sample_id and weight")
+    advanced.add_argument("-o", "--output", required=True, type=Path)
+    advanced.add_argument("--permutations", type=int, default=999)
+    advanced.add_argument("--min-cluster-size", type=int, default=4)
+    advanced.add_argument("--min-informative-clusters", type=int, default=2)
+    advanced.add_argument("--alpha", type=float, default=.05)
+    advanced.add_argument("--seed", type=int, default=20260926)
+    report = sub.add_parser("report", help="render report-only outputs from a staged advanced-filter result")
+    report.add_argument("--filter-results", required=True, type=Path)
+    report.add_argument("-o", "--output", required=True, type=Path)
     wgs = sub.add_parser("wgs", help="build a complete unfiltered PP/PT/TP/TT dependency landscape from genomes")
     wgs.add_argument("genomes", nargs="+", type=Path, help="input genome FASTA files")
     wgs.add_argument("-r", "--reference", required=True, type=Path, help="reference CDS FASTA with unique locus IDs")
@@ -81,6 +97,16 @@ def main(argv: list[str] | None = None) -> int:
                 minimum_order_observations=args.min_order_observations,
                 block_pairs=args.block_pairs,
             )
+        elif args.command == "advanced-filter":
+            output = run_advanced_filter(
+                args.association, args.profile, args.shc, args.output,
+                weights_path=args.weights, permutations=args.permutations,
+                minimum_cluster_size=args.min_cluster_size,
+                minimum_informative_clusters=args.min_informative_clusters,
+                alpha=args.alpha, seed=args.seed,
+            )
+        elif args.command == "report":
+            output = run_report(args.filter_results, args.output)
         elif args.command == "wgs":
             output = run_wgs(args.reference, args.genomes, args.prefix, args.threads, args.output,
                              args.phenotype, args.min_identity, args.min_informative,

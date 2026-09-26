@@ -79,5 +79,7 @@ def test_cli_exposes_wgs_and_filter():
     assert parser.parse_args(["map", "g.fasta", "-r", "ref.fasta", "-o", "mapped"]).command == "map"
     assert parser.parse_args(["profile", "x.tsv", "-o", "p", "--missing-policy", "unresolved"]).command == "profile"
     assert parser.parse_args(["associate", "--profile", "p.npz", "--coordinates", "c.tsv", "-o", "a"]).command == "associate"
+    assert parser.parse_args(["advanced-filter", "--association", "a", "--profile", "p.npz", "--shc", "s.tsv", "-o", "f"]).command == "advanced-filter"
+    assert parser.parse_args(["report", "--filter-results", "f", "-o", "r"]).command == "report"
     assert parser.parse_args(["filter", "--wgs_results", "x", "--hc", "69",
                               "--order-threshold", "100"]).command == "filter"

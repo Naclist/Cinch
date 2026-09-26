@@ -52,3 +52,10 @@
 - [COMPUTED | HIGH] Engineering review: 36 tests pass; mapper and pair/advanced microbenchmarks are recorded; atomic cache/output recovery is exercised.
 - [COMPUTED | HIGH] Integration review: map/profile/associate share the V2 state schema; frozen wgs/filter remain intact; advanced workflow glue is still absent.
 - [COMPUTED | HIGH] Scope review: production pair throughput, advanced filter/report glue, and 224×25K acceptance dominate remaining work; cosmetic repository work remains deferred.
+
+## Staged advanced-filter review
+
+- [COMPUTED | HIGH] Scientific review: SHC permutation is restricted to binary PP edges; BH is applied only across eligible tested edges; ARACNE occurs after significance and remains graph pruning.
+- [COMPUTED | HIGH] Engineering review: deterministic edge-derived RNG seeds, aligned sample checks, input hashes, atomic outputs, and report artifacts pass the 37-test suite.
+- [COMPUTED | HIGH] Integration review: `advanced-filter` consumes association blocks/profile/SHC/weights and `report` consumes immutable filter outputs; frozen `filter` is unchanged.
+- [COMPUTED | HIGH] Scope review: public SPN534 real-genome E2E now outranks further local workflow embellishment.

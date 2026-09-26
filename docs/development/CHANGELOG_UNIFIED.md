@@ -43,3 +43,9 @@
 - [COMPUTED | HIGH] Added `cinch map`, `cinch profile`, and `cinch associate` stages without changing frozen `wgs`/`filter` behavior.
 - [COMPUTED | HIGH] Added a controlled profile-to-association CLI test with manifest validation and resume.
 - [KNOWN | HIGH] Staged advanced filtering/reporting and production acceptance remain incomplete.
+
+## 2026-09-26 — Staged PP filtering and reporting
+
+- [COMPUTED | HIGH] Added deterministic PP-only SHC permutation, BH correction, ARACNE pruning, hashed provenance, and atomic outputs.
+- [COMPUTED | HIGH] Added a report-only stage with tabular summary and SHC diagnostic figures.
+- [KNOWN | HIGH] Binary SHC permutation was not generalized to categorical PT/TP/TT states without a validated statistical definition.

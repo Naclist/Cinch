@@ -2,16 +2,16 @@
 
 Last completed milestone: M02 unified exact statistical API. M03 is TESTED but not scientifically validated against legacy uberBlast.
 
-Current active task: complete M07 advanced filter/report glue and M05 scaling.
+Current active task: public SPN534 genome acquisition, reference reconstruction, real-data E2E, and progressive scaling.
 
-Last verified Git commit: `f85b73c` M02 exact statistical kernels.
+Last verified Git commit before current staged-filter change: `b070b36` audit synchronization.
 
-Files modified after M06: staged profile/association workflows, CLI commands, controlled E2E test, and usage documentation.
+Files modified: staged PP SHC/BH/ARACNE filtering, report-only workflow, CLI, controlled workflow test, and documentation.
 
-Tests passed: unified 35/35; CINCH-dev2 7/7; staged profile→associate E2E and resume pass.
+Tests passed: unified 37/37; CINCH-dev2 7/7; staged PP SHC/BH/ARACNE and reporting pass.
 
 Tests failed: none after using supported Python; initial install under Python 3.9.6 was rejected by package metadata.
 
 Unresolved issues: uberBlast/configure equivalence; pair runtime scaling; advanced filter/report integration; production inputs/resources.
 
-Immediate next action: add staged candidate filtering with SHC/BH/ARACNE manifests, without changing frozen `cinch filter` semantics.
+Immediate next action: download a documented SPN534 subset, reconstruct an explicitly nonhistorical reference when necessary, and execute real-genome stages with resource measurements.
