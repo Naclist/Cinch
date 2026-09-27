@@ -93,7 +93,11 @@ def test_public_package_version_is_distinct_from_frozen_workflow_version():
 
 
 def test_release_smoke_resolves_command_name_from_path(monkeypatch):
-    from scripts.release_smoke import _resolve_executable
+    import runpy
+    from pathlib import Path
 
-    monkeypatch.setattr("scripts.release_smoke.shutil.which", lambda value: "/tmp/bin/cinch")
-    assert _resolve_executable("cinch") == "/tmp/bin/cinch"
+    script = Path(__file__).resolve().parents[1] / "scripts" / "release_smoke.py"
+    namespace = runpy.run_path(str(script))
+    resolver = namespace["_resolve_executable"]
+    monkeypatch.setattr(resolver.__globals__["shutil"], "which", lambda value: "/tmp/bin/cinch")
+    assert resolver("cinch") == "/tmp/bin/cinch"
