@@ -112,9 +112,9 @@ def map_genomes(reference_path: Path, genome_paths: list[Path], minimum_identity
                                    "CDS_SHA256": hashlib.sha256(hit.sequence.encode()).hexdigest(),
                                    "type_ID": f"type_{types[s, j]}" if type_callable else "",
                                    "mapping_identity": hit.identity})
-            by_contig: dict[str, list[tuple[int, Hit]]] = {}
-            for item in sample_hits:
-                by_contig.setdefault(item[1].contig, []).append(item)
+        by_contig: dict[str, list[tuple[int, Hit]]] = {}
+        for item in sample_hits:
+            by_contig.setdefault(item[1].contig, []).append(item)
         for contig, items in by_contig.items():
             for gene_order, (j, hit) in enumerate(sorted(items, key=lambda x: (x[1].start, x[1].end, x[0])), 1):
                 coordinate_rows.append({"sample_id": sample_ids[s], "locus_id": locus_ids[j], "locus_index": j,

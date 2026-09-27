@@ -1,0 +1,23 @@
+{
+  "scope": "controlled scientific validation of population- and habitat-conditioned PP/PT/TP/TT association",
+  "command": "pytest -q tests/test_conditional_association.py",
+  "result": "15 passed in 1.31 s",
+  "full_suite_result": "60 passed in 2.74 s",
+  "cases": {
+    "A_population_only": "passed; global signal with zero within-population MI",
+    "B_habitat_coexistence": "passed; positive standardized delta MI and two-sided permutation support",
+    "C_habitat_exclusion": "passed; non-negative MI with depleted same-state driver",
+    "D_no_differential": "passed; zero delta and nonsignificant permutation",
+    "E_perfect_confounding": "passed; NOT_IDENTIFIABLE and no fabricated effect",
+    "F_multiallelic_TT": "passed; full three-state categorical contingency",
+    "G_PT_TP": "passed; separate channel conditioning in CLI end-to-end run",
+    "H_missing_multicopy": "passed; unresolved states excluded and callable presence/type ambiguity separated",
+    "I_unbalanced_design": "passed; common-support weights and population-preserving permutation",
+    "J_frozen_Diff_GWES": "passed; exact dictionary equality to preserved historical implementation",
+    "support_invariance_regression": "passed; monomorphic habitat margin remains estimable when population-by-background sample overlap is adequate",
+    "empty_audit_schema_regression": "passed; all-excluded run retains complete tested/excluded table columns"
+  },
+  "inferential_seed": 4004,
+  "construction": "deterministic balanced-cell designs; no shared construction RNG",
+  "interpretation": "controlled method validation only; no biological epistasis or causal claim"
+}

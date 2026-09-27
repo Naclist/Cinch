@@ -1,0 +1,12 @@
+{
+  "scope": "controlled computational benchmark only; not biological validation",
+  "genomes": 12,
+  "loci": 200,
+  "length": 300,
+  "seed": 20260926,
+  "runs": [
+    {"workers": 1, "seconds": 0.5336463749990799, "genome_locus_queries": 2400, "queries_per_second": 4497.360260348697, "callable": 2400, "cache_hits": 0, "speedup_vs_first": 1.0},
+    {"workers": 2, "seconds": 0.5601703330030432, "genome_locus_queries": 2400, "queries_per_second": 4284.411113194318, "callable": 2400, "cache_hits": 0, "speedup_vs_first": 0.9526501914841333},
+    {"workers": 4, "seconds": 0.46823595800378826, "genome_locus_queries": 2400, "queries_per_second": 5125.620873355871, "callable": 2400, "cache_hits": 0, "speedup_vs_first": 1.1396954161191577}
+  ]
+}

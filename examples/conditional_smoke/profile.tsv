@@ -1,0 +1,17 @@
+sample_id	A	B
+c0_soil_1	1	1
+c0_soil_2	1	2
+c0_soil_3	2	1
+c0_soil_4	2	2
+c0_hospital_1	1	1
+c0_hospital_2	1	1
+c0_hospital_3	2	2
+c0_hospital_4	2	2
+c1_soil_1	1	1
+c1_soil_2	1	2
+c1_soil_3	2	1
+c1_soil_4	2	2
+c1_hospital_1	1	1
+c1_hospital_2	1	1
+c1_hospital_3	2	2
+c1_hospital_4	2	2

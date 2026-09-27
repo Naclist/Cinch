@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
+from cinch import __version__
 from cinch.cli import build_parser
 from cinch.frozen_v1.hierarchy import scan_hc, select_hc_level
 from cinch.frozen_v1.mapping import pair_order_distance
@@ -76,6 +77,27 @@ def test_neff_exact():
 
 def test_cli_exposes_wgs_and_filter():
     parser = build_parser()
+    assert parser.parse_args(["map", "g.fasta", "-r", "ref.fasta", "-o", "mapped"]).command == "map"
+    assert parser.parse_args(["profile", "x.tsv", "-o", "p", "--missing-policy", "unresolved"]).command == "profile"
+    assert parser.parse_args(["associate", "--profile", "p.npz", "--coordinates", "c.tsv", "-o", "a"]).command == "associate"
+    assert parser.parse_args(["advanced-filter", "--association", "a", "--profile", "p.npz", "--shc", "s.tsv", "-o", "f"]).command == "advanced-filter"
+    assert parser.parse_args(["report", "--filter-results", "f", "-o", "r"]).command == "report"
     assert parser.parse_args(["filter", "--wgs_results", "x", "--hc", "69",
                               "--order-threshold", "100"]).command == "filter"
 
+
+def test_public_package_version_is_distinct_from_frozen_workflow_version():
+    from cinch.frozen_v1 import VERSION as frozen_workflow_version
+    assert __version__ == "0.1.0"
+    assert frozen_workflow_version == "1.0.0"
+
+
+def test_release_smoke_resolves_command_name_from_path(monkeypatch):
+    import runpy
+    from pathlib import Path
+
+    script = Path(__file__).resolve().parents[1] / "scripts" / "release_smoke.py"
+    namespace = runpy.run_path(str(script))
+    resolver = namespace["_resolve_executable"]
+    monkeypatch.setattr(resolver.__globals__["shutil"], "which", lambda value: "/tmp/bin/cinch")
+    assert resolver("cinch") == "/tmp/bin/cinch"

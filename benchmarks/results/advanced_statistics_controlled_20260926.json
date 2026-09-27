@@ -1,0 +1,19 @@
+{
+  "scope": "controlled computational benchmark only",
+  "shc_permutation": {
+    "samples": 1000,
+    "clusters": 20,
+    "permutations": 199,
+    "seconds": 0.07094537500233855,
+    "permutations_per_second": 2804.974954229792,
+    "observed": 0.1832808251717737,
+    "pvalue": 0.005
+  },
+  "aracne": {
+    "nodes": 500,
+    "edges": 1000,
+    "seconds": 0.01542462500219699,
+    "edges_per_second": 64831.39783674262,
+    "direct_edges": 596
+  }
+}

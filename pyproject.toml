@@ -1,12 +1,15 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "cinch-wgs"
-version = "0.1.0.dev0"
+version = "0.1.0"
 description = "Information-theoretic gene-content and allele-type dependency discovery for bacterial WGS"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "Naclist", email = "776047333@qq.com"}]
 requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.26",
@@ -21,13 +24,32 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-test = ["pytest>=8"]
+mapping = ["mappy>=2.31,<3"]
+performance = ["numba>=0.61,<0.64"]
+test = ["pytest>=8", "mappy>=2.31,<3", "numba>=0.61,<0.64"]
+release = ["build>=1.2", "twine>=5"]
+
+[project.urls]
+Repository = "https://github.com/Naclist/Cinch"
+Documentation = "https://github.com/Naclist/Cinch/tree/integration/unified-framework/docs"
+Issues = "https://github.com/Naclist/Cinch/issues"
 
 [project.scripts]
 cinch = "cinch.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["cinch*"]
+
+[tool.setuptools.data-files]
+"share/doc/cinch-wgs" = [
+  "README.md",
+  "RELEASE_NOTES.md",
+  "FROZEN_CINCH_WGS_V1.yaml",
+  "docs/CONDITIONAL_ASSOCIATION.md",
+  "docs/STAGED_WORKFLOW.md",
+  "docs/development/KNOWN_LIMITATIONS.md",
+  "docs/development/SCIENTIFIC_EQUIVALENCE.md",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

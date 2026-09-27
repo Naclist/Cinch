@@ -221,18 +221,33 @@ set of disconnected dependency components. Use the
 **[interactive network](examples/spn534/network/CINCH_INTERACTIVE.html)** for
 channel filters, ego views, product search and exact edge metadata.
 
-## Install and run the redistributable demo
+## Install CINCH Unified Research Preview
 
-The actual WGS input contract is a reference CDS FASTA plus genome FASTA files:
+The repository default branch still contains the earlier frozen presentation.
+Until the validated v0.1.0 commit receives a release tag, clone the unified
+integration branch explicitly:
 
 ```bash
-git clone https://github.com/Naclist/Cinch.git
+git clone --branch integration/unified-framework --single-branch \
+  https://github.com/Naclist/Cinch.git
 cd Cinch
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
-python -m pip install -e ".[test]"
-pytest -q
+python -m pip install --upgrade pip
+python -m pip install ".[mapping,performance]"
+cinch --version                  # Cinch 0.1.0
+```
 
+The base install contains the frozen and staged analysis workflows.
+`.[mapping]` installs `mappy`, required by the indexed `cinch map` backend.
+`.[performance]` installs Numba for the optional compiled association engine.
+Use `.[mapping,performance,test]` for development and full validation, or
+`.[release]` for distribution-building tools.
+
+The actual WGS input contract is a reference CDS FASTA plus genome FASTA files.
+Run the redistributable synthetic demo from the repository root:
+
+```bash
 cinch wgs \
   -r examples/tiny_wgs/input/ref.cds.fasta \
   -p tiny -t 4 \
@@ -246,11 +261,63 @@ The toy's `--hc 2` is a toy-specific HC level, not the SPN534 recurrence-count
 criterion. SPN534 provenance, versioned assembly mappings and SHA256 manifests are
 under [`examples/spn534/provenance`](examples/spn534/provenance).
 
+## Unified staged integration preview
+
+The integration branch also exposes explicit restart boundaries:
+
+```bash
+cinch map -r reference.cds.fasta -o mapped -t 4 genomes/*.fasta
+cinch profile legacy.tsv -o converted --missing-policy unresolved
+cinch associate \
+  --profile mapped/profiles/PROFILE_V2.npz \
+  --coordinates mapped/mapping/COORDINATES.tsv \
+  -o associated --block-pairs 100000
+
+# optional compiled scorer
+python -m pip install -e ".[performance]"
+cinch associate \
+  --profile mapped/profiles/PROFILE_V2.npz \
+  --coordinates mapped/mapping/COORDINATES.tsv \
+  -o associated-numba --block-pairs 100000 --engine numba
+
+cinch conditional-associate \
+  --profile mapped/profiles/PROFILE_V2.npz \
+  --metadata sample_metadata.tsv \
+  --population-column tree_shc \
+  --background-column habitat \
+  --reference-background soil \
+  --comparison-background hospital \
+  --channels PP PT TP TT \
+  --permutations 999 --seed 42 \
+  -o conditional_results
+```
+
+`map` caches each indexed genome independently. `profile` refuses to guess whether
+legacy non-calls mean absence or unresolved. `associate` preserves frozen
+PP/PT/TP/TT semantics and writes atomic resumable blocks. `--engine numba` is an
+optional tolerance-equivalent compiled scorer; the default remains Python. This
+staged path is not yet a production replacement: all-channel categorical
+population/background testing is implemented, while production-scale pair throughput
+and full frozen-reference acceptance remain incomplete. See [`docs/STAGED_WORKFLOW.md`](docs/STAGED_WORKFLOW.md)
+and [`docs/development/COMPLETION_README.md`](docs/development/COMPLETION_README.md).
+
+The conditional workflow accepts categorical backgrounds only. It uses a common
+population-support distribution for both backgrounds and reports
+`NOT_IDENTIFIABLE` when population/background overlap is insufficient. Its
+results are context-dependent statistical associations, not proof of epistasis,
+adaptation, fitness interaction or causality. See
+[`docs/CONDITIONAL_ASSOCIATION.md`](docs/CONDITIONAL_ASSOCIATION.md).
+
 ## Repository map and boundaries
 
 | path | purpose |
 |---|---|
 | [`cinch/frozen_v1`](cinch/frozen_v1) | state construction, MI/NMI, hierarchy, order distance, recurrence and Neff |
+| [`cinch/mapping`](cinch/mapping) | indexed genome mapper, deterministic alleles and per-genome cache |
+| [`cinch/profiles`](cinch/profiles) | explicit presence/type schema and legacy adapters |
+| [`cinch/association`](cinch/association) | bounded four-channel blocks and high-order kernels |
+| [`cinch/population`](cinch/population) | SHC and categorical population/background MI and permutation kernels |
+| [`cinch/network`](cinch/network) | ARACNE triangle pruning |
 | [`docs/SCIENTIFIC_NARRATIVE.md`](docs/SCIENTIFIC_NARRATIVE.md) | full mathematical/scientific walkthrough |
 | [`docs/FIGURE_INDEX.md`](docs/FIGURE_INDEX.md) | result figures and exact evidence source |
 | [`docs/DEVELOPMENT_HISTORY.md`](docs/DEVELOPMENT_HISTORY.md) | decisions, failures and frozen/future boundaries |
@@ -270,5 +337,7 @@ Comparator inputs originate from
 and Whelan, Rusilowicz & McInerney (2020),
 [doi:10.1099/mgen.0.000338](https://doi.org/10.1099/mgen.0.000338).
 
-No redistribution license has yet been selected; public source visibility is not
-a grant of reuse rights.
+The Naclist-owned CINCH software is distributed under the
+[MIT License](LICENSE). Third-party dependencies and research evidence retain
+their own terms; see [third-party notices](THIRD_PARTY_NOTICES.md) and the
+[release license audit](docs/development/RELEASE_LICENSE_AUDIT.md).

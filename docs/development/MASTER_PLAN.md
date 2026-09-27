@@ -1,0 +1,48 @@
+# CINCH Unified master plan
+
+## Control rules
+
+[KNOWN | HIGH] Status vocabulary is restricted to `NOT_STARTED`, `IN_PROGRESS`, `IMPLEMENTED`, `TESTED`, `VALIDATED`, `BLOCKED`, and `DEFERRED`.
+
+[KNOWN | HIGH] A milestone is `VALIDATED` only when its implementation, tests, scientific acceptance criteria, performance criteria, and documentation gates are all satisfied.
+
+## Milestones
+
+| ID | Objective | Required sources | Expected outputs | Dependencies | Acceptance and scientific validation | Performance requirement | Status | Evidence |
+|---|---|---|---|---|---|---|---|---|
+| M00 | Freeze sources and install the audit system | CINCH `98c41ef`; CINCH-dev2 `ec1eaa5` | ten control documents; migration manifest | none | clean source snapshots; baseline tests recorded; no source destroyed | none | VALIDATED | `TEST_EVIDENCE.md`; this branch |
+| M01 | Complete architecture and feature audit | both packages, CLIs, tests, frozen contracts | `FEATURE_INVENTORY.md`; architecture comparison | M00 | every major scientific module classified; differences explicit | bottleneck hypotheses only, not invented measurements | VALIDATED | Checkpoint 1 review in `ARCHITECTURE_DECISIONS.md` |
+| M02 | Establish unified import/API skeleton without changing frozen_v1 | dev2 exact kernels; frozen_v1 package | `cinch/statistics`, compatibility exports, regression tests | M01 | weighted/unweighted definitions remain separate; exact kernel tests pass | one-million-pair measured microbenchmark | VALIDATED | 17 tests; zero cross-repository numerical difference; benchmark JSON |
+| M03 | Implement mapper backend contract and correct frozen mapper defects | frozen_v1 mapping; legacy `Cinch_v8.py` | backend interface; corrected internal backend; preserved legacy source | M02 | controlled and public-SPN cases classified; uberBlast comparison blocked | real threads; reusable index; resumable per genome | TESTED | mapping audit; 12 real genomes; 25K synthetic loci |
+| M04 | Unify presence/type profiles and compatibility adapters | frozen states; legacy profiles | explicit state schema and adapters | M03 | deterministic sample/locus/type ordering; missingness round-trip | five bytes/cell raw state arrays | VALIDATED | `docs/PROFILE_SCHEMA.md`; 27-test suite |
+| M05 | Implement bounded-memory PP/PT/TP/TT pair engine | frozen channel semantics; dev2 kernels | blockwise pair engine; necessary-state prescreen; optional compiled scorer/distance aggregation; restartable output; sparse distances | M04 | exact/tolerance-bounded equality for metrics/drivers/distances | real 50–400-locus and 12–48-sample ladders complete; core scaling and 25K pairs pending | TESTED | exact distance/non-float A/B; up to 3.24× compiled gain at 400 loci; `ASSOCIATION_BLOCKS.md` |
+| M06 | Integrate population and advanced statistics | HC/Neff; weighting; SHC; BH; ARACNE; Diff-GWES | separate named methods and workflows | M05 | zero-difference kernel migration and controlled PP workflow | kernels profiled; workflow-scale profile absent | TESTED | 37-test suite; cross-source comparison; staged SHC/BH/ARACNE test |
+| M07 | Expose staged `cinch` workflow and unified schemas | all prior modules | `map`, `profile`, `associate`, `filter`, `report`, `wgs` | M03-M06 | controlled and public SPN534-subset E2E pass with explicit reference boundary | real stage timing plus mapping/association resume evidence | VALIDATED | 45 tests; public 12- and 48-genome E2E; staged reports |
+| M08 | Production acceptance at 224 genomes × 25,000 loci | production inputs or approved equivalent | benchmark report and release decision | M07 | mandatory gates in assignment satisfied | actual wall time, CPU, RSS and throughput | DEFERRED | user explicitly owns P0/P1 large-scale acceptance |
+| P2 | Population- and habitat-dependent four-channel association | PROFILE_V2; categorical metadata; frozen Diff-GWES | `conditional-associate`; audited estimands/permutations/FDR | M04/M06/M07 | Cases A-J and CLI E2E; non-identifiability enforced | controlled workflow execution | VALIDATED | `P2_CONDITIONAL_ASSOCIATION_STATUS.md`; 15 P2 tests |
+
+## Predefined completion calculation
+
+[KNOWN | HIGH] Each milestone has five equal gates: implementation, engineering tests, scientific validation, performance evidence, and documentation. Project completion is `satisfied gates / 45`; blocked or deferred gates count as unsatisfied. No subjective weighting is permitted.
+
+[COMPUTED | HIGH] M00-M02, M04, and M07 satisfy twenty-five gates. M03 and M05 each satisfy four gates. M06 satisfies four gates but lacks workflow-scale performance evidence. M08 satisfies zero gates. Overall completion is therefore `37/45 = 82.2%`.
+
+[KNOWN | HIGH] The historical 45-gate integration score is retained for audit continuity. P0 25K and P1 full-SPN534 acceptance are user-deferred, not validated. P2 is tracked separately and reaches `16/16` controlled scientific/engineering gates without borrowing credit from P0/P1.
+
+## M03 mapping-semantics checkpoint
+
+| Case | frozen_v1 | unified indexed mapper | Status |
+|---|---|---|---|
+| exact forward hit | callable | callable | tested |
+| exact reverse-complement hit | callable with reverse coordinates | callable with reverse coordinates | tested |
+| SNP | callable above identity threshold | callable above identity threshold | tested |
+| short indel | generally missed by fixed-length Hamming window | supported by gapped minimap2 alignment | intentionally different; tested |
+| truncated locus | no hit becomes absence | detection-only/partial state | intentionally richer; tested |
+| no hit | `presence=0` confident absence | `presence=-1` unresolved no hit | intentionally richer; tested |
+| equal multicopy hits | non-callable | `AMBIGUOUS_MULTICOPY` | tested |
+| competing reference loci | no explicit cross-locus adjudication | ambiguous/rejected competition states | tested |
+| ambiguous bases | seed/window-dependent behavior | identity denominator includes query/target span | tested |
+
+[KNOWN | HIGH] The unified mapper is not claimed to be numerically equivalent to historical uberBlast nomenclature. `configure` and `uberBlast` are unavailable, and their executable/license contract is unresolved.
+
+[KNOWN | HIGH] Indexed mapping now exposes an explicit `no_hit_policy`. The default `unresolved` preserves the conservative behavior above; `absence` converts only zero-raw-hit calls to `presence=0` for PP analysis when assembly completeness and search sensitivity are accepted assumptions.

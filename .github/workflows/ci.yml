@@ -11,11 +11,37 @@ jobs:
       matrix:
         python-version: ["3.10", "3.12"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
       - run: python -m pip install -e ".[test]"
       - run: pytest -q
 
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Build source and wheel distributions
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install build
+          python -m build
+      - name: Inspect distribution contents
+        run: python scripts/verify_distribution.py dist/*
+      - name: Install and smoke-test the wheel in a fresh environment
+        run: |
+          python -m venv /tmp/cinch-wheel
+          /tmp/cinch-wheel/bin/python -m pip install --upgrade pip
+          /tmp/cinch-wheel/bin/python -m pip install "cinch-wgs[mapping,performance] @ file://$PWD/dist/cinch_wgs-0.1.0-py3-none-any.whl"
+          /tmp/cinch-wheel/bin/cinch --version
+          python scripts/release_smoke.py --repository "$PWD" --cinch /tmp/cinch-wheel/bin/cinch
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cinch-v0.1.0-distributions
+          path: dist/
