@@ -29,6 +29,9 @@
 | 2026-09-27 | unified current | Python 3.12.14, NumPy 2.3.5, Numba 0.63.1 | `pytest -q` | 45 passed in 2.45 s | full suite including pairwise-absent-state and compiled-distance regressions |
 | 2026-09-27 | P2 conditional association | deterministic controlled Cases A-J plus support/audit regressions | `pytest -q tests/test_conditional_association.py` | 15 passed in 1.31 s | population confounding, habitat coexistence/exclusion/null, overlap, TT/PT/TP, missingness, imbalance, non-identifiability CLI output, permutation-invariant support, stable audit schemas, legacy Diff-GWES |
 | 2026-09-27 | unified current with P2 | Python 3.12.14, optional Numba installed | `pytest -q` | 60 passed in 2.74 s | complete repository regression after P2 integration |
+| 2026-09-27 | v0.1.0 release candidate | Python 3.12.14 | `pytest -q` | 61 passed in 2.42 s | package-version regression added; no scientific method changed |
+| 2026-09-27 | installed-command smoke | local editable and isolated wheel installs | `scripts/release_smoke.py` | PASS twice | tiny WGS/filter counts 36/32/31/21 and 33 final; conditional TT 1 row/2 tests |
+| 2026-09-27 | v0.1.0 distributions | isolated build and wheel venv | `python -m build`; artifact verifier; `twine check`; `pip check` | PASS | package modules, selected docs, license notices, console entry point and SPN534 exclusion verified |
 
 ## Evidence limitations
 

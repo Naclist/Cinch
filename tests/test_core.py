@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
+from cinch import __version__
 from cinch.cli import build_parser
 from cinch.frozen_v1.hierarchy import scan_hc, select_hc_level
 from cinch.frozen_v1.mapping import pair_order_distance
@@ -83,3 +84,9 @@ def test_cli_exposes_wgs_and_filter():
     assert parser.parse_args(["report", "--filter-results", "f", "-o", "r"]).command == "report"
     assert parser.parse_args(["filter", "--wgs_results", "x", "--hc", "69",
                               "--order-threshold", "100"]).command == "filter"
+
+
+def test_public_package_version_is_distinct_from_frozen_workflow_version():
+    from cinch.frozen_v1 import VERSION as frozen_workflow_version
+    assert __version__ == "0.1.0"
+    assert frozen_workflow_version == "1.0.0"

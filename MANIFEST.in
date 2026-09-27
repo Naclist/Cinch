@@ -1,0 +1,15 @@
+include LICENSE
+include THIRD_PARTY_NOTICES.md
+include RELEASE_NOTES.md
+include CONTRIBUTING.md
+include FROZEN_CINCH_WGS_V1.yaml
+recursive-include docs *.md *.tsv
+recursive-include examples/tiny_wgs *.md *.yaml *.tsv *.fasta *.py *.png *.pdf *.svg
+recursive-include examples/conditional_smoke *.md *.tsv
+include scripts/release_smoke.py
+include scripts/verify_distribution.py
+prune examples/spn534
+prune docs/assets
+prune tests
+global-exclude *.py[cod]
+global-exclude __pycache__

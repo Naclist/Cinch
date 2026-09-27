@@ -1,5 +1,13 @@
 # Unified integration changelog
 
+## 2026-09-27 — v0.1.0 Research Preview release preparation
+
+- [COMPUTED | HIGH] Set the public package/CLI version to 0.1.0 while retaining the frozen WGS/filter internal version 1.0.0.
+- [COMPUTED | HIGH] Added MIT licensing for Naclist-owned source, explicit third-party/data scope, dependency audit, and release notes.
+- [COMPUTED | HIGH] Added synthetic installed-command smoke inputs, sdist/wheel content verification, and a GitHub Actions package job.
+- [COMPUTED | HIGH] Local source and isolated-wheel smoke tests reproduce tiny WGS counts and complete the conditional TT workflow.
+- [KNOWN | HIGH] No tag or GitHub Release is created during release preparation; public-clone and CI gates must pass first.
+
 ## 2026-09-26 — Checkpoint 1
 
 - [COMPUTED | HIGH] Cloned CINCH at `98c41ef081be4face6b32cb61b557964537cb353` into an independent worktree.

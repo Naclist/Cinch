@@ -4,7 +4,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from .frozen_v1 import VERSION
+from . import __version__
 from .frozen_v1.filtering import SelectionRequiredError, run_filter
 from .frozen_v1.wgs import run_wgs
 from .mapping import MappingConfig
@@ -18,7 +18,7 @@ from .workflow.conditional_association import run_conditional_association
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="cinch", description="Cinch WGS v1 dependency discovery and Cinch Filter v1 recurrence filtering")
-    parser.add_argument("--version", action="version", version=f"Cinch {VERSION}")
+    parser.add_argument("--version", action="version", version=f"Cinch {__version__}")
     sub = parser.add_subparsers(dest="command", required=True)
     mapping = sub.add_parser("map", help="indexed, parallel, resumable genome mapping and profile generation")
     mapping.add_argument("genomes", nargs="+", type=Path, help="input genome FASTA files")

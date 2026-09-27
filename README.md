@@ -221,18 +221,33 @@ set of disconnected dependency components. Use the
 **[interactive network](examples/spn534/network/CINCH_INTERACTIVE.html)** for
 channel filters, ego views, product search and exact edge metadata.
 
-## Install and run the redistributable demo
+## Install CINCH Unified Research Preview
 
-The actual WGS input contract is a reference CDS FASTA plus genome FASTA files:
+The repository default branch still contains the earlier frozen presentation.
+Until the validated v0.1.0 commit receives a release tag, clone the unified
+integration branch explicitly:
 
 ```bash
-git clone https://github.com/Naclist/Cinch.git
+git clone --branch integration/unified-framework --single-branch \
+  https://github.com/Naclist/Cinch.git
 cd Cinch
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
-python -m pip install -e ".[test]"
-pytest -q
+python -m pip install --upgrade pip
+python -m pip install ".[mapping,performance]"
+cinch --version                  # Cinch 0.1.0
+```
 
+The base install contains the frozen and staged analysis workflows.
+`.[mapping]` installs `mappy`, required by the indexed `cinch map` backend.
+`.[performance]` installs Numba for the optional compiled association engine.
+Use `.[mapping,performance,test]` for development and full validation, or
+`.[release]` for distribution-building tools.
+
+The actual WGS input contract is a reference CDS FASTA plus genome FASTA files.
+Run the redistributable synthetic demo from the repository root:
+
+```bash
 cinch wgs \
   -r examples/tiny_wgs/input/ref.cds.fasta \
   -p tiny -t 4 \
@@ -322,5 +337,7 @@ Comparator inputs originate from
 and Whelan, Rusilowicz & McInerney (2020),
 [doi:10.1099/mgen.0.000338](https://doi.org/10.1099/mgen.0.000338).
 
-No redistribution license has yet been selected; public source visibility is not
-a grant of reuse rights.
+The Naclist-owned CINCH software is distributed under the
+[MIT License](LICENSE). Third-party dependencies and research evidence retain
+their own terms; see [third-party notices](THIRD_PARTY_NOTICES.md) and the
+[release license audit](docs/development/RELEASE_LICENSE_AUDIT.md).
