@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import shutil
 import subprocess
 import tempfile
 from pathlib import Path
@@ -20,13 +21,27 @@ def _rows(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
+def _resolve_executable(value: str) -> str:
+    """Resolve explicit paths while leaving command names to PATH lookup."""
+    candidate = Path(value).expanduser()
+    if candidate.is_absolute() or candidate.parent != Path("."):
+        resolved = candidate.resolve(strict=True)
+        if not resolved.is_file():
+            raise SystemExit(f"cinch executable is not a file: {resolved}")
+        return str(resolved)
+    resolved = shutil.which(value)
+    if resolved is None:
+        raise SystemExit(f"cinch executable not found on PATH: {value}")
+    return resolved
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repository", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--cinch", default="cinch", help="installed cinch executable")
     args = parser.parse_args()
     repository = args.repository.resolve()
-    executable = str(Path(args.cinch).resolve()) if Path(args.cinch).exists() else args.cinch
+    executable = _resolve_executable(args.cinch)
     tiny = repository / "examples" / "tiny_wgs" / "input"
     conditional = repository / "examples" / "conditional_smoke"
     with tempfile.TemporaryDirectory(prefix="cinch-release-smoke-") as temporary:

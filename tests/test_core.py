@@ -90,3 +90,10 @@ def test_public_package_version_is_distinct_from_frozen_workflow_version():
     from cinch.frozen_v1 import VERSION as frozen_workflow_version
     assert __version__ == "0.1.0"
     assert frozen_workflow_version == "1.0.0"
+
+
+def test_release_smoke_resolves_command_name_from_path(monkeypatch):
+    from scripts.release_smoke import _resolve_executable
+
+    monkeypatch.setattr("scripts.release_smoke.shutil.which", lambda value: "/tmp/bin/cinch")
+    assert _resolve_executable("cinch") == "/tmp/bin/cinch"
