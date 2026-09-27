@@ -80,9 +80,10 @@
 
 ## Tests executed
 
-- [COMPUTED | HIGH] Unified branch: 60 passed in 2.74 s on Python 3.12.14 with optional Numba installed.
+- [COMPUTED | HIGH] Unified release candidate: 62 passed in 3.19 s on Python 3.12.14; release-core tests also pass on Python 3.10.
 - [COMPUTED | HIGH] CINCH-dev2 baseline: 7 passed on Python 3.12.14.
 - [COMPUTED | HIGH] P2 controlled suite: 15 passed, covering Cases A-J, metadata failure, all-channel CLI output, non-identifiability output, zero-margin driver support, permutation-invariant support selection, and stable empty audit schemas.
+- [COMPUTED | HIGH] A fresh public GitHub clone passed both installed-command smokes, sdist/wheel build and content verification, Twine checks, and isolated wheel installation. GitHub Actions passed Python 3.10, Python 3.12, and package jobs.
 
 ## Tests not executed
 
@@ -96,7 +97,7 @@
 
 ## Current recommended usage
 
-[KNOWN | HIGH] Use released frozen_v1 for its documented WGS/filter workflow and dev2 only for its explicitly frozen research modules. Do not use the integration branch as a unified production release.
+[KNOWN | HIGH] Use v0.1.0 only as a Research Preview for reproducible evaluation. It retains frozen_v1 and dev2 historical modules, but it is not a unified production release.
 
 ## Release readiness
 

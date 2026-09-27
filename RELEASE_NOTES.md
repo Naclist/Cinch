@@ -6,10 +6,10 @@ Cinch v0.1.0 is the first unified Research Preview. It is intended for
 reproducible research evaluation and method development. It is not a
 production-ready clinical, diagnostic, epidemiological, or regulatory tool.
 
-The immutable release candidate is prepared on
-`integration/unified-framework`. A Git tag and GitHub Release must be created
-only after the final public-clone, wheel, smoke-test, and GitHub Actions checks
-pass.
+The release candidate on `integration/unified-framework` passed the fresh
+public-clone, wheel, smoke-test, and GitHub Actions checks. No Git tag or GitHub
+Release was created during release preparation; publication remains an
+explicit separate action from the validated commit.
 
 ## Validation classes
 

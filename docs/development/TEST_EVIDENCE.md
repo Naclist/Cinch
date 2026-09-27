@@ -32,6 +32,8 @@
 | 2026-09-27 | v0.1.0 release candidate | Python 3.12.14 | `pytest -q` | 61 passed in 2.42 s | package-version regression added; no scientific method changed |
 | 2026-09-27 | installed-command smoke | local editable and isolated wheel installs | `scripts/release_smoke.py` | PASS twice | tiny WGS/filter counts 36/32/31/21 and 33 final; conditional TT 1 row/2 tests |
 | 2026-09-27 | v0.1.0 distributions | isolated build and wheel venv | `python -m build`; artifact verifier; `twine check`; `pip check` | PASS | package modules, selected docs, license notices, console entry point and SPN534 exclusion verified |
+| 2026-09-27 | public GitHub clone at `6166c96` | fresh Python 3.12.14 environments | public HTTPS clone; `pytest -q`; both CLI smokes; build; artifact/Twine checks; wheel install | 62 passed; all release checks PASS | no local source checkout or private input used |
+| 2026-09-27 | GitHub Actions `ae0a319` | hosted Ubuntu, Python 3.10/3.12 | workflow run `36284486133` | all three jobs PASS | regression matrix plus package build, artifact audit, isolated wheel install and CLI smoke |
 
 ## Evidence limitations
 

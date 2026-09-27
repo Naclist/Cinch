@@ -10,17 +10,17 @@ Release title: **Cinch v0.1.0 — Research Preview**
 | Optional indexed mapper dependency | PASS | `.[mapping]` documents and installs mappy |
 | Optional compiled dependency | PASS | `.[performance]` documents and installs Numba |
 | Version consistency | PASS | project and CLI report `0.1.0`; frozen workflow remains `1.0.0` |
-| Complete local regression | PASS | 61 tests in 2.42 s |
+| Complete local regression | PASS | 62 tests in 3.19 s on Python 3.12; core release tests also pass on Python 3.10 |
 | Tiny WGS/filter smoke | PASS | PP/PT/TP/TT 36/32/31/21; 33 final candidates |
 | Conditional CLI smoke | PASS | TT differential row present; two tested hypotheses |
 | sdist build and content | PASS | modules/docs/synthetic examples included; SPN534 and tests excluded |
 | wheel build and content | PASS | every `cinch/*.py`, selected documentation, console entry point and license notices included |
 | Twine metadata check | PASS | sdist and wheel |
 | Fresh wheel installation | PASS | isolated Python 3.12 environment; mapping/performance extras; `pip check` clean |
-| Fresh public GitHub clone | PENDING | execute after pushing the release candidate commit |
-| GitHub Actions | PENDING | verify Python 3.10, Python 3.12 and package jobs on the release candidate |
+| Fresh public GitHub clone | PASS | public HTTPS clone of `integration/unified-framework`; 62 tests, both CLI smokes, build, artifact audit, Twine check and isolated wheel install passed |
+| GitHub Actions | PASS | run `36284486133` on `ae0a319`: Python 3.10, Python 3.12 and package jobs all passed |
 | Production-scale acceptance | USER-DEFERRED | full SPN534, 25K-locus, and private HPC gates remain unexecuted |
-| Git tag/GitHub Release | NOT CREATED | prohibited until every non-deferred release gate passes |
+| Git tag/GitHub Release | NOT CREATED | release gates pass; intentionally left for an explicit publication action |
 
 ## Scope review
 
